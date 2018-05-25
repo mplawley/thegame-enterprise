@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}
+    by House Lawlez
+  </h1>
+  <img width="300" alt="The Game Logo" src="../assets/placeholder.png">
+</div>
+<div>
+    <nav>
+        <a routerLink="/character">Character sheet</a>
+        <a routerLink="/bio">Bio</a>
+        <a routerLink="/inventory">Inventory</a>
+        <a routerLink="/meritsAndBuffs">Merits and Buffs</a>
+        <a routerLink="/powers">Powers</a>
+        <a routerLink="/items">Items</a>
+        <a routerLink="/levelup">Level up</a>
+        <a routerLink="/settings">Settings</a>
+    </nav>
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</div>
