@@ -1,6 +1,6 @@
-hello/User.class
-hello/Character.class
-hello/MainController.class
-hello/Proficiency.class
-hello/Application.class
-hello/UserRepository.class
+gameCore/UserRepository.class
+gameCore/Proficiency.class
+gameCore/CharacterSheet.class
+gameCore/Application.class
+gameCore/User.class
+gameCore/MainController.class

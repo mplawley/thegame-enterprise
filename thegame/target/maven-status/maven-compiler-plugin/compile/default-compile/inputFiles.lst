@@ -1,6 +1,6 @@
-/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/hello/Application.java
-/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/hello/User.java
-/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/hello/Character.java
-/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/hello/UserRepository.java
-/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/hello/Proficiency.java
-/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/hello/MainController.java
+/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/gameCore/Proficiency.java
+/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/gameCore/Application.java
+/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/gameCore/User.java
+/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/gameCore/UserRepository.java
+/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/gameCore/CharacterSheet.java
+/Users/marklawley/Developer/thegame-enterprise/thegame/src/main/java/gameCore/MainController.java
