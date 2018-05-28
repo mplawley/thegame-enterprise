@@ -1,4 +1,4 @@
-import { Character, CharacterSheetDataObject } from './characterSheet';
+import { CharacterSheet, CharacterSheetDataObject } from './characterSheet';
 import { Monster } from './characterSheet';
 
 export const DEMO_ENEMIES: Monster[] = [

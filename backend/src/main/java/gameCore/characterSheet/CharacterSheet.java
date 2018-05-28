@@ -1,4 +1,4 @@
-package gameCore;
+package gameCore.characterSheet;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

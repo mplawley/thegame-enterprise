@@ -1,4 +1,4 @@
-import { Proficiency, BaseAttribute, Character } from "./characterSheet";
+import { Proficiency, BaseAttribute, CharacterSheet } from "./characterSheet";
 import { RadioControlValueAccessor } from "@angular/forms";
 import { Component, OnInit } from "@angular/core";
 // import { BASE_STATS } from "./mock-characterSheet-items";

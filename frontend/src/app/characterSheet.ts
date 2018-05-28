@@ -13,7 +13,7 @@ export enum BaseAttribute {
     Charisma,
 }
 
-export class Character {
+export class CharacterSheet {
     name: string;
     age: number;
     bio: string;

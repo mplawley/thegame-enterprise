@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Character, CharacterSheetClickableItems, Proficiency } from '../characterSheet';
+import { CharacterSheet, CharacterSheetClickableItems, Proficiency } from '../characterSheet';
 import { GameEngine } from '../gameEngine';
 import { CharacterService } from '../character.service';
 import { ProficiencyStringPipe } from '../proficiency-int-to-string-pipe';
@@ -45,6 +45,11 @@ export class CharacterComponent implements OnInit {
   getVitals(): void {
     this.characterService.getVitals()
       .subscribe(vitals => this.characterSheetVitals = vitals);
+  }
+
+  saveVitals(): void {
+    this.characterService.updateVitals(this.characterSheetVitals)
+      .subscribe(result => console.log(result.json()));
   }
 
   getStats(): void {

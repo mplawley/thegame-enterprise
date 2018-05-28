@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Character, CharacterSheetVitals, CharacterSheetDataObject } from './characterSheet'
+import { CharacterSheet, CharacterSheetVitals, CharacterSheetDataObject } from './characterSheet'
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { MessageService } from './message.service';
 import { Observable } from 'rxjs/Observable';
@@ -8,16 +8,25 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable()
 export class CharacterService {
-  private characterVitalsUrl = 'api/CHARACTER_VITALS';
+  private getCharacterVitalsUrl = 'http://localhost:8080/vitals/getVitals'; //For mocking: 'api/CHARACTER_VITALS';
+  private updateCharacterVitalsUrl = 'http://localhost:8080/vitals/saveVitals';
   private characterStatsUrl = 'api/BASE_STATS';
   private characterSkillsUrl = 'api/SKILLS';
   private testSpringBootBackendUrl = 'http://localhost:8080/characterSheet';
 
   getVitals(): Observable<CharacterSheetVitals[]> {
-    return this.http.get<CharacterSheetVitals[]>(this.characterVitalsUrl)
+    return this.http.get<CharacterSheetVitals[]>(this.getCharacterVitalsUrl)
       .pipe(
         tap(vitals => this.log('Fetched vitals')),
         catchError(this.handleError('getVitals', []))
+      );
+  }
+
+  updateVitals(characterSheetVitals: CharacterSheetVitals): Observable<any> {
+    return this.http.put(this.updateCharacterVitalsUrl, characterSheetVitals)
+      .pipe(
+        tap(_ => this.log(`updated character vitals with currentLife=${characterSheetVitals.currentLife}`)),
+        catchError(this.handleError<any>('updateVitals'))
       );
   }
 

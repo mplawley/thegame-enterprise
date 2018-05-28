@@ -1,4 +1,4 @@
-package gameCore;
+package gameCore.characterSheet;
 
 public class CharacterSheetVitals {
     String characterName;

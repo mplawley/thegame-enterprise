@@ -1,4 +1,4 @@
-package gameCore;
+package gameCore.characterSheet;
 
 public enum Proficiency {
     Apprentice,
