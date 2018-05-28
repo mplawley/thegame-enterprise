@@ -1,0 +1,94 @@
+<h1>Character sheet</h1>
+<div id="characterSheet" *ngIf="characterSheetVitals">
+
+    <table class="characterTable" id="bioTable">
+        <thead>
+          <tr>
+            <th>Character</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="2">
+            </td>
+          </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+              <td>Name</td><td>{{characterSheetVitals.characterName | uppercase}}</td>
+            </tr>
+  
+            <tr>
+              <td>Age</td><td>{{characterSheetVitals.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="characterTable" id="vitalsTable">
+        <thead>
+          <tr>
+            <th>Vitals</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="2">
+            </td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>Life</td>
+            <td>
+              <input [(ngModel)] = "characterSheetVitals.currentLife"/>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Max life</td><td>{{characterSheetVitals.maxLife}}</td>
+          </tr>
+
+          <tr>
+            <td>Endurance</td><td><input [(ngModel)] = "characterSheetVitals.currentEndurance"/></td>
+          </tr>
+
+          <tr>
+            <td>Max Endurance</td><td>{{characterSheetVitals.maxEndurance}}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="characterSheet">
+  <h1>Actions</h1>
+  <ul class="characterSheetStats">
+    <li *ngFor="let characterSheetItem of characterSheetBaseStats; let i = index" 
+        (click) = "onSelectStat(characterSheetItem, i)" 
+        [class.selected]="characterSheetItem === selectedCharacterSheetItem">
+      <span>{{characterSheetBaseStats[i].skillName}}:</span>
+      <span>{{characterSheetBaseStats[i].skillValue}}</span>
+    </li>
+  </ul>
+
+  <ul class="characterSheetSkills">
+    <li *ngFor="let characterSheetItem of characterSheetSkills; let i = index" 
+        (click) = "onSelectSkill(characterSheetItem, i)" 
+        [class.selected]="characterSheetItem === selectedCharacterSheetItem">
+      <span>{{characterSheetSkills[i].skillName}}: </span>
+      <span>{{characterSheetSkills[i].skillValue}}, </span>
+      <span>{{characterSheetSkills[i].skillProficiency | proficiencyString}}</span>
+    </li>
+  </ul>
+
+  <app-character-detail 
+    [selectedCharacterSheetItem]="selectedCharacterSheetItem" 
+    [currentPerformance]="currentPerformance"
+  ></app-character-detail>
+</div>
+
+<div class="testArea">
+  <button type="button" (click)="getSpringBootRestResponse()">Test Spring boot response</button>
+  <p id="displayResponse"></p>
+</div>
