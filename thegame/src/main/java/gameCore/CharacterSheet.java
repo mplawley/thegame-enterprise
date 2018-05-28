@@ -11,6 +11,13 @@ public class CharacterSheet {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer characterId;
 
+    public CharacterSheet() {};
+
+    public CharacterSheet(Integer characterId, String characterName) {
+        this.characterId = characterId;
+        this.characterName = characterName;
+    }
+
     //General profile
     private String playerName;
     private String characterName;
