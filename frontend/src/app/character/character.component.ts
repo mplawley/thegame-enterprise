@@ -42,6 +42,7 @@ export class CharacterComponent implements OnInit {
     document.getElementById("displayResponse").innerHTML = this.testResponse[0];
   }
 
+  //TODO: Build out first
   getVitals(): void {
     this.characterService.getVitals()
       .subscribe(vitals => this.characterSheetVitals = vitals);
