@@ -32,9 +32,7 @@ public class Application {
             }
 
             log.info("Fetching all character sheets with CharacterSheetRepo interface method-query");
-            repository.findByCharacterName("Clarissa Gladstone").forEach(nameFound -> {
-                log.info(nameFound.toString());
-            });
+                log.info(repository.findByCharacterId(1L).toString());
         };
     }
 
@@ -48,6 +46,16 @@ public class Application {
             for (CharacterSheet characterSheet : repository.findAll()) {
                 log.info(characterSheet.getCharacterName());
             }
+        };
+    }
+
+    @Bean
+    public CommandLineRunner saveTestSheet(CharacterSheetRepository characterSheetRepository) {
+        return (args) -> {
+            log.info("Creating a characterSheet record with ID = 1L");
+            CharacterSheet characterSheet = new CharacterSheet();
+            characterSheet.setCharacterId(1L);
+            characterSheetRepository.save(characterSheet);
         };
     }
 }

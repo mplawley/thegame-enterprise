@@ -1,13 +1,31 @@
-package gameCore.characterSheet;
+package gameCore.characterSheetVitals;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class CharacterSheetVitals {
-    String characterName;
-    Integer age;
-    String bio;
-    Integer currentLife;
-    Integer maxLife;
-    Integer currentEndurance;
-    Integer maxEndurance;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long characterVitalsId;
+
+    private String characterName;
+    private Integer age;
+    private String bio;
+    private Integer currentLife;
+    private Integer maxLife;
+    private Integer currentEndurance;
+    private Integer maxEndurance;
+
+    public Long getCharacterVitalsId() {
+        return characterVitalsId;
+    }
+
+    public void setCharacterVitalsId(Long characterVitalsId) {
+        this.characterVitalsId = characterVitalsId;
+    }
 
     public String getCharacterName() {
         return characterName;

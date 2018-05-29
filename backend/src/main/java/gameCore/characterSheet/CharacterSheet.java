@@ -9,11 +9,11 @@ import javax.persistence.Id;
 public class CharacterSheet {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer characterId;
+    private Long characterId;
 
     public CharacterSheet() {};
 
-    public CharacterSheet(Integer characterId, String characterName) {
+    public CharacterSheet(Long characterId, String characterName) {
         this.characterId = characterId;
         this.characterName = characterName;
     }
@@ -22,6 +22,7 @@ public class CharacterSheet {
     private String playerName;
     private String characterName;
     private String characterBio;
+    private Integer characterAge;
 
     //Vitals
     private Integer currentLife;
@@ -73,11 +74,11 @@ public class CharacterSheet {
     private Proficiency diplomacyProficiency;
 
     //Behaviours
-    public Integer getCharacterId() {
+    public Long getCharacterId() {
         return characterId;
     }
 
-    public void setCharacterId(Integer characterId) {
+    public void setCharacterId(Long characterId) {
         this.characterId = characterId;
     }
 
