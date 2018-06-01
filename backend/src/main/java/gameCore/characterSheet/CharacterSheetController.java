@@ -6,19 +6,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path="/characterSheet")
+@RequestMapping("/characterSheet")
+@CrossOrigin
 public class CharacterSheetController {
     @Autowired
     private CharacterSheetRepository characterSheetRepository;
 
-    @GetMapping(path="/getCharacterSheet")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @RequestMapping("/getCharacterSheet")
+    @CrossOrigin
     public CharacterSheet getCharacterSheet(@RequestParam(value="name", defaultValue="Generic") String characterName) {
         return new CharacterSheet(1L, "Clariss Bunny");
     }
 
     @PutMapping(path="/saveVitals")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
     public @ResponseBody String saveVitals (@RequestParam("characterId") Long characterId,
                                             @RequestParam("currentLife") Integer currentLife,
                                             @RequestParam("maxLife") Integer maxLife,

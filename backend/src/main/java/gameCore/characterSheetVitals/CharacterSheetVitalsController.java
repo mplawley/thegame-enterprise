@@ -5,18 +5,19 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path="/vitals")
+@CrossOrigin
 public class CharacterSheetVitalsController {
     @Autowired
     private CharacterSheetVitalsRepository characterSheetVitalsRepository;
 
     @GetMapping(path="/getVitals")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
     public @ResponseBody CharacterSheetVitals getCharacterSheetVitals(@RequestParam(value="characterVitalsId") Long characterVitalsId) {
         return characterSheetVitalsRepository.findByCharacterVitalsId(characterVitalsId);
     }
 
     @RequestMapping(path="/saveVitals")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
     public @ResponseBody String saveVitals (@RequestParam Integer currentLife) {
         CharacterSheetVitals characterSheetVitals = new CharacterSheetVitals();
         characterSheetVitals.setCharacterVitalsId(1L);

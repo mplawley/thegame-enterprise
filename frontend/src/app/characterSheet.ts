@@ -70,6 +70,7 @@ export class CharacterSheetDataObject {
 }
 
 export class CharacterSheetVitals {
+    characterVitalsId: number;
     characterName: string;
     age: number;
     bio: string;

@@ -12,10 +12,11 @@ export class CharacterService {
   private updateCharacterVitalsUrl = 'http://localhost:8080/vitals/saveVitals';
   private characterStatsUrl = 'api/BASE_STATS';
   private characterSkillsUrl = 'api/SKILLS';
-  private testSpringBootBackendUrl = 'http://localhost:8080/characterSheet';
+  private testSpringBootBackendUrl = 'http://localhost:8080/characterSheet/getCharacterSheet';
 
-  getVitals(): Observable<CharacterSheetVitals[]> {
-    return this.http.get<CharacterSheetVitals[]>(this.getCharacterVitalsUrl)
+  getVitals(headers?: HttpHeaders | null): Observable<any> {
+    const expandedHeaders = this.prepareHeader(headers);
+    return this.http.get<CharacterSheetVitals>(this.getCharacterVitalsUrl, expandedHeaders)
       .pipe(
         tap(vitals => this.log('Fetched vitals')),
         catchError(this.handleError('getVitals', []))
@@ -47,7 +48,7 @@ export class CharacterService {
   }
 
   getSpringBootBackendRESTResponse(): Observable<any> {
-    console.log("In character service's getSpringzBoot() sresponse");
+    console.log("In character service's getSpringzBoot() response");
     return this.http.get<string>(this.testSpringBootBackendUrl) //was string[]
       .pipe(
         tap(string => this.log('Fetched Spring Boot Backend REST Response: ' + string)),
@@ -82,4 +83,15 @@ export class CharacterService {
       return of(result as T);
     };
   }
+
+  private prepareHeader(headers: HttpHeaders | null): object {
+    headers = headers || new HttpHeaders();
+
+    headers = headers.set('Content-Type', 'application/json');
+    headers = headers.set('Accept', 'application/json');
+
+    return {
+        headers: headers
+    }
+}
 }

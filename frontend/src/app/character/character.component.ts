@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CharacterSheet, CharacterSheetClickableItems, Proficiency } from '../characterSheet';
+import { CharacterSheet, CharacterSheetClickableItems, Proficiency, CharacterSheetVitals } from '../characterSheet';
 import { GameEngine } from '../gameEngine';
 import { CharacterService } from '../character.service';
 import { ProficiencyStringPipe } from '../proficiency-int-to-string-pipe';
@@ -15,7 +15,7 @@ export class CharacterComponent implements OnInit {
 
   characterSheetBaseStats;
   characterSheetSkills;
-  characterSheetVitals;
+  characterSheetVitals: CharacterSheetVitals;
   testResponse;
 
   selectedCharacterSheetItem: CharacterSheetClickableItems;
@@ -39,6 +39,7 @@ export class CharacterComponent implements OnInit {
   onButtonClick(): void {
     this.getSpringBootRestResponse();
     console.log("Checking field on this object for response from spring boot..." + this.testResponse[0]);
+    console.log("Vitals current life: " + this.characterSheetVitals.currentLife);
     document.getElementById("displayResponse").innerHTML = this.testResponse[0];
   }
 
@@ -64,7 +65,6 @@ export class CharacterComponent implements OnInit {
   }
 
   getSpringBootRestResponse(): void {
-    console.log("in character composnent's getSpringBootRestResponse()");
     this.characterService.getSpringBootBackendRESTResponse()
       .subscribe(stringResponse => this.testResponse = stringResponse);
   }
