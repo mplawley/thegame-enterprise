@@ -14,9 +14,8 @@ export class CharacterService {
   private characterSkillsUrl = 'api/SKILLS';
   private testSpringBootBackendUrl = 'http://localhost:8080/characterSheet/getCharacterSheet';
 
-  getVitals(headers?: HttpHeaders | null): Observable<any> {
-    const expandedHeaders = this.prepareHeader(headers);
-    return this.http.get<CharacterSheetVitals>(this.getCharacterVitalsUrl, expandedHeaders)
+  getVitals(): Observable<any> {
+    return this.http.get<CharacterSheetVitals>(this.getCharacterVitalsUrl)
       .pipe(
         tap(vitals => this.log('Fetched vitals')),
         catchError(this.handleError('getVitals', []))
@@ -83,15 +82,4 @@ export class CharacterService {
       return of(result as T);
     };
   }
-
-  private prepareHeader(headers: HttpHeaders | null): object {
-    headers = headers || new HttpHeaders();
-
-    headers = headers.set('Content-Type', 'application/json');
-    headers = headers.set('Accept', 'application/json');
-
-    return {
-        headers: headers
-    }
-}
 }
