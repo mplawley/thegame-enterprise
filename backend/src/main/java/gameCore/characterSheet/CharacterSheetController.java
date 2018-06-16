@@ -14,8 +14,8 @@ public class CharacterSheetController {
 
     @RequestMapping("/getCharacterSheet")
     @CrossOrigin
-    public CharacterSheet getCharacterSheet(@RequestParam(value="name", defaultValue="Generic") String characterName) {
-        return new CharacterSheet(1L, "Clariss Bunny");
+    public CharacterSheet getCharacterSheet(@RequestParam(value="characterId") Long characterId) {
+        return characterSheetRepository.findByCharacterId(characterId);
     }
 
     @PutMapping(path="/saveVitals")

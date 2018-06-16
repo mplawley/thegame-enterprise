@@ -13,6 +13,7 @@ export class CharacterService {
   private characterStatsUrl = 'api/BASE_STATS';
   private characterSkillsUrl = 'api/SKILLS';
   private testSpringBootBackendUrl = 'http://localhost:8080/characterSheet/getCharacterSheet';
+  private characterSheetUrl = 'http://localhost:8080/characterSheet/getCharacterSheet';
 
   getVitals(): Observable<any> {
     return this.http.get<CharacterSheetVitals>(this.getCharacterVitalsUrl)
@@ -54,6 +55,15 @@ export class CharacterService {
         catchError(this.handleError('getSpringBootBackendRESTResponse', []))
       );
       // return this.http.get<string>(this.testSpringBootBackendUrl);
+  }
+
+  getCharacterSheet(): Observable<any> {
+    let data = {characterId: "1"};
+    return this.http.get<CharacterSheet>(this.characterSheetUrl, {params: data})
+      .pipe(
+        tap(skills => this.log('Fetched character sheet')),
+        catchError(this.handleError('getCharacterSheet', []))
+      );
   }
 
   constructor(

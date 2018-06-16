@@ -17,6 +17,7 @@ export class CharacterComponent implements OnInit {
   characterSheetSkills;
   characterSheetVitals: CharacterSheetVitals;
   testResponse;
+  characterSheet: CharacterSheet;
 
   selectedCharacterSheetItem: CharacterSheetClickableItems;
   currentPerformance: number;
@@ -37,10 +38,10 @@ export class CharacterComponent implements OnInit {
   }
 
   onButtonClick(): void {
-    this.getSpringBootRestResponse();
-    console.log("Checking field on this object for response from spring boot..." + this.testResponse[0]);
-    console.log("Vitals current life: " + this.characterSheetVitals.currentLife);
-    document.getElementById("displayResponse").innerHTML = this.testResponse[0];
+    this.getCharacterSheet();
+    console.log("Checking field on this object for response from spring boot..." + this.getCharacterSheet[0]);
+    console.log("Vitals current life: " + this.characterSheet.life);
+    document.getElementById("displayResponse").innerHTML = this.characterSheet[0];
   }
 
   //TODO: Build out first
@@ -69,6 +70,11 @@ export class CharacterComponent implements OnInit {
       .subscribe(stringResponse => this.testResponse = stringResponse);
   }
 
+  getCharacterSheet(): void {
+    this.characterService.getCharacterSheet()
+      .subscribe(characterSheetObject => this.characterSheet = characterSheetObject);
+  }
+
   constructor(private characterService: CharacterService) {}
 
   ngOnInit() {
@@ -76,5 +82,6 @@ export class CharacterComponent implements OnInit {
     this.getStats();
     this.getSkills();
     this.getSpringBootRestResponse();
+    this.getCharacterSheet();
   }
 }

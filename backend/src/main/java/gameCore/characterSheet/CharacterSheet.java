@@ -65,7 +65,7 @@ public class CharacterSheet {
     private Proficiency alchemyProficiency;
 
     private Integer crafting;
-    private Proficiency craftomgProficiency;
+    private Proficiency craftingProficiency;
 
     private Integer arts;
     private Proficiency artsProficiency;
@@ -339,11 +339,11 @@ public class CharacterSheet {
     }
 
     public Proficiency getCraftomgProficiency() {
-        return craftomgProficiency;
+        return craftingProficiency;
     }
 
     public void setCraftomgProficiency(Proficiency craftomgProficiency) {
-        this.craftomgProficiency = craftomgProficiency;
+        this.craftingProficiency = craftomgProficiency;
     }
 
     public Integer getArts() {
