@@ -1,10 +1,18 @@
 import { Injectable } from '@angular/core';
 import { CharacterSheet, CharacterSheetVitals, CharacterSheetDataObject } from './characterSheet'
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { MessageService } from './message.service';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
+import { CharacterComponent } from './character/character.component';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type':  'application/json',
+    'Authorization': 'my-auth-token'
+  })
+};
 
 @Injectable()
 export class CharacterService {
@@ -57,11 +65,12 @@ export class CharacterService {
       // return this.http.get<string>(this.testSpringBootBackendUrl);
   }
 
-  getCharacterSheet(): Observable<any> {
-    let data = {characterId: "1"};
-    return this.http.get<CharacterSheet>(this.characterSheetUrl, {params: data})
+  getCharacterSheet(characterId: string): Observable<any> {
+    characterId = characterId.trim();
+    const options = characterId ? { params: new HttpParams().set('characterId', characterId) } : {};
+    return this.http.get<CharacterSheet>(this.characterSheetUrl, options)
       .pipe(
-        tap(skills => this.log('Fetched character sheet')),
+        tap(characterSheetObject => this.log('Fetched character sheet')),
         catchError(this.handleError('getCharacterSheet', []))
       );
   }

@@ -71,7 +71,7 @@ export class CharacterComponent implements OnInit {
   }
 
   getCharacterSheet(): void {
-    this.characterService.getCharacterSheet()
+    this.characterService.getCharacterSheet('3')
       .subscribe(characterSheetObject => this.characterSheet = characterSheetObject);
   }
 
