@@ -346,12 +346,12 @@ public class CharacterSheet {
         this.crafting = crafting;
     }
 
-    public Proficiency getCraftomgProficiency() {
+    public Proficiency getCraftingProficiency() {
         return craftingProficiency;
     }
 
-    public void setCraftomgProficiency(Proficiency craftomgProficiency) {
-        this.craftingProficiency = craftomgProficiency;
+    public void setCraftingProficiency(Proficiency craftingProficiency) {
+        this.craftingProficiency = craftingProficiency;
     }
 
     public Integer getArts() {

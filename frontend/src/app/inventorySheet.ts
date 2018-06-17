@@ -56,6 +56,10 @@ export interface IHash {
     [details: string] : string;
 }
 
+export interface IHashOfHash {
+    [details: string] : IHash;
+}
+
 export class InventoryModifiers {
     //Avoiding Map class because older browsers (e.g. IE 11) do not support it
     modifiersHash: IHash = {};

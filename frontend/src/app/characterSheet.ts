@@ -13,6 +13,12 @@ export enum BaseAttribute {
     Charisma,
 }
 
+export enum CharacterSheetDataType {
+    Stat,
+    Skill,
+    Proficiency,
+}
+
 export class CharacterSheet {
     characterId: number;
 
