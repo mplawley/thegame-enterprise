@@ -61,16 +61,14 @@
     </table>
 </div>
 
-<!-- <div class="characterSheetActions">
+<div class="characterSheetActions">
   <h1>Actions</h1>
   <ul class="characterSheetStats">
-    <li *ngFor="let characterSheetItem of characterSheet; let i = index" 
-        (click) = "onSelectStat(characterSheetItem, i)" 
-        [class.selected]="characterSheetItem === selectedCharacterSheetItem">
-      <span>{{characterSheet[i].skillName}}:</span>
-      <span>{{characterSheet[i].skillValue}}</span>
+    <li (click) = "onSelectStat('speed', characterSheet.speed)">
+      <span>Speed: </span>
+      <span>{{characterSheet.speed}}</span>
     </li>
-  </ul> -->
+  </ul>
 
   <!-- <ul class="characterSheetSkills">
     <li *ngFor="let characterSheetItem of characterSheet; let i = index" 
@@ -80,7 +78,7 @@
       <span>{{characterSheet[i].skillValue}}, </span>
       <span>{{characterSheet[i].skillProficiency | proficiencyString}}</span>
     </li>
-  </ul>
+  </ul> -->
 
   <app-character-detail 
     [selectedCharacterSheetItem]="selectedCharacterSheetItem" 
@@ -88,7 +86,7 @@
   ></app-character-detail>
 </div>
 
-<div class="testArea">
+<!-- <div class="testArea">
   <button type="button" (click)="updateCharacterSheetOnUI()">Test characterSheet response</button>
   <p id="displayResponse"></p>
 </div> -->

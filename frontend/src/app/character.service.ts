@@ -59,7 +59,7 @@ export class CharacterService {
     const options = characterId ? { params: new HttpParams().set('characterId', characterId) } : {};
     return this.http.get<CharacterSheet>(this.characterSheetUrl, options)
       .pipe(
-        tap(characterSheetObject => this.log('Fetched character sheet')),
+        tap(characterSheetObject => this.log(`Fetched character sheet with characterId=${characterId}`)),
         catchError(this.handleError('getCharacterSheet', []))
       );
   }

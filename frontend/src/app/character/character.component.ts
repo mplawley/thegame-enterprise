@@ -18,17 +18,17 @@ export class CharacterComponent implements OnInit {
   characterSheetVitals: CharacterSheetVitals;
   characterSheet;
 
-  selectedCharacterSheetItem: CharacterSheetClickableItems;
+  selectedCharacterSheetItem: string;
   currentPerformance: number;
   proficiency: Proficiency = Proficiency.Apprentice;
 
-  onSelectStat(characterSheetItem: CharacterSheetClickableItems, i: number): void {
-    this.selectedCharacterSheetItem = characterSheetItem;
-    this.currentPerformance = this.gameEngine.calculateStatPerformance(this.characterSheetBaseStats[i].skillValue);
+  onSelectStat(statName: string, statValue: number): void {
+    this.selectedCharacterSheetItem = statName;
+    this.currentPerformance = this.gameEngine.calculateStatPerformance(statValue);
   }
 
   onSelectSkill(characterSheetItem: CharacterSheetClickableItems, i: number): void {
-    this.selectedCharacterSheetItem = characterSheetItem;
+    // this.selectedCharacterSheetItem = characterSheetItem;
     this.proficiency = this.characterSheetSkills[i].skillProficiency;
     this.currentPerformance = this.gameEngine.calculateSkillPerformance(this.characterSheetSkills[i].skillName,
                                                                         this.characterSheetBaseStats[i].skillValue,
