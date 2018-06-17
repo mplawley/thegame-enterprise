@@ -16,8 +16,7 @@ export class CharacterComponent implements OnInit {
   characterSheetBaseStats;
   characterSheetSkills;
   characterSheetVitals: CharacterSheetVitals;
-  testResponse;
-  characterSheet: CharacterSheet;
+  characterSheet;
 
   selectedCharacterSheetItem: CharacterSheetClickableItems;
   currentPerformance: number;
@@ -37,14 +36,10 @@ export class CharacterComponent implements OnInit {
                                                                         this.characterSheetSkills[i].skillProficiency);
   }
 
-  onButtonClick(): void {
-    this.getCharacterSheet();
-    console.log("Checking field on this object for response from spring boot..." + this.getCharacterSheet[0]);
-    console.log("Vitals current life: " + this.characterSheet.life);
-    document.getElementById("displayResponse").innerHTML = this.characterSheet[0];
+  updateCharacterSheetOnUI(): void {
+    console.log(this.characterSheet);
   }
 
-  //TODO: Build out first
   getVitals(): void {
     this.characterService.getVitals()
       .subscribe(vitals => this.characterSheetVitals = vitals);
@@ -65,23 +60,27 @@ export class CharacterComponent implements OnInit {
       .subscribe(skills => this.characterSheetSkills = skills);
   }
 
-  getSpringBootRestResponse(): void {
-    this.characterService.getSpringBootBackendRESTResponse()
-      .subscribe(stringResponse => this.testResponse = stringResponse);
-  }
-
   getCharacterSheet(): void {
     this.characterService.getCharacterSheet('3')
       .subscribe(characterSheetObject => this.characterSheet = characterSheetObject);
   }
 
+  transformObjectToIterable(objectToTransform): any {
+    let iterableObjectProperties = Object.keys(objectToTransform);
+    let iterableObject = [];
+    for (let prop of iterableObjectProperties) { 
+      iterableObject.push(iterableObjectProperties[prop]);
+    }
+
+    return iterableObject;
+  }
+
   constructor(private characterService: CharacterService) {}
 
   ngOnInit() {
-    this.getVitals();
-    this.getStats();
-    this.getSkills();
-    this.getSpringBootRestResponse();
+    // this.getVitals();
+    // this.getStats();
+    // this.getSkills();
     this.getCharacterSheet();
   }
 }

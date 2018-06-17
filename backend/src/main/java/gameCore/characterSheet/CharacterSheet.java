@@ -106,6 +106,14 @@ public class CharacterSheet {
         this.characterBio = characterBio;
     }
 
+    public Integer getCharacterAge() {
+        return characterAge;
+    }
+
+    public void setCharacterAge(Integer characterAge) {
+        this.characterAge = characterAge;
+    }
+
     public Integer getCurrentLife() {
         return currentLife;
     }

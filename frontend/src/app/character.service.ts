@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { CharacterSheet, CharacterSheetVitals, CharacterSheetDataObject } from './characterSheet'
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { MessageService } from './message.service';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { CharacterComponent } from './character/character.component';
 
@@ -53,16 +52,6 @@ export class CharacterService {
         tap(skills => this.log('Fetched skills')),
         catchError(this.handleError('getSkills', []))
       );
-  }
-
-  getSpringBootBackendRESTResponse(): Observable<any> {
-    console.log("In character service's getSpringzBoot() response");
-    return this.http.get<string>(this.testSpringBootBackendUrl) //was string[]
-      .pipe(
-        tap(string => this.log('Fetched Spring Boot Backend REST Response: ' + string)),
-        catchError(this.handleError('getSpringBootBackendRESTResponse', []))
-      );
-      // return this.http.get<string>(this.testSpringBootBackendUrl);
   }
 
   getCharacterSheet(characterId: string): Observable<any> {

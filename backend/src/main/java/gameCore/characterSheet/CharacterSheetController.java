@@ -39,4 +39,10 @@ public class CharacterSheetController {
     public CharacterSheet getVitals (@RequestParam Long characterId) {
         return characterSheetRepository.findByCharacterId(characterId);
     }
+
+    @GetMapping(path="/getStats")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public CharacterSheet getStats (@RequestParam Long characterId) {
+        return characterSheetRepository.findByCharacterId(characterId);
+    }
 }

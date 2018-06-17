@@ -14,16 +14,21 @@ export enum BaseAttribute {
 }
 
 export class CharacterSheet {
-    name: string;
-    age: number;
-    bio: string;
-    portraitSelection: number;
+    characterId: number;
 
-    life: number;
+    //General profile
+    playerName: string;
+    characterName: string;
+    characterBio: string;
+    characterAge: number;
+
+    //Vitals
+    currentLife: number;
     maxLife: number;
-    endurance: number;
+    currentEndurance: number;
     maxEndurance: number;
 
+    //Stats
     speed: number;
     assessment: number;
     insight: number;
@@ -33,8 +38,9 @@ export class CharacterSheet {
     fortitude: number;
     wisdom: number;
     will: number;
-    charisma: number;
+    presence: number;
 
+    //Skills
     martial: number;
     martialProficiency: Proficiency;
     ranged: number;

@@ -1,9 +1,8 @@
 package gameCore.characterSheetVitals;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import gameCore.characterSheet.CharacterSheet;
+
+import javax.persistence.*;
 
 @Entity
 public class CharacterSheetVitals {
@@ -11,7 +10,11 @@ public class CharacterSheetVitals {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long characterVitalsId;
 
-    private String characterName;
+//    @OneToOne(targetEntity = CharacterSheet.class)
+//    @JoinColumn(name = "characterId", nullable = false)
+//    private CharacterSheet characterSheet;
+
+    protected String characterName;
     private Integer age;
     private String bio;
     private Integer currentLife;
