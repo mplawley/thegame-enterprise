@@ -77,8 +77,8 @@
         (click) = "onSelectSkill(skill[0], skill[1])" 
         [class.selected]="characterSheetItem === selectedCharacterSheetItem">
       <span>{{skill[0]}}: </span>
-      <span>{{skill[1]}}, </span>
-      <!-- <span>{{characterSheet[i].skillProficiency | proficiencyString}}</span> -->
+      <span>{{skill[1]}} </span>
+      <span>{{proficiencies[skill[0] + "Proficiency"]}}</span>
     </li>
   </ul>
 
@@ -87,8 +87,3 @@
     [currentPerformance]="currentPerformance"
   ></app-character-detail>
 </div>
-
-<!-- <div class="testArea">
-  <button type="button" (click)="updateCharacterSheetOnUI()">Test characterSheet response</button>
-  <p id="displayResponse"></p>
-</div> -->

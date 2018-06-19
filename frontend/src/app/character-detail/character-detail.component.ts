@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CharacterSheetClickableItems } from '../characterSheet';
+import { CharacterSheetClickableItems, Proficiency } from '../characterSheet';
 
 @Component({
   selector: 'app-character-detail',
@@ -8,7 +8,7 @@ import { CharacterSheetClickableItems } from '../characterSheet';
 })
 export class CharacterDetailComponent implements OnInit {
 
-  @Input() selectedCharacterSheetItem: CharacterSheetClickableItems;
+  @Input() selectedCharacterSheetItem: string;
   @Input() currentPerformance: number;
 
   constructor() { }

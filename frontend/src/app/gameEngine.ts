@@ -18,7 +18,7 @@ export class GameEngine {
     }
     
     //Generate a random number with a floor and max
-    randomIntFromInterval(min,max) {
+    randomIntFromInterval(min,max): number {
         return Math.floor(Math.random()*(max-min+1)+min);
     }
 
@@ -40,29 +40,32 @@ export class GameEngine {
     // 4. Any vital modifiers, merit and status modifiers, and equipment modifiers
 
     calculateSkillPerformance(skillName: string, baseAttributeValue: number, skillValue: number, skillProficiency: Proficiency): number {
-        let rollResult = this.getRollResultBasedOnSkillProficiency(skillProficiency);
+        let rollResult: number = this.getRollResultBasedOnSkillProficiency(skillProficiency);
+        console.log("calculateSkillPerformance is about to retun: " + rollResult);
         return rollResult + baseAttributeValue + skillValue;
     }
 
     //Get a skill's base attribute depending on what family that skill belongs to
     getSkillBaseAttribute(skillName: string): BaseAttribute {
-        let skillsWithCoordinationAsABaseAttribute: string[] =[ "Martial", "Ranged","Stealth", "Athletics" ];
-        let skillsWithWisdomAsABaseAttribute: string[] = [ "Lore", "Scouting", "Crafting", "Alchemy" ];
-        let skillsWithCharismaAsBaseAttribute: string[] = [ "Arts", "Diplomacy" ];
+        let skillsWithCoordinationAsABaseAttribute: string[] =[ "martial", "ranged","stealth", "athletics" ];
+        let skillsWithWisdomAsABaseAttribute: string[] = [ "lore", "scouting", "crafting", "alchemy" ];
+        let skillsWithCharismaAsBaseAttribute: string[] = [ "arts", "diplomacy" ];
 
         if (skillsWithCoordinationAsABaseAttribute.indexOf(skillName) > -1) {
             return BaseAttribute.Coordination;
         } else if (skillsWithWisdomAsABaseAttribute.indexOf(skillName) > -1) {
             return BaseAttribute.Wisdom;
         } else {
-            return BaseAttribute.Charisma;
+            return BaseAttribute.Presence;
         }
     }
 
     //Return roll result based on proficiency
-    getRollResultBasedOnSkillProficiency(skillProficiency: Proficiency) {
+    getRollResultBasedOnSkillProficiency(skillProficiency: Proficiency): number {
+        var proficiencyAsValue: number = parseInt(Proficiency[skillProficiency]);
+
         //Lowest proficiency possible...
-        if (skillProficiency === Proficiency.Apprentice) {
+        if (skillProficiency === Proficiency.Apprentice || proficiencyAsValue === 1) {
             return Math.min(this.rollDice(2, 1, 10), this.rollDice(2, 1, 10));
         }
 
@@ -70,7 +73,8 @@ export class GameEngine {
         //keeping in mind that the Proficiency enum can be an int and that the Proficiency
         //enum is 1-indexed instead of 0-indexed
         let rollResultsArray: number[] = [];
-        for (var i = 0; i < skillProficiency - 1; i++) {
+
+        for (var i = 0; i < proficiencyAsValue - 1; i++) {
             rollResultsArray.push(this.rollDice(2, 1, 10));
         }
 

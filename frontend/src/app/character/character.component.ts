@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CharacterSheet, CharacterSheetClickableItems, Proficiency, CharacterSheetVitals, CharacterSheetDataType, CharacterSheetDataObject } from '../characterSheet';
+import { CharacterSheet, CharacterSheetClickableItems, Proficiency, CharacterSheetVitals, CharacterSheetDataType, CharacterSheetDataObject, BaseAttribute } from '../characterSheet';
 import { GameEngine } from '../gameEngine';
 import { CharacterService } from '../character.service';
 import { ProficiencyStringPipe } from '../proficiency-int-to-string-pipe';
@@ -21,8 +21,9 @@ export class CharacterComponent implements OnInit {
   characterSheet;
   general;
   stats;
+  statsAsArray;
   skills;
-  proficiencies;
+  proficiencies: Proficiency[];
 
   selectedCharacterSheetItem: string;
   currentPerformance: number;
@@ -33,10 +34,10 @@ export class CharacterComponent implements OnInit {
   }
 
   onSelectSkill(skillName: string, skillValue: number): void {
-    // this.selectedCharacterSheetItem = characterSheetItem;
-    let baseAttributeName = this.gameEngine.getSkillBaseAttribute(skillName);
-    let baseAttributeValue = this.stats[baseAttributeName];
-    let proficiency = this.proficiencies[skillName];
+    this.selectedCharacterSheetItem = skillName;
+    let baseAttributeName: string = this.gameEngine.getSkillBaseAttribute(skillName);
+    let baseAttributeValue: number = this.statsAsArray[baseAttributeName];
+    let proficiency: Proficiency = this.proficiencies[skillName + "Proficiency"];
     this.currentPerformance = this.gameEngine.calculateSkillPerformance(skillName, baseAttributeValue, skillValue, proficiency);
   }
 
@@ -70,6 +71,7 @@ export class CharacterComponent implements OnInit {
         this.characterSheet = this.transformObjectToIterable(characterSheetObject);
         this.general = this.characterSheet['general'];
         this.stats = Object.entries(this.characterSheet['stats']);
+        this.statsAsArray = this.characterSheet['stats'];
         this.skills = Object.entries(this.characterSheet['skills']);
         this.proficiencies = this.characterSheet['proficiencies'];
       }

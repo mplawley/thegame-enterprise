@@ -8,9 +8,9 @@ export enum Proficiency {
 }
 
 export enum BaseAttribute {
-    Coordination,
-    Wisdom,
-    Charisma,
+    Coordination = "coordination",
+    Wisdom = "wisdom",
+    Presence = "presence",
 }
 
 export enum CharacterSheetDataType {
