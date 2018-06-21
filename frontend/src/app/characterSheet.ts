@@ -3,7 +3,7 @@ export enum Proficiency {
     Journeyman,
     Master,
     Grandmaster,
-    Legend,
+    Legendary,
     Epic,    
 }
 
