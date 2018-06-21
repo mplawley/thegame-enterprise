@@ -6,5 +6,5 @@ public enum Proficiency {
     Master,
     Grandmaster,
     Legendary,
-    Epic;
+    Epic
 }

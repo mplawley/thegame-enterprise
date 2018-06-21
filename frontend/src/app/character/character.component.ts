@@ -66,7 +66,7 @@ export class CharacterComponent implements OnInit {
   }
 
   getCharacterSheet(): void {
-    this.characterService.getCharacterSheet('3')
+    this.characterService.getCharacterSheet('2')
       .subscribe(characterSheetObject => {
         this.characterSheet = this.transformObjectToIterable(characterSheetObject);
         this.general = this.characterSheet['general'];

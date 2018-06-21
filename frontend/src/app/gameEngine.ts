@@ -41,8 +41,8 @@ export class GameEngine {
 
     calculateSkillPerformance(skillName: string, baseAttributeValue: number, skillValue: number, skillProficiency: Proficiency): number {
         let rollResult: number = this.getRollResultBasedOnSkillProficiency(skillProficiency);
-        console.log("calculateSkillPerformance is about to retun: " + rollResult);
-        return rollResult + baseAttributeValue + skillValue;
+        let skillPerformance: number = +rollResult + +baseAttributeValue + +skillValue;
+        return skillPerformance;
     }
 
     //Get a skill's base attribute depending on what family that skill belongs to
