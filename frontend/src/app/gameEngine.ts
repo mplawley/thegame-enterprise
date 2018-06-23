@@ -52,11 +52,11 @@ export class GameEngine {
         let skillsWithCharismaAsBaseAttribute: string[] = [ "arts", "diplomacy" ];
 
         if (skillsWithCoordinationAsABaseAttribute.indexOf(skillName) > -1) {
-            return BaseAttribute.Coordination;
+            return BaseAttribute.COORDINATION;
         } else if (skillsWithWisdomAsABaseAttribute.indexOf(skillName) > -1) {
-            return BaseAttribute.Wisdom;
+            return BaseAttribute.WISDOM;
         } else {
-            return BaseAttribute.Presence;
+            return BaseAttribute.PRESENCE;
         }
     }
 

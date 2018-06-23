@@ -18,7 +18,8 @@ export class CharacterComponent implements OnInit {
   characterSheetSkills;
   characterSheetVitals: CharacterSheetVitals;
   
-  characterSheet;
+  characterSheetIterable;
+  characterSheetObject: CharacterSheet;
   general;
   stats;
   statsAsArray;
@@ -41,10 +42,6 @@ export class CharacterComponent implements OnInit {
     this.currentPerformance = this.gameEngine.calculateSkillPerformance(skillName, baseAttributeValue, skillValue, proficiency);
   }
 
-  updateCharacterSheetOnUI(): void {
-    console.log(this.characterSheet);
-  }
-
   getVitals(): void {
     this.characterService.getVitals()
       .subscribe(vitals => this.characterSheetVitals = vitals);
@@ -65,15 +62,25 @@ export class CharacterComponent implements OnInit {
       .subscribe(skills => this.characterSheetSkills = skills);
   }
 
+  updateCharacterSheet(): void {    
+    //Update
+    this.characterService.updateCharacterSheet(this.characterSheetObject)
+      .subscribe(characterSheet => {
+        this.characterSheetObject = characterSheet;
+        this.getCharacterSheet(); //Update UI after the update
+      })
+  }
+
   getCharacterSheet(): void {
     this.characterService.getCharacterSheet('2')
       .subscribe(characterSheetObject => {
-        this.characterSheet = this.transformObjectToIterable(characterSheetObject);
-        this.general = this.characterSheet['general'];
-        this.stats = Object.entries(this.characterSheet['stats']);
-        this.statsAsArray = this.characterSheet['stats'];
-        this.skills = Object.entries(this.characterSheet['skills']);
-        this.proficiencies = this.characterSheet['proficiencies'];
+        this.characterSheetIterable = this.transformObjectToIterable(characterSheetObject);
+        this.characterSheetObject = characterSheetObject;
+        this.general = this.characterSheetIterable['general'];
+        this.stats = Object.entries(this.characterSheetIterable['stats']);
+        this.statsAsArray = this.characterSheetIterable['stats'];
+        this.skills = Object.entries(this.characterSheetIterable['skills']);
+        this.proficiencies = this.characterSheetIterable['proficiencies'];
       }
     )
   }
@@ -131,6 +138,10 @@ export class CharacterComponent implements OnInit {
     }
   }
 
+  bindPageElementsToActions() {
+    //TODO: jQuery installation, optional
+  }
+
   constructor(private characterService: CharacterService) {}
 
   ngOnInit() {
@@ -138,5 +149,6 @@ export class CharacterComponent implements OnInit {
     // this.getStats();
     // this.getSkills();
     this.getCharacterSheet();
+    this.bindPageElementsToActions();
   }
 }

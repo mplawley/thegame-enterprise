@@ -21,6 +21,7 @@ export class CharacterService {
   private characterSkillsUrl = 'api/SKILLS';
   private testSpringBootBackendUrl = 'http://localhost:8080/characterSheet/getCharacterSheet';
   private characterSheetUrl = 'http://localhost:8080/characterSheet/getCharacterSheet';
+  private updateCharacterSheetUrl = 'http://localhost:8080/characterSheet/updateCharacterSheet';
 
   getVitals(): Observable<any> {
     return this.http.get<CharacterSheetVitals>(this.getCharacterVitalsUrl)
@@ -61,6 +62,14 @@ export class CharacterService {
       .pipe(
         tap(characterSheetObject => this.log(`Fetched character sheet for ${characterSheetObject.characterName} with characterId=${characterId}`)),
         catchError(this.handleError('getCharacterSheet', []))
+      );
+  }
+
+    /** PUT: update the characterSheet on the server. Returns the updated hero upon success. */
+  updateCharacterSheet(characterSheet: CharacterSheet): Observable<CharacterSheet> {
+    return this.http.put<CharacterSheet>(this.updateCharacterSheetUrl, characterSheet, httpOptions)
+      .pipe(
+        catchError(this.handleError('updateCharacterSheet', characterSheet))
       );
   }
 

@@ -1,21 +1,33 @@
 package gameCore.characterSheet;
 
-import gameCore.characterSheetVitals.CharacterSheetVitals;
-import gameCore.characterSheetVitals.CharacterSheetVitalsRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.File;
+import java.io.IOException;
 
 @RestController
 @RequestMapping("/characterSheet")
 @CrossOrigin
 public class CharacterSheetController {
-    @Autowired
-    private CharacterSheetRepository characterSheetRepository;
+    private final CharacterSheetRepository characterSheetRepository;
 
-    @RequestMapping("/getCharacterSheet")
+    CharacterSheetController(CharacterSheetRepository characterSheetRepository) {
+        this.characterSheetRepository = characterSheetRepository;
+    }
+
+    @GetMapping("/getCharacterSheet")
     @CrossOrigin
     public CharacterSheet getCharacterSheet(@RequestParam(value="characterId") Long characterId) {
         return characterSheetRepository.findByCharacterId(characterId);
+    }
+
+    @PutMapping("/updateCharacterSheet")
+    @CrossOrigin
+    public CharacterSheet updateCharacterSheet(@RequestBody CharacterSheet characterSheet) {
+        characterSheetRepository.save(characterSheet);
+        return characterSheet;
     }
 
     @PutMapping(path="/saveVitals")

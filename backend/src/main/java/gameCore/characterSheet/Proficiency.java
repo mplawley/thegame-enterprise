@@ -1,10 +1,10 @@
 package gameCore.characterSheet;
 
 public enum Proficiency {
-    Apprentice,
-    Journeyman,
-    Master,
-    Grandmaster,
-    Legendary,
-    Epic
+    APPRENTICE,
+    JOURNEYMAN,
+    MASTER,
+    GRANDMASTER,
+    LEGENDARY,
+    EPIC
 }

@@ -1,16 +1,16 @@
 export enum Proficiency {
-    Apprentice = 1,
-    Journeyman,
-    Master,
-    Grandmaster,
-    Legendary,
-    Epic,    
+    APPRENTICE = 1,
+    JOURNEYMAN,
+    MASTER,
+    GRANDMASTER,
+    LEGENDARY,
+    EPIC,    
 }
 
 export enum BaseAttribute {
-    Coordination = "coordination",
-    Wisdom = "wisdom",
-    Presence = "presence",
+    COORDINATION = "coordination",
+    WISDOM = "wisdom",
+    PRESENCE = "presence",
 }
 
 export enum CharacterSheetDataType {
