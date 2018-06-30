@@ -6,12 +6,12 @@
 //   createDb() {
 //     const CHARACTER_VITALS: CharacterSheetVitals = {
 //       characterName: "Gloria",
-//       age: 33,
-//       bio: "Test bio", 
-//       currentLife: 100, 
-//       maxLife: 100, 
-//       currentEndurance: 10, 
-//       maxEndurance: 10 
+//       characterAge: 33,
+//       characterBio: "Test characterBio",
+//       currentLife: 100,
+//       maxLife: 100,
+//       currentEndurance: 10,
+//       maxEndurance: 10
 //     };
 
 //     const BASE_STATS: CharacterSheetDataObject[] = [
@@ -26,7 +26,7 @@
 //       {skillName: "Will", skillValue: 3, skillProficiency: Proficiency.Journeyman},
 //       {skillName: "Charisma", skillValue: 100, skillProficiency: Proficiency.Journeyman}
 //     ];
-    
+
 //     const SKILLS: CharacterSheetDataObject[] = [
 //       {skillName: "Martial", skillValue: 3, skillProficiency: Proficiency.Apprentice},
 //       {skillName: "Ranged", skillValue: 2, skillProficiency: Proficiency.Journeyman},

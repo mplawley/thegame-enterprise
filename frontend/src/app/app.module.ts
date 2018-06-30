@@ -13,7 +13,7 @@ import { MessageService } from './message.service';
 import { PowerService } from './power.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { InventoryComponent } from './inventory/inventory.component';
-import { BioComponent } from './bio/bio.component';
+import { BioComponent } from './characterBio/characterBio.component';
 import { MeritsAndBuffsComponent } from './merits-and-buffs/merits-and-buffs.component';
 import { PowersComponent } from './powers/powers.component';
 import { ItemsComponent } from './items/items.component';

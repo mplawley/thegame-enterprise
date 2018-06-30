@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CharacterComponent } from './character/character.component';
-import { BioComponent } from './bio/bio.component';
+import { BioComponent } from './characterBio/characterBio.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { MeritsAndBuffsComponent } from './merits-and-buffs/merits-and-buffs.component';
 import { PowersComponent } from './powers/powers.component';
@@ -15,7 +15,7 @@ import { SettingsComponent } from './settings/settings.component';
 const routes: Routes = [
   {path: '', redirectTo: '/character', pathMatch: 'full'},
   {path: 'character', component: CharacterComponent},
-  {path: 'bio', component: BioComponent},
+  {path: 'characterBio', component: BioComponent},
   {path: 'inventory', component: InventoryComponent},
   {path: 'meritsAndBuffs', component: MeritsAndBuffsComponent},
   {path: 'powers', component: PowersComponent},

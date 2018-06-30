@@ -2,17 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef15c94-5eb6-42dc-bf1e-39c9a6c17d88" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/pom.xml" afterPath="$PROJECT_DIR$/backend/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/package-lock.json" afterPath="$PROJECT_DIR$/frontend/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/package.json" afterPath="$PROJECT_DIR$/frontend/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/character.service.ts" afterPath="$PROJECT_DIR$/frontend/src/app/character.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/character/character.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/character/character.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/character/character.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/character/character.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/bundles/forms.umd.js.map" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/bundles/forms.umd.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/bundles/forms.umd.min.js.map" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/bundles/forms.umd.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/fesm2015/forms.js.map" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/fesm2015/forms.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/fesm5/forms.js.map" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/fesm5/forms.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/src/directives/number_value_accessor.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/src/directives/number_value_accessor.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/src/directives/range_value_accessor.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular/forms/src/directives/range_value_accessor.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/@types/node/index.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/@types/node/index.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/asn1.js/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/asn1.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/babylon/CHANGELOG.md" afterPath="$PROJECT_DIR$/frontend/node_modules/babylon/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/better-assert/Readme.md" afterPath="$PROJECT_DIR$/frontend/node_modules/better-assert/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/connect/HISTORY.md" afterPath="$PROJECT_DIR$/frontend/node_modules/connect/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/cookie/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/cookie/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/express/History.md" afterPath="$PROJECT_DIR$/frontend/node_modules/express/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/fsevents/node_modules/json-schema/draft-zyp-json-schema-03.xml" afterPath="$PROJECT_DIR$/frontend/node_modules/fsevents/node_modules/json-schema/draft-zyp-json-schema-03.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/fsevents/node_modules/json-schema/draft-zyp-json-schema-04.xml" afterPath="$PROJECT_DIR$/frontend/node_modules/fsevents/node_modules/json-schema/draft-zyp-json-schema-04.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/handlebars/README.markdown" afterPath="$PROJECT_DIR$/frontend/node_modules/handlebars/README.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/jasmine-core/CODE_OF_CONDUCT.md" afterPath="$PROJECT_DIR$/frontend/node_modules/jasmine-core/CODE_OF_CONDUCT.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/json-schema/draft-zyp-json-schema-03.xml" afterPath="$PROJECT_DIR$/frontend/node_modules/json-schema/draft-zyp-json-schema-03.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/json-schema/draft-zyp-json-schema-04.xml" afterPath="$PROJECT_DIR$/frontend/node_modules/json-schema/draft-zyp-json-schema-04.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/karma/CODE_OF_CONDUCT.md" afterPath="$PROJECT_DIR$/frontend/node_modules/karma/CODE_OF_CONDUCT.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/levn/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/levn/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/lru-cache/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/lru-cache/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/mailgun-js/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/mailgun-js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/protractor/built/locators.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/protractor/built/locators.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs-compat/operator/distinct.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs-compat/operator/distinct.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs-compat/operator/max.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs-compat/operator/max.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs-compat/operator/min.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs-compat/operator/min.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/internal/operators/distinct.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/internal/operators/distinct.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/internal/operators/max.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/internal/operators/max.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/internal/operators/min.d.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/internal/operators/min.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/observable/zip.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/observable/zip.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/distinct.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/distinct.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/distinctUntilChanged.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/distinctUntilChanged.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/distinctUntilKeyChanged.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/distinctUntilKeyChanged.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/max.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/max.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/min.ts" afterPath="$PROJECT_DIR$/frontend/node_modules/rxjs/src/internal/operators/min.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/selenium-webdriver/lib/test/data/formPage.html" afterPath="$PROJECT_DIR$/frontend/node_modules/selenium-webdriver/lib/test/data/formPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/selenium-webdriver/lib/test/data/macbeth.html" afterPath="$PROJECT_DIR$/frontend/node_modules/selenium-webdriver/lib/test/data/macbeth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/send/HISTORY.md" afterPath="$PROJECT_DIR$/frontend/node_modules/send/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/send/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/send/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/serve-static/HISTORY.md" afterPath="$PROJECT_DIR$/frontend/node_modules/serve-static/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/serve-static/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/serve-static/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/smart-buffer/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/smart-buffer/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/useragent/node_modules/lru-cache/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/useragent/node_modules/lru-cache/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Group.o.d" afterPath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Group.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/HTTPSocket.o.d" afterPath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/HTTPSocket.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Hub.o.d" afterPath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Hub.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Networking.o.d" afterPath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Networking.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Node.o.d" afterPath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Node.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Socket.o.d" afterPath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/Socket.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/WebSocket.o.d" afterPath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/WebSocket.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/addon.o.d" afterPath="$PROJECT_DIR$/frontend/node_modules/uws/build/Release/.deps/Release/obj.target/uws/src/addon.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/webdriver-js-extender/node_modules/selenium-webdriver/lib/test/data/formPage.html" afterPath="$PROJECT_DIR$/frontend/node_modules/webdriver-js-extender/node_modules/selenium-webdriver/lib/test/data/formPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/webdriver-js-extender/node_modules/selenium-webdriver/lib/test/data/macbeth.html" afterPath="$PROJECT_DIR$/frontend/node_modules/webdriver-js-extender/node_modules/selenium-webdriver/lib/test/data/macbeth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/webdriver-js-extender/node_modules/xml2js/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/webdriver-js-extender/node_modules/xml2js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/node_modules/xml2js/README.md" afterPath="$PROJECT_DIR$/frontend/node_modules/xml2js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/bio/bio.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/bio/bio.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/bio/bio.component.spec.ts" afterPath="$PROJECT_DIR$/frontend/src/app/bio/bio.component.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/bio/bio.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/bio/bio.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/characterSheet.ts" afterPath="$PROJECT_DIR$/frontend/src/app/characterSheet.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/gameEngine.ts" afterPath="$PROJECT_DIR$/frontend/src/app/gameEngine.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/in-memory-data.service.ts" afterPath="$PROJECT_DIR$/frontend/src/app/in-memory-data.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/mock-characterSheet-items.ts" afterPath="$PROJECT_DIR$/frontend/src/app/mock-characterSheet-items.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/thegame/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CharacterSheetController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CharacterSheetController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,21 +98,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/pom.xml">
+      <file leaf-file-name="CharacterSheetService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CharacterSheet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterSheet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="92" column="18" lean-forward="false" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding>
                 <element signature="e#2250#2251#0" expanded="true" />
                 <element signature="e#2286#2287#0" expanded="true" />
@@ -59,21 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Proficiency.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -82,8 +144,8 @@
       <file leaf-file-name="CharacterSheetRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="105">
+              <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -92,11 +154,19 @@
       <file leaf-file-name="CharacterSheetVitalsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterSheetVitalsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,9 +174,11 @@
       <file leaf-file-name="CharacterSheetVitals.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="390">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,8 +186,8 @@
       <file leaf-file-name="CharacterSheetVitalsRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="120">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,6 +219,7 @@
       <find>craft</find>
       <find>getCharacterAge</find>
       <find>craftomg</find>
+      <find>new charactersheet</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/backend/src/main/java/gameCore</dir>
@@ -182,18 +255,20 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitalsRepository.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitals.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitalsController.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/WebConfig.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java" />
         <option value="$PROJECT_DIR$/backend/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java" />
       </list>
     </option>
   </component>
@@ -449,11 +524,12 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26800978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -462,7 +538,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -470,39 +545,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStatsRepository.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStats.java" />
     <entry file="file://$PROJECT_DIR$/thegame/pom.xml" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/User.java" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/UserRepository.java" />
@@ -645,75 +692,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/WebSecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/WebConfig.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="92" column="18" lean-forward="false" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
-          <folding>
-            <element signature="e#2250#2251#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -722,12 +700,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java">
+    <entry file="file://$PROJECT_DIR$/backend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="311">
+          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#2250#2251#0" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
           </folding>
         </state>
       </provider>

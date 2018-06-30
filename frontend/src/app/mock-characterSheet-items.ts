@@ -4,12 +4,12 @@
 
 // export const CHARACTER_VITALS: CharacterSheetVitals = {
 //     characterName: "Gloria",
-//     age: 33,
-//     bio: "Test bio", 
-//     currentLife: 100, 
-//     maxLife: 100, 
-//     currentEndurance: 10, 
-//     maxEndurance: 10 
+//     characterAge: 33,
+//     characterBio: "Test characterBio",
+//     currentLife: 100,
+//     maxLife: 100,
+//     currentEndurance: 10,
+//     maxEndurance: 10
 // };
 
 // export const BASE_STATS: CharacterSheetDataObject[] = [

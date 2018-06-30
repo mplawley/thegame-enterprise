@@ -1,60 +1,51 @@
 package gameCore.characterSheet;
 
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import gameCore.characterSheetVitals.CharacterSheetVitals;
 import org.springframework.web.bind.annotation.*;
-
-import java.io.File;
-import java.io.IOException;
 
 @RestController
 @RequestMapping("/characterSheet")
 @CrossOrigin
 public class CharacterSheetController {
-    private final CharacterSheetRepository characterSheetRepository;
+    private final CharacterSheetService characterSheetService;
+    private final String CROSS_ORIGIN_URL = "http://localhost:4200";
 
-    CharacterSheetController(CharacterSheetRepository characterSheetRepository) {
-        this.characterSheetRepository = characterSheetRepository;
+    CharacterSheetController(CharacterSheetRepository characterSheetRepository, CharacterSheetService characterSheetService) {
+        this.characterSheetService = characterSheetService;
     }
 
     @GetMapping("/getCharacterSheet")
-    @CrossOrigin
+    @CrossOrigin(origins = CROSS_ORIGIN_URL)
     public CharacterSheet getCharacterSheet(@RequestParam(value="characterId") Long characterId) {
-        return characterSheetRepository.findByCharacterId(characterId);
+        return characterSheetService.getCharacterSheet(characterId);
     }
 
     @PutMapping("/updateCharacterSheet")
-    @CrossOrigin
+    @CrossOrigin(origins = CROSS_ORIGIN_URL)
     public CharacterSheet updateCharacterSheet(@RequestBody CharacterSheet characterSheet) {
-        characterSheetRepository.save(characterSheet);
-        return characterSheet;
+        return characterSheetService.updateCharacterSheet(characterSheet);
     }
 
     @PutMapping(path="/saveVitals")
-    @CrossOrigin
+    @CrossOrigin(origins = CROSS_ORIGIN_URL)
     public @ResponseBody String saveVitals (@RequestParam("characterId") Long characterId,
                                             @RequestParam("currentLife") Integer currentLife,
                                             @RequestParam("maxLife") Integer maxLife,
                                             @RequestParam("currentEndurance") Integer currentEndurance,
                                             @RequestParam("maxEndurance") Integer maxEndurance) {
-        CharacterSheet characterSheet = characterSheetRepository.findByCharacterId(characterId);
-        characterSheet.setCurrentLife(currentLife);
-        characterSheet.setMaxLife(maxLife);
-        characterSheet.setCurrentEndurance(currentEndurance);
-        characterSheet.setMaxEndurance(maxEndurance);
-        characterSheetRepository.save(characterSheet);
-        return "Saved vitals to character sheet";
+        CharacterSheetVitals characterSheetVitals = new CharacterSheetVitals(characterId, currentLife, maxLife, currentEndurance, maxEndurance);
+        return characterSheetService.saveVitals(characterSheetVitals);
     }
 
     @GetMapping(path="/getVitals")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = CROSS_ORIGIN_URL)
     public CharacterSheet getVitals (@RequestParam Long characterId) {
-        return characterSheetRepository.findByCharacterId(characterId);
+        return characterSheetService.getVitals(characterId);
     }
 
     @GetMapping(path="/getStats")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = CROSS_ORIGIN_URL)
     public CharacterSheet getStats (@RequestParam Long characterId) {
-        return characterSheetRepository.findByCharacterId(characterId);
+        return characterSheetService.getStats(characterId);
     }
 }

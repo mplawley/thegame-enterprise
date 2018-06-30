@@ -23,6 +23,7 @@ public class Application {
             log.info("Saving new character sheet");
             CharacterSheet clarissaGladstone = new CharacterSheet();
             clarissaGladstone.setCharacterName("Clarissa Gladstone");
+            clarissaGladstone.setCharacterId(1L);
 
             repository.save(clarissaGladstone);
 
@@ -46,16 +47,6 @@ public class Application {
             for (CharacterSheet characterSheet : repository.findAll()) {
                 log.info(characterSheet.getCharacterName());
             }
-        };
-    }
-
-    @Bean
-    public CommandLineRunner saveTestSheet(CharacterSheetRepository characterSheetRepository) {
-        return (args) -> {
-            log.info("Creating a characterSheet record with ID = 1L");
-            CharacterSheet characterSheet = new CharacterSheet();
-            characterSheet.setCharacterId(1L);
-            characterSheetRepository.save(characterSheet);
         };
     }
 }

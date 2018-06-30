@@ -65,7 +65,7 @@ export class GameEngine {
         var proficiencyAsValue: number = parseInt(Proficiency[skillProficiency]);
 
         //Lowest proficiency possible...
-        if (skillProficiency === Proficiency.Apprentice || proficiencyAsValue === 1) {
+        if (skillProficiency === Proficiency.APPRENTICE || proficiencyAsValue === 1) {
             return Math.min(this.rollDice(2, 1, 10), this.rollDice(2, 1, 10));
         }
 

@@ -1,8 +1,9 @@
 package gameCore.characterSheetVitals;
 
-import gameCore.characterSheet.CharacterSheet;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class CharacterSheetVitals {
@@ -10,17 +11,31 @@ public class CharacterSheetVitals {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long characterVitalsId;
 
-//    @OneToOne(targetEntity = CharacterSheet.class)
-//    @JoinColumn(name = "characterId", nullable = false)
-//    private CharacterSheet characterSheet;
-
-    protected String characterName;
-    private Integer age;
-    private String bio;
+    private String characterName;
+    private Integer characterAge;
+    private String characterBio;
     private Integer currentLife;
     private Integer maxLife;
     private Integer currentEndurance;
     private Integer maxEndurance;
+
+    public CharacterSheetVitals(String characterName, Integer age, String bio, Integer currentLife, Integer maxLife, Integer currentEndurance, Integer maxEndurance ) {
+        this.characterName = characterName;
+        this.characterAge = age;
+        this.characterBio = bio;
+        this.currentLife = currentLife;
+        this.maxLife = maxLife;
+        this.currentEndurance = currentEndurance;
+        this.maxEndurance = maxEndurance;
+    }
+
+    public CharacterSheetVitals(Long characterVitalsId, Integer currentLife, Integer maxLife, Integer currentEndurance, Integer maxEndurance ) {
+        this.characterVitalsId = characterVitalsId;
+        this.currentLife = currentLife;
+        this.maxLife = maxLife;
+        this.currentEndurance = currentEndurance;
+        this.maxEndurance = maxEndurance;
+    }
 
     public Long getCharacterVitalsId() {
         return characterVitalsId;
@@ -38,20 +53,20 @@ public class CharacterSheetVitals {
         this.characterName = characterName;
     }
 
-    public Integer getAge() {
-        return age;
+    public Integer getCharacterAge() {
+        return characterAge;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setCharacterAge(Integer characterAge) {
+        this.characterAge = characterAge;
     }
 
-    public String getBio() {
-        return bio;
+    public String getCharacterBio() {
+        return characterBio;
     }
 
-    public void setBio(String bio) {
-        this.bio = bio;
+    public void setCharacterBio(String characterBio) {
+        this.characterBio = characterBio;
     }
 
     public Integer getCurrentLife() {

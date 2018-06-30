@@ -4,7 +4,7 @@ export enum Proficiency {
     MASTER,
     GRANDMASTER,
     LEGENDARY,
-    EPIC,    
+    EPIC,
 }
 
 export enum BaseAttribute {
@@ -84,8 +84,8 @@ export class CharacterSheetDataObject {
 export class CharacterSheetVitals {
     characterVitalsId: number;
     characterName: string;
-    age: number;
-    bio: string;
+    characterAge: number;
+    characterBio: string;
     currentLife: number;
     maxLife: number;
     currentEndurance: number;
