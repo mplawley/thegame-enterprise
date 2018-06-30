@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { Power }         from '../power';
-import { PowerService }  from '../power.service';
+import { Power } from '../../data/power';
+import { PowerService } from '../../services/power.service';
 
 @Component({
   selector: 'app-powers-detail',

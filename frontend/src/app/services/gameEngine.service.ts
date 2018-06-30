@@ -1,10 +1,9 @@
-import { Proficiency, BaseAttribute, CharacterSheet } from "./characterSheet";
-import { RadioControlValueAccessor } from "@angular/forms";
-import { Component, OnInit } from "@angular/core";
+import { Injectable } from '@angular/core';
+import { Proficiency, BaseAttribute, CharacterSheet } from "../data/characterSheet";
 // import { BASE_STATS } from "./mock-characterSheet-items";
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-export class GameEngine {
+@Injectable()
+export class GameEngineService {
     //Roll dice with the classic xDy notation--e.g., 2d10 for roll 2 ten-sided
     //dice and sum the result--except with the ability to specify each dice's 
     //lower and upper bounds. For instance, perhaps each 6-sided dice should start 

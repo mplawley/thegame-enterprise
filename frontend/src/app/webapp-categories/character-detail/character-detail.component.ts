@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CharacterSheetClickableItems, Proficiency } from '../characterSheet';
 
 @Component({
   selector: 'app-character-detail',

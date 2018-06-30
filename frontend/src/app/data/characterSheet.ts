@@ -71,10 +71,6 @@ export class CharacterSheet {
     diplomacyProficiency: Proficiency;
   }
 
-export class CharacterSheetClickableItems {
-    listOfClickables: string[] = [];
-}
-
 export class CharacterSheetDataObject {
     skillName: string;
     skillValue: number;
@@ -90,11 +86,4 @@ export class CharacterSheetVitals {
     maxLife: number;
     currentEndurance: number;
     maxEndurance: number;
-}
-
-export class Monster {
-    name: string;
-    speed: number;
-    strength: number;
-    wisdom: number;
 }

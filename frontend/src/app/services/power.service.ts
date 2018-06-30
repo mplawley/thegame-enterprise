@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Power } from './power';
+import { Power } from '../data/power';
 import { MessageService } from './message.service';
 import { catchError, map, tap } from 'rxjs/operators';
 

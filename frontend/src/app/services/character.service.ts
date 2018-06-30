@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
-import { CharacterSheet, CharacterSheetVitals, CharacterSheetDataObject } from './characterSheet'
+import { CharacterSheet, CharacterSheetVitals, CharacterSheetDataObject } from '../data/characterSheet'
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { MessageService } from './message.service';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
-import { CharacterComponent } from './character/character.component';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -19,7 +18,6 @@ export class CharacterService {
   private updateCharacterVitalsUrl = 'http://localhost:8080/vitals/saveVitals';
   private characterStatsUrl = 'api/BASE_STATS';
   private characterSkillsUrl = 'api/SKILLS';
-  private testSpringBootBackendUrl = 'http://localhost:8080/characterSheet/getCharacterSheet';
   private characterSheetUrl = 'http://localhost:8080/characterSheet/getCharacterSheet';
   private updateCharacterSheetUrl = 'http://localhost:8080/characterSheet/updateCharacterSheet';
 
