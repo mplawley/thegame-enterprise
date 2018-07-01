@@ -38,8 +38,8 @@ export class GameEngineService {
     //     e. ...and so on as proficiency gets higher.
     // 4. Any vital modifiers, merit and status modifiers, and equipment modifiers
 
-    calculateSkillPerformance(skillName: string, baseAttributeValue: number, skillValue: number, skillProficiency: Proficiency): number {
-        let rollResult: number = this.getRollResultBasedOnSkillProficiency(skillProficiency);
+    calculateSkillPerformance(skillName: string, baseAttributeValue: number, skillValue: number, proficiencyValue: number): number {
+        let rollResult: number = this.getRollResultBasedOnSkillProficiency(proficiencyValue);
         let skillPerformance: number = +rollResult + +baseAttributeValue + +skillValue;
         return skillPerformance;
     }
@@ -60,11 +60,9 @@ export class GameEngineService {
     }
 
     //Return roll result based on proficiency
-    getRollResultBasedOnSkillProficiency(skillProficiency: Proficiency): number {
-        var proficiencyAsValue: number = parseInt(Proficiency[skillProficiency]);
-
+    getRollResultBasedOnSkillProficiency(proficiencyValue: number): number {
         //Lowest proficiency possible...
-        if (skillProficiency === Proficiency.APPRENTICE || proficiencyAsValue === 1) {
+        if (proficiencyValue === 1) {
             return Math.min(this.rollDice(2, 1, 10), this.rollDice(2, 1, 10));
         }
 
@@ -73,7 +71,7 @@ export class GameEngineService {
         //enum is 1-indexed instead of 0-indexed
         let rollResultsArray: number[] = [];
 
-        for (var i = 0; i < proficiencyAsValue - 1; i++) {
+        for (var i = 0; i < proficiencyValue - 1; i++) {
             rollResultsArray.push(this.rollDice(2, 1, 10));
         }
 

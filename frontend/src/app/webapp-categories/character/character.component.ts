@@ -11,7 +11,7 @@ import { CharacterService } from '../../services/character.service';
 
 export class CharacterComponent implements OnInit {
   characterSheet: CharacterSheet;
-  proficiencies: Proficiency[];
+  proficiencies;
 
   selectedCharacterSheetItem: string;
   currentPerformance: number;
@@ -25,8 +25,9 @@ export class CharacterComponent implements OnInit {
     this.selectedCharacterSheetItem = skillName;
     let baseAttributeName: string = this.gameEngine.getSkillBaseAttribute(skillName);
     let baseAttributeValue: number = this.characterSheet[baseAttributeName];
-    let proficiency: Proficiency = this.proficiencies[skillName + "Proficiency"];
-    this.currentPerformance = this.gameEngine.calculateSkillPerformance(skillName, baseAttributeValue, skillValue, proficiency);
+    let proficiencyName = this.proficiencies[skillName + "Proficiency"];
+    let proficiencyValue: number = parseInt(Proficiency[proficiencyName]);
+    this.currentPerformance = this.gameEngine.calculateSkillPerformance(skillName, baseAttributeValue, skillValue, proficiencyValue);
   }
 
   updateCharacterSheet(): void {    
@@ -41,6 +42,7 @@ export class CharacterComponent implements OnInit {
     this.characterService.getCharacterSheet('2')
       .subscribe(characterSheetObject => {
         this.characterSheet = characterSheetObject;
+        this.populateProficienciesObject(characterSheetObject);
       }
     )
   }
@@ -66,6 +68,44 @@ export class CharacterComponent implements OnInit {
         return CharacterSheetDataType.Proficiency;
       }
     }
+  }
+
+  populateProficienciesObject(characterSheet) {
+    this.proficiencies = this.generateProficienciesHashMap(characterSheet);
+  }
+
+  generateArray(obj){
+    return Object.keys(obj).map((key)=>{ return {key:key, value:obj[key]}});
+  }
+
+  generateStatsArray(obj){
+    return this.generateArrayOfDataTypePassedIn(obj, CharacterSheetDataType.Stat);
+  }
+
+  generateSkillsArray(obj){
+    return this.generateArrayOfDataTypePassedIn(obj, CharacterSheetDataType.Skill);
+  }
+
+  generateProficienciesHashMap(obj){
+    let _this = this;
+    let mapOfProficiencyNamesToProficiencyValues = {};
+    Object.keys(obj).map(function (k) {
+      if (_this.determineCharacterSheetEntryDataType(k) == CharacterSheetDataType.Proficiency) {
+        mapOfProficiencyNamesToProficiencyValues[k] = obj[k];
+      }
+    });
+    return mapOfProficiencyNamesToProficiencyValues;
+  }
+
+  generateArrayOfDataTypePassedIn(obj, dataType: CharacterSheetDataType) {
+    let _this = this;
+    var arrayRequested = [];
+    Object.keys(obj).map(function (k) { //k for key other than the "key" in the arrayOfStats
+        if (_this.determineCharacterSheetEntryDataType(k) == dataType) {
+          arrayRequested.push( { key: k, value: obj[k]});
+        }
+    });
+    return arrayRequested;
   }
 
   constructor(private characterService: CharacterService,

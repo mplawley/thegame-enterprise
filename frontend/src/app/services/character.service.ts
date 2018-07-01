@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CharacterSheet, CharacterSheetVitals, CharacterSheetDataObject } from '../data/characterSheet'
+import { CharacterSheet, CharacterSheetVitals, CharacterSheetDataObject } from '../data/characterSheet';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { MessageService } from './message.service';
 import { Observable, of } from 'rxjs';
