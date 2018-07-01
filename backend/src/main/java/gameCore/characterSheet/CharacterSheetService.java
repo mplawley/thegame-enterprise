@@ -1,7 +1,9 @@
 package gameCore.characterSheet;
 
 import gameCore.characterSheetVitals.CharacterSheetVitals;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CharacterSheetService {
     private final CharacterSheetRepository characterSheetRepository;
 

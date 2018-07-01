@@ -1,6 +1,7 @@
 package gameCore.characterSheet;
 
 import gameCore.characterSheetVitals.CharacterSheetVitals;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -10,6 +11,7 @@ public class CharacterSheetController {
     private final CharacterSheetService characterSheetService;
     private final String CROSS_ORIGIN_URL = "http://localhost:4200";
 
+    @Autowired
     CharacterSheetController(CharacterSheetRepository characterSheetRepository, CharacterSheetService characterSheetService) {
         this.characterSheetService = characterSheetService;
     }

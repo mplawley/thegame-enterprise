@@ -84,7 +84,7 @@
         [class.selected]="characterSheetItem === selectedCharacterSheetItem">
       <span>{{item.key}}: </span>
       <span>{{item.value}} </span>
-      <span>{{proficiencies[item.key + "Proficiency"]}}</span>
+      <span>{{proficiencies[item.key + "Proficiency"] | titlecase}}</span>
     </li>
   </ul>
 
