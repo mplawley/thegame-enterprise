@@ -37,4 +37,8 @@ public class CharacterSheetService {
     public CharacterSheet getStats (Long characterId) {
         return characterSheetRepository.findByCharacterId(characterId);
     }
+
+    public void saveEntryTest() {
+        CharacterSheet characterSheet = new CharacterSheet();
+    }
 }

@@ -50,4 +50,10 @@ public class CharacterSheetController {
     public CharacterSheet getStats (@RequestParam Long characterId) {
         return characterSheetService.getStats(characterId);
     }
+
+    @PostMapping(path="/saveEntryTest")
+    @CrossOrigin(origins = CROSS_ORIGIN_URL)
+    public void saveEntryTest () {
+        characterSheetService.saveEntryTest();
+    }
 }
