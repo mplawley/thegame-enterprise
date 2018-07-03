@@ -1,10 +1,8 @@
 package gameCore.characterSheet;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+import gameCore.inventory.Inventory;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
@@ -15,6 +13,10 @@ public class CharacterSheet {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long characterId;
+
+    @OneToOne(cascade = CascadeType.MERGE)
+    @PrimaryKeyJoinColumn
+    private Inventory inventory;
 
     public CharacterSheet() {};
 
