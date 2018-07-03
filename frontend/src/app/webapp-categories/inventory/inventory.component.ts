@@ -10,14 +10,9 @@ import { CharacterService } from '../../services/character.service';
 export class InventoryComponent implements OnInit {
   inventory: Inventory;
 
-  constructor(private characterService: CharacterService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.inventory.constructBasicInventory();
   }
 
-  getHeroes(): void {
-    // this.heroService.getHeroes()
-    //   .subscribe(heroes => this.heroes = heroes.slice(1, 5));
-  }
 }

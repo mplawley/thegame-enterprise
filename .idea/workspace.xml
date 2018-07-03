@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef15c94-5eb6-42dc-bf1e-39c9a6c17d88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/Inventory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryEntry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/data/inventorySheet.ts" afterPath="$PROJECT_DIR$/frontend/src/app/data/inventorySheet.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/thegame/target/" />
     <ignored path="$PROJECT_DIR$/backend/target/" />
@@ -67,13 +62,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/Inventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="300">
+              <caret line="20" column="46" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="20" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
                 <element signature="e#544#545#0" expanded="true" />
                 <element signature="e#596#597#0" expanded="true" />
                 <element signature="e#642#643#0" expanded="true" />
@@ -102,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InventoryEntry.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InventoryEntry.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryEntry.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="27" />
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="e#233#234#0" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -823,27 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -854,10 +829,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="300">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="20" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
             <element signature="e#544#545#0" expanded="true" />
             <element signature="e#596#597#0" expanded="true" />
             <element signature="e#642#643#0" expanded="true" />
@@ -881,6 +857,27 @@
             <element signature="e#1422#1423#0" expanded="true" />
             <element signature="e#1492#1493#0" expanded="true" />
             <element signature="e#1540#1541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
           </folding>
         </state>
       </provider>
