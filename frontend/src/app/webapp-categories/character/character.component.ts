@@ -39,7 +39,7 @@ export class CharacterComponent implements OnInit {
   }
 
   getCharacterSheet(): void {
-    this.characterService.getCharacterSheet('2')
+    this.characterService.getCharacterSheet('10')
       .subscribe(characterSheetObject => {
         this.characterSheet = characterSheetObject;
         this.populateProficienciesObject(characterSheetObject);

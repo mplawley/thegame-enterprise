@@ -39,6 +39,21 @@ public class CharacterSheetService {
     }
 
     public void saveEntryTest() {
-        CharacterSheet characterSheet = new CharacterSheet();
+        CharacterSheet characterSheet = CharacterSheet.builder().characterName("Test entry").characterAge(33).characterBio("A test").playerName("Mark")
+                .currentLife(100).maxLife(100).currentEndurance(6).maxEndurance(8)
+                .assessment(1).insight(2).spirit(3).speed(4).coordination(5).strength(6).fortitude(7).wisdom(8).will(9).presence(10)
+                .martial(1).martialProficiency(Proficiency.APPRENTICE)
+                .ranged(2).rangedProficiency(Proficiency.APPRENTICE)
+                .stealth(3).stealthProficiency(Proficiency.APPRENTICE)
+                .athletics(4).athleticsProficiency(Proficiency.JOURNEYMAN)
+                .lore(5).loreProficiency(Proficiency.JOURNEYMAN)
+                .scouting(6).scoutingProficiency(Proficiency.JOURNEYMAN)
+                .crafting(7).craftingProficiency(Proficiency.MASTER)
+                .alchemy(8).alchemyProficiency(Proficiency.MASTER)
+                .arts(9).artsProficiency(Proficiency.GRANDMASTER)
+                .diplomacy(10).diplomacyProficiency(Proficiency.LEGENDARY)
+                .build();
+
+        characterSheetRepository.save(characterSheet);
     }
 }
