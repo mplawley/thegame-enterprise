@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef15c94-5eb6-42dc-bf1e-39c9a6c17d88" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/pom.xml" afterPath="$PROJECT_DIR$/backend/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.css" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/thegame/target/" />
+    <ignored path="$PROJECT_DIR$/backend/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,91 +21,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bio.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/bio/bio.component.ts">
+      <file leaf-file-name="CharacterSheetController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2502#2503#0" expanded="true" />
+                <element signature="e#2555#2556#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterSheetRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="character.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/character/character.component.ts">
+      <file leaf-file-name="CharacterSheetService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+            <state relative-caret-position="337">
+              <caret line="43" column="82" lean-forward="true" selection-start-line="43" selection-start-column="82" selection-end-line="43" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mock-enemies.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/mock-enemies.ts">
+      <file leaf-file-name="Proficiency.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="power.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/power.ts">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="430">
+              <caret line="66" column="7" lean-forward="false" selection-start-line="45" selection-start-column="2" selection-end-line="66" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="power.service.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/power.service.spec.ts">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="characterSheet.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/characterSheet.ts">
+      <file leaf-file-name="CharacterSheetVitalsRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="character.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/character.service.ts">
+      <file leaf-file-name="CharacterSheet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-250">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-1635">
+              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+            <state relative-caret-position="514">
+              <caret line="47" column="48" lean-forward="false" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mvnw" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/mvnw">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,7 +147,23 @@
       <find>@RestController</find>
       <find>alchemy</find>
       <find>hello</find>
+      <find>enablejpa</find>
+      <find>WebSecurityConfig</find>
+      <find>security</find>
+      <find>craft</find>
+      <find>getCharacterAge</find>
+      <find>craftomg</find>
+      <find>new charactersheet</find>
+      <find>j</find>
+      <find>jackson</find>
+      <find>getCharacterSheetNames</find>
+      <find>hbm2ddl</find>
+      <find>spring.jpa.hibernate.ddl-auto</find>
+      <find>craftingProficiency</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/backend/src/main/java/gameCore</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -150,7 +189,28 @@
         <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterSheetController.java" />
         <option value="$PROJECT_DIR$/thegame/pom.xml" />
         <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterSheet.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetVitals.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetVitalsRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetVitalsController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitalsRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitals.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitalsController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/WebConfig.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java" />
+        <option value="$PROJECT_DIR$/thegame-enterprise-db.spf" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java" />
         <option value="$PROJECT_DIR$/backend/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java" />
       </list>
     </option>
   </component>
@@ -167,6 +227,21 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="thegame" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="thegame" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="thegame" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="thegame" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -208,17 +283,69 @@
               <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="thegame-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thegame-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thegame-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thegame-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gameCore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thegame-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gameCore" type="462c0819:PsiDirectoryNode" />
+              <item name="characterSheet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thegame-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -348,19 +475,20 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26800978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25579977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2741148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -369,7 +497,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -379,69 +506,31 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetController.java</url>
-          <line>13</line>
+          <url>file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java</url>
+          <line>56</line>
           <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thegame/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/Application.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/MainController.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/resources/application.properties" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.7.RELEASE/spring-data-commons-2.0.7.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStatsRepository.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStats.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/User.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/UserRepository.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.2.RELEASE/spring-boot-2.0.2.RELEASE-sources.jar!/org/springframework/boot/CommandLineRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/Application.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterSheet.java" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterSheetRepository.java" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/Proficiency.java" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/MainController.java" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStats.java" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStatsRepository.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Proficiency.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/User.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/UserRepository.java" />
     <entry file="file://$PROJECT_DIR$/backend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -464,20 +553,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/MainController.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.7.RELEASE/spring-data-commons-2.0.7.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -487,138 +563,111 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStatsRepository.java" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStats.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.2.RELEASE/spring-boot-2.0.2.RELEASE-sources.jar!/org/springframework/boot/CommandLineRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Proficiency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.0.2.RELEASE/spring-boot-dependencies-2.0.2.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37328">
-          <caret line="480" column="12" lean-forward="false" selection-start-line="480" selection-start-column="12" selection-end-line="480" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CoolCarController.java" />
     <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/WebApplicationConfig.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/bio/bio.component.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/character/character.component.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/mock-enemies.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/power.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/power.service.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/characterSheet.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/character.service.ts" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="67" lean-forward="false" selection-start-line="61" selection-start-column="67" selection-end-line="61" selection-end-column="67" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheet.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/MainController.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/User.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/UserRepository.java" />
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.0.2.RELEASE/spring-boot-dependencies-2.0.2.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="166">
+          <caret line="477" column="56" lean-forward="false" selection-start-line="477" selection-start-column="48" selection-end-line="477" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetController.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/WebSecurityConfig.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/WebConfig.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        <state relative-caret-position="337">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetRepository.java">
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.amd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="180">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/MainController.java">
+    <entry file="file://$PROJECT_DIR$/frontend/node_modules/xml2js/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="1470">
+          <caret line="98" column="15" lean-forward="false" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/UserRepository.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.2.RELEASE/spring-boot-2.0.2.RELEASE-sources.jar!/org/springframework/boot/CommandLineRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/bio/bio.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/character/character.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/mock-enemies.ts">
+    <entry file="file://$PROJECT_DIR$/thegame-enterprise-db.spf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/power.ts">
+    <entry file="file://$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/power.service.spec.ts">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/characterSheet.ts">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/character.service.ts">
+    <entry file="file://$PROJECT_DIR$/backend/mvnw.cmd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/backend/mvnw">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -628,8 +677,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        <state relative-caret-position="514">
+          <caret line="47" column="48" lean-forward="false" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="43" column="82" lean-forward="true" selection-start-line="43" selection-start-column="82" selection-end-line="43" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2502#2503#0" expanded="true" />
+            <element signature="e#2555#2556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1635">
+          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="66" column="7" lean-forward="false" selection-start-line="45" selection-start-column="2" selection-end-line="66" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -637,9 +756,80 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android API 27 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>backend</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>Android API 27 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
