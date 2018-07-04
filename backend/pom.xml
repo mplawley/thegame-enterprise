@@ -31,6 +31,13 @@
         </dependency>
 
         <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+            <version>${org.jmockit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -49,11 +56,27 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+        </dependency>
+
     </dependencies>
 
     <properties>
         <java.version>1.8</java.version>
         <org.projectlombok.version>1.16.16</org.projectlombok.version>
+        <org.jmockit.version>1.8</org.jmockit.version>
+        <org.mockito.version>1.9.5</org.mockito.version>
         <com.fasterxml.jackson.core.version>2.9.6</com.fasterxml.jackson.core.version>
     </properties>
 

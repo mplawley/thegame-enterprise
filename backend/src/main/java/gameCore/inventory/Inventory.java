@@ -1,10 +1,10 @@
 package gameCore.inventory;
 
-import gameCore.characterSheet.CharacterSheet;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.List;
 
 @Entity

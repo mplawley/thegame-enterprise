@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Inventory, InventoryEntry } from '../../data/inventorySheet';
-import { CharacterService } from '../../services/character.service';
+import { InventoryService } from '../../services/inventory-service.service';
 
 @Component({
   selector: 'app-inventory',
@@ -10,9 +10,16 @@ import { CharacterService } from '../../services/character.service';
 export class InventoryComponent implements OnInit {
   inventory: Inventory;
 
-  constructor() { }
-
-  ngOnInit() {
+  getInventory(): void {
+    this.inventoryService.getInventory('10')
+      .subscribe(inventoryObject => {
+        this.inventory = inventoryObject;
+      })
   }
 
+  constructor(private inventoryService: InventoryService) { }
+
+  ngOnInit() {
+    this.getInventory();
+  }
 }
