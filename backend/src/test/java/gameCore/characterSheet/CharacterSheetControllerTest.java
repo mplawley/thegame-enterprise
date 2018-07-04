@@ -1,6 +1,5 @@
 package gameCore.characterSheet;
 
-import mockit.Expectations;
 import mockit.Injectable;
 import mockit.Tested;
 import mockit.Verifications;
