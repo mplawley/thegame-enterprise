@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface InventoryRepository extends CrudRepository<Inventory, Long> {
     Inventory findByInventoryId(Long inventoryId);
-    List<Inventory> findByItemName(String itemName);
+    //List<Inventory> findByItemName(String itemName);
 }

@@ -2,10 +2,21 @@ package gameCore.inventory;
 
 import gameCore.characterSheet.Proficiency;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class InventoryEntry {
     private String itemName;
     private Proficiency itemQuality;
     private String itemNotes;
+
+    public InventoryEntry() {}
+
+    public InventoryEntry(String itemName, Proficiency itemQuality, String itemNotes) {
+        this.itemName = itemName;
+        this.itemQuality = itemQuality;
+        this.itemNotes = itemNotes;
+    }
 
     public String getItemName() {
         return itemName;

@@ -6,19 +6,22 @@ import gameCore.inventory.Inventory;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
+import java.io.Serializable;
+
 @Entity
 @Builder
 @AllArgsConstructor
-public class CharacterSheet {
+public class CharacterSheet implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long characterId;
 
-    @OneToOne(cascade = CascadeType.MERGE)
-    @PrimaryKeyJoinColumn
+    @OneToOne(fetch = FetchType.LAZY,
+              cascade =  CascadeType.ALL,
+              mappedBy = "characterSheet")
     private Inventory inventory;
 
-    public CharacterSheet() {};
+    public CharacterSheet() {}
 
     public CharacterSheet(Long characterId, String characterName) {
         this.characterId = characterId;
@@ -391,5 +394,9 @@ public class CharacterSheet {
 
     public void setDiplomacyProficiency(Proficiency diplomacyProficiency) {
         this.diplomacyProficiency = diplomacyProficiency;
+    }
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
     }
 }

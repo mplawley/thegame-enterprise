@@ -1,12 +1,14 @@
 package gameCore.characterSheet;
 
 import gameCore.characterSheetVitals.CharacterSheetVitals;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CharacterSheetService {
     private final CharacterSheetRepository characterSheetRepository;
 
+    @Autowired
     CharacterSheetService(CharacterSheetRepository characterSheetRepository) {
         this.characterSheetRepository = characterSheetRepository;
     }
