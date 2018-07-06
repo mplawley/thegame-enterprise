@@ -13,6 +13,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @SpringBootApplication
 public class Application {
     private static final Logger log = LoggerFactory.getLogger(Application.class);
@@ -49,6 +52,11 @@ public class Application {
 
             //Give this inventory record some data to see
             newInventory.setMeleeWeapon(new InventoryEntry("Sword of Asswhoop", Proficiency.MASTER, "This sword whoops ass."));
+            newInventory.setArmor(new InventoryEntry("Full plate", Proficiency.JOURNEYMAN, "Just journeyman armor."));
+            List<InventoryEntry> generalItemsList = new ArrayList<>();
+            generalItemsList.add(new InventoryEntry("Potion", Proficiency.APPRENTICE, "Fey potion of healing"));
+            generalItemsList.add(new InventoryEntry("Tactical stars", Proficiency.MASTER, "Ouch from a ninja"));
+            newInventory.setGeneralItems(generalItemsList);
 
             // Set child reference (inventory) in parent entity (characterSheet)
             newCharacterSheet.setInventory(newInventory);
