@@ -58,8 +58,53 @@ public class Inventory implements Serializable {
     @Embedded
     public InventoryEntry shield;
 
-    @ElementCollection
-    private List<InventoryEntry> generalItems;
+    @AttributeOverrides({
+            @AttributeOverride(name="itemName",column=@Column(name="itemSlot1ItemName")),
+            @AttributeOverride(name="itemQuality",column=@Column(name="itemSlot1ItemQuality")),
+            @AttributeOverride(name="itemNotes",column=@Column(name="itemSlot1ItemNotes")),
+    })
+    @Embedded
+    public InventoryEntry itemSlot1;
+
+    @AttributeOverrides({
+            @AttributeOverride(name="itemName",column=@Column(name="itemSlot2ItemName")),
+            @AttributeOverride(name="itemQuality",column=@Column(name="itemSlot2ItemQuality")),
+            @AttributeOverride(name="itemNotes",column=@Column(name="itemSlot2ItemNotes")),
+    })
+    @Embedded
+    public InventoryEntry itemSlot2;
+
+    @AttributeOverrides({
+            @AttributeOverride(name="itemName",column=@Column(name="itemSlot3ItemName")),
+            @AttributeOverride(name="itemQuality",column=@Column(name="itemSlot3ItemQuality")),
+            @AttributeOverride(name="itemNotes",column=@Column(name="itemSlot3ItemNotes")),
+    })
+    @Embedded
+    public InventoryEntry itemSlot3;
+
+    @AttributeOverrides({
+            @AttributeOverride(name="itemName",column=@Column(name="itemSlot4ItemName")),
+            @AttributeOverride(name="itemQuality",column=@Column(name="itemSlot4ItemQuality")),
+            @AttributeOverride(name="itemNotes",column=@Column(name="itemSlot4ItemNotes")),
+    })
+    @Embedded
+    public InventoryEntry itemSlot4;
+
+    @AttributeOverrides({
+            @AttributeOverride(name="itemName",column=@Column(name="itemSlot5ItemName")),
+            @AttributeOverride(name="itemQuality",column=@Column(name="itemSlot5ItemQuality")),
+            @AttributeOverride(name="itemNotes",column=@Column(name="itemSlot5ItemNotes")),
+    })
+    @Embedded
+    public InventoryEntry itemSlot5;
+
+    @AttributeOverrides({
+            @AttributeOverride(name="itemName",column=@Column(name="itemSlot6ItemName")),
+            @AttributeOverride(name="itemQuality",column=@Column(name="itemSlot6ItemQuality")),
+            @AttributeOverride(name="itemNotes",column=@Column(name="itemSlot6ItemNotes")),
+    })
+    @Embedded
+    public InventoryEntry itemSlot6;
 
     public Long getInventoryId() {
         return inventoryId;
@@ -105,11 +150,51 @@ public class Inventory implements Serializable {
         this.shield = shield;
     }
 
-    public List<InventoryEntry> getGeneralItems() {
-        return generalItems;
+    public InventoryEntry getItemSlot1() {
+        return itemSlot1;
     }
 
-    public void setGeneralItems(List<InventoryEntry> generalItems) {
-        this.generalItems = generalItems;
+    public void setItemSlot1(InventoryEntry itemSlot1) {
+        this.itemSlot1 = itemSlot1;
+    }
+
+    public InventoryEntry getItemSlot2() {
+        return itemSlot2;
+    }
+
+    public void setItemSlot2(InventoryEntry itemSlot2) {
+        this.itemSlot2 = itemSlot2;
+    }
+
+    public InventoryEntry getItemSlot3() {
+        return itemSlot3;
+    }
+
+    public void setItemSlot3(InventoryEntry itemSlot3) {
+        this.itemSlot3 = itemSlot3;
+    }
+
+    public InventoryEntry getItemSlot4() {
+        return itemSlot4;
+    }
+
+    public void setItemSlot4(InventoryEntry itemSlot4) {
+        this.itemSlot4 = itemSlot4;
+    }
+
+    public InventoryEntry getItemSlot5() {
+        return itemSlot5;
+    }
+
+    public void setItemSlot5(InventoryEntry itemSlot5) {
+        this.itemSlot5 = itemSlot5;
+    }
+
+    public InventoryEntry getItemSlot6() {
+        return itemSlot6;
+    }
+
+    public void setItemSlot6(InventoryEntry itemSlot6) {
+        this.itemSlot6 = itemSlot6;
     }
 }

@@ -53,10 +53,9 @@ public class Application {
             //Give this inventory record some data to see
             newInventory.setMeleeWeapon(new InventoryEntry("Sword of Asswhoop", Proficiency.MASTER, "This sword whoops ass."));
             newInventory.setArmor(new InventoryEntry("Full plate", Proficiency.JOURNEYMAN, "Just journeyman armor."));
-            List<InventoryEntry> generalItemsList = new ArrayList<>();
-            generalItemsList.add(new InventoryEntry("Potion", Proficiency.APPRENTICE, "Fey potion of healing"));
-            generalItemsList.add(new InventoryEntry("Tactical stars", Proficiency.MASTER, "Ouch from a ninja"));
-            newInventory.setGeneralItems(generalItemsList);
+
+            newInventory.setItemSlot1(new InventoryEntry("Potion", Proficiency.APPRENTICE, "Fey potion of healing"));
+            newInventory.setItemSlot2(new InventoryEntry("Tactical stars", Proficiency.MASTER, "Ouch from a ninja"));
 
             // Set child reference (inventory) in parent entity (characterSheet)
             newCharacterSheet.setInventory(newInventory);
