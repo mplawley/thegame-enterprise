@@ -6,7 +6,6 @@ import lombok.Builder;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 @Builder

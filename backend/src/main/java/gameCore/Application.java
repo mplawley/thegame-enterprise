@@ -13,8 +13,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.util.ArrayList;
-import java.util.List;
+import static gameCore.modifiers.InventoryModifiers.speedInventoryMod;
 
 @SpringBootApplication
 public class Application {
@@ -95,6 +94,17 @@ public class Application {
 
             log.info(String.format("Fetching character sheet with playerName: %s", clarissaGladstone.getPlayerName()));
             log.info(repository.findByCharacterName("Clarissa Gladstone").toString());
+        };
+    }
+
+    @Bean
+    public CommandLineRunner testCharacterSheetMods() {
+        return (args) -> {
+            log.info(String.format("Testing inventory mods. SpeedInventoryMod: %d", speedInventoryMod));
+            speedInventoryMod += 3;
+            log.info(String.format("Testing inventory mods. SpeedInventoryMod: %d", speedInventoryMod));
+            speedInventoryMod = -1000;
+            log.info(String.format("Testing inventory mods. SpeedInventoryMod: %d", speedInventoryMod));
         };
     }
 }
