@@ -13,20 +13,14 @@ import java.util.stream.Stream;
 
 @Service
 public class AllModifiersService {
-    private final InventoryModifiers inventoryModifiers;
     private final InventoryModifiersService inventoryModifiersService;
-    private final BuffsAndMeritsModifiers buffsAndMeritsModifiers;
     private final BuffsAndMeritsModifiersService buffsAndMeritsModifiersService;
-    private final VitalsModifiers vitalsModifiers;
     private final VitalsModifiersService vitalsModifiersService;
 
     @Autowired
-    public AllModifiersService(InventoryModifiers inventoryModifiers, InventoryModifiersService inventoryModifiersService, BuffsAndMeritsModifiers buffsAndMeritsModifiers, BuffsAndMeritsModifiersService buffsAndMeritsModifiersService, VitalsModifiers vitalsModifiers, VitalsModifiersService vitalsModifiersService) {
-        this.inventoryModifiers = inventoryModifiers;
+    public AllModifiersService(InventoryModifiersService inventoryModifiersService, BuffsAndMeritsModifiersService buffsAndMeritsModifiersService, VitalsModifiersService vitalsModifiersService) {
         this.inventoryModifiersService = inventoryModifiersService;
-        this.buffsAndMeritsModifiers = buffsAndMeritsModifiers;
         this.buffsAndMeritsModifiersService = buffsAndMeritsModifiersService;
-        this.vitalsModifiers = vitalsModifiers;
         this.vitalsModifiersService = vitalsModifiersService;
     }
 
