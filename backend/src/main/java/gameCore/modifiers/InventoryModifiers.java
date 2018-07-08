@@ -4,377 +4,377 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class InventoryModifiers {
-    private int speedInventoryMod;
-    private int assessmentInventoryMod;
-    private int insightInventoryMod;
-    private int spiritInventoryMod;
-    private int coordinationInventoryMod;
-    private int strengthInventoryMod;
-    private int fortitudeInventoryMod;
-    private int wisdomInventoryMod;
-    private int willInventoryMod;
-    private int charismaInventoryMod;
+    private int speedMod;
+    private int assessmentMod;
+    private int insightMod;
+    private int spiritMod;
+    private int coordinationMod;
+    private int strengthMod;
+    private int fortitudeMod;
+    private int wisdomMod;
+    private int willMod;
+    private int presenceMod;
 
-    private int martialInventoryMod;
-    private int martialProficiencyInventoryMod;
-    private int rangedInventoryMod;
-    private int rangedProficiencyInventoryMod;
-    private int stealthInventoryMod;
-    private int stealthProficiencyInventoryMod;
-    private int athleticsInventoryMod;
-    private int athleticsProficiencyInventoryMod;
+    private int martialMod;
+    private int martialProficiencyMod;
+    private int rangedMod;
+    private int rangedProficiencyMod;
+    private int stealthMod;
+    private int stealthProficiencyMod;
+    private int athleticsMod;
+    private int athleticsProficiencyMod;
 
-    private int loreInventoryMod;
-    private int loreProficiencyInventoryMod;
-    private int scoutingInventoryMod;
-    private int scoutingProficiencyInventoryMod;
-    private int alchemyInventoryMod;
-    private int alchemyProficiencyInventoryMod;
-    private int craftingInventoryMod;
-    private int craftingProficiencyInventoryMod;
+    private int loreMod;
+    private int loreProficiencyMod;
+    private int scoutingMod;
+    private int scoutingProficiencyMod;
+    private int alchemyMod;
+    private int alchemyProficiencyMod;
+    private int craftingMod;
+    private int craftingProficiencyMod;
 
-    private int artsInventoryMod;
-    private int artsProficiencyInventoryMod;
-    private int diplomacyInventoryMod;
-    private int diplomacyProficiencyInventoryMod;
+    private int artsMod;
+    private int artsProficiencyMod;
+    private int diplomacyMod;
+    private int diplomacyProficiencyMod;
 
-    private int forceInventoryMod;
-    private int shotStrengthInventoryMod;
-    private int shotDistanceInventoryMod;
-    private int PowerInventoryMod;
-    private int martialCritInventoryMod;
-    private int rangedCritInventoryMod;
-    private int defenseInventoryMod;
-    private int resolveInventoryMod;
-    private int deflectInventoryMod;
-    private int moveInventoryMod;
-    private int initiativeInventoryMod;
+    private int forceMod;
+    private int shotStrengthMod;
+    private int shotDistanceMod;
+    private int PowerMod;
+    private int martialCritMod;
+    private int rangedCritMod;
+    private int defenseMod;
+    private int resolveMod;
+    private int deflectMod;
+    private int moveMod;
+    private int initiativeMod;
 
-    public int getSpeedInventoryMod() {
-        return speedInventoryMod;
+    public int getSpeedMod() {
+        return speedMod;
     }
 
-    public void setSpeedInventoryMod(int speedInventoryMod) {
-        this.speedInventoryMod = speedInventoryMod;
+    public void setSpeedMod(int speedMod) {
+        this.speedMod = speedMod;
     }
 
-    public int getAssessmentInventoryMod() {
-        return assessmentInventoryMod;
+    public int getAssessmentMod() {
+        return assessmentMod;
     }
 
-    public void setAssessmentInventoryMod(int assessmentInventoryMod) {
-        this.assessmentInventoryMod = assessmentInventoryMod;
+    public void setAssessmentMod(int assessmentMod) {
+        this.assessmentMod = assessmentMod;
     }
 
-    public int getInsightInventoryMod() {
-        return insightInventoryMod;
+    public int getInsightMod() {
+        return insightMod;
     }
 
-    public void setInsightInventoryMod(int insightInventoryMod) {
-        this.insightInventoryMod = insightInventoryMod;
+    public void setInsightMod(int insightMod) {
+        this.insightMod = insightMod;
     }
 
-    public int getSpiritInventoryMod() {
-        return spiritInventoryMod;
+    public int getSpiritMod() {
+        return spiritMod;
     }
 
-    public void setSpiritInventoryMod(int spiritInventoryMod) {
-        this.spiritInventoryMod = spiritInventoryMod;
+    public void setSpiritMod(int spiritMod) {
+        this.spiritMod = spiritMod;
     }
 
-    public int getCoordinationInventoryMod() {
-        return coordinationInventoryMod;
+    public int getCoordinationMod() {
+        return coordinationMod;
     }
 
-    public void setCoordinationInventoryMod(int coordinationInventoryMod) {
-        this.coordinationInventoryMod = coordinationInventoryMod;
+    public void setCoordinationMod(int coordinationMod) {
+        this.coordinationMod = coordinationMod;
     }
 
-    public int getStrengthInventoryMod() {
-        return strengthInventoryMod;
+    public int getStrengthMod() {
+        return strengthMod;
     }
 
-    public void setStrengthInventoryMod(int strengthInventoryMod) {
-        this.strengthInventoryMod = strengthInventoryMod;
+    public void setStrengthMod(int strengthMod) {
+        this.strengthMod = strengthMod;
     }
 
-    public int getFortitudeInventoryMod() {
-        return fortitudeInventoryMod;
+    public int getFortitudeMod() {
+        return fortitudeMod;
     }
 
-    public void setFortitudeInventoryMod(int fortitudeInventoryMod) {
-        this.fortitudeInventoryMod = fortitudeInventoryMod;
+    public void setFortitudeMod(int fortitudeMod) {
+        this.fortitudeMod = fortitudeMod;
     }
 
-    public int getWisdomInventoryMod() {
-        return wisdomInventoryMod;
+    public int getWisdomMod() {
+        return wisdomMod;
     }
 
-    public void setWisdomInventoryMod(int wisdomInventoryMod) {
-        this.wisdomInventoryMod = wisdomInventoryMod;
+    public void setWisdomMod(int wisdomMod) {
+        this.wisdomMod = wisdomMod;
     }
 
-    public int getWillInventoryMod() {
-        return willInventoryMod;
+    public int getWillMod() {
+        return willMod;
     }
 
-    public void setWillInventoryMod(int willInventoryMod) {
-        this.willInventoryMod = willInventoryMod;
+    public void setWillMod(int willMod) {
+        this.willMod = willMod;
     }
 
-    public int getCharismaInventoryMod() {
-        return charismaInventoryMod;
+    public int getPresenceMod() {
+        return presenceMod;
     }
 
-    public void setCharismaInventoryMod(int charismaInventoryMod) {
-        this.charismaInventoryMod = charismaInventoryMod;
+    public void setPresenceMod(int presenceMod) {
+        this.presenceMod = presenceMod;
     }
 
-    public int getMartialInventoryMod() {
-        return martialInventoryMod;
+    public int getMartialMod() {
+        return martialMod;
     }
 
-    public void setMartialInventoryMod(int martialInventoryMod) {
-        this.martialInventoryMod = martialInventoryMod;
+    public void setMartialMod(int martialMod) {
+        this.martialMod = martialMod;
     }
 
-    public int getMartialProficiencyInventoryMod() {
-        return martialProficiencyInventoryMod;
+    public int getMartialProficiencyMod() {
+        return martialProficiencyMod;
     }
 
-    public void setMartialProficiencyInventoryMod(int martialProficiencyInventoryMod) {
-        this.martialProficiencyInventoryMod = martialProficiencyInventoryMod;
+    public void setMartialProficiencyMod(int martialProficiencyMod) {
+        this.martialProficiencyMod = martialProficiencyMod;
     }
 
-    public int getRangedInventoryMod() {
-        return rangedInventoryMod;
+    public int getRangedMod() {
+        return rangedMod;
     }
 
-    public void setRangedInventoryMod(int rangedInventoryMod) {
-        this.rangedInventoryMod = rangedInventoryMod;
+    public void setRangedMod(int rangedMod) {
+        this.rangedMod = rangedMod;
     }
 
-    public int getRangedProficiencyInventoryMod() {
-        return rangedProficiencyInventoryMod;
+    public int getRangedProficiencyMod() {
+        return rangedProficiencyMod;
     }
 
-    public void setRangedProficiencyInventoryMod(int rangedProficiencyInventoryMod) {
-        this.rangedProficiencyInventoryMod = rangedProficiencyInventoryMod;
+    public void setRangedProficiencyMod(int rangedProficiencyMod) {
+        this.rangedProficiencyMod = rangedProficiencyMod;
     }
 
-    public int getStealthInventoryMod() {
-        return stealthInventoryMod;
+    public int getStealthMod() {
+        return stealthMod;
     }
 
-    public void setStealthInventoryMod(int stealthInventoryMod) {
-        this.stealthInventoryMod = stealthInventoryMod;
+    public void setStealthMod(int stealthMod) {
+        this.stealthMod = stealthMod;
     }
 
-    public int getStealthProficiencyInventoryMod() {
-        return stealthProficiencyInventoryMod;
+    public int getStealthProficiencyMod() {
+        return stealthProficiencyMod;
     }
 
-    public void setStealthProficiencyInventoryMod(int stealthProficiencyInventoryMod) {
-        this.stealthProficiencyInventoryMod = stealthProficiencyInventoryMod;
+    public void setStealthProficiencyMod(int stealthProficiencyMod) {
+        this.stealthProficiencyMod = stealthProficiencyMod;
     }
 
-    public int getAthleticsInventoryMod() {
-        return athleticsInventoryMod;
+    public int getAthleticsMod() {
+        return athleticsMod;
     }
 
-    public void setAthleticsInventoryMod(int athleticsInventoryMod) {
-        this.athleticsInventoryMod = athleticsInventoryMod;
+    public void setAthleticsMod(int athleticsMod) {
+        this.athleticsMod = athleticsMod;
     }
 
-    public int getAthleticsProficiencyInventoryMod() {
-        return athleticsProficiencyInventoryMod;
+    public int getAthleticsProficiencyMod() {
+        return athleticsProficiencyMod;
     }
 
-    public void setAthleticsProficiencyInventoryMod(int athleticsProficiencyInventoryMod) {
-        this.athleticsProficiencyInventoryMod = athleticsProficiencyInventoryMod;
+    public void setAthleticsProficiencyMod(int athleticsProficiencyMod) {
+        this.athleticsProficiencyMod = athleticsProficiencyMod;
     }
 
-    public int getLoreInventoryMod() {
-        return loreInventoryMod;
+    public int getLoreMod() {
+        return loreMod;
     }
 
-    public void setLoreInventoryMod(int loreInventoryMod) {
-        this.loreInventoryMod = loreInventoryMod;
+    public void setLoreMod(int loreMod) {
+        this.loreMod = loreMod;
     }
 
-    public int getLoreProficiencyInventoryMod() {
-        return loreProficiencyInventoryMod;
+    public int getLoreProficiencyMod() {
+        return loreProficiencyMod;
     }
 
-    public void setLoreProficiencyInventoryMod(int loreProficiencyInventoryMod) {
-        this.loreProficiencyInventoryMod = loreProficiencyInventoryMod;
+    public void setLoreProficiencyMod(int loreProficiencyMod) {
+        this.loreProficiencyMod = loreProficiencyMod;
     }
 
-    public int getScoutingInventoryMod() {
-        return scoutingInventoryMod;
+    public int getScoutingMod() {
+        return scoutingMod;
     }
 
-    public void setScoutingInventoryMod(int scoutingInventoryMod) {
-        this.scoutingInventoryMod = scoutingInventoryMod;
+    public void setScoutingMod(int scoutingMod) {
+        this.scoutingMod = scoutingMod;
     }
 
-    public int getScoutingProficiencyInventoryMod() {
-        return scoutingProficiencyInventoryMod;
+    public int getScoutingProficiencyMod() {
+        return scoutingProficiencyMod;
     }
 
-    public void setScoutingProficiencyInventoryMod(int scoutingProficiencyInventoryMod) {
-        this.scoutingProficiencyInventoryMod = scoutingProficiencyInventoryMod;
+    public void setScoutingProficiencyMod(int scoutingProficiencyMod) {
+        this.scoutingProficiencyMod = scoutingProficiencyMod;
     }
 
-    public int getAlchemyInventoryMod() {
-        return alchemyInventoryMod;
+    public int getAlchemyMod() {
+        return alchemyMod;
     }
 
-    public void setAlchemyInventoryMod(int alchemyInventoryMod) {
-        this.alchemyInventoryMod = alchemyInventoryMod;
+    public void setAlchemyMod(int alchemyMod) {
+        this.alchemyMod = alchemyMod;
     }
 
-    public int getAlchemyProficiencyInventoryMod() {
-        return alchemyProficiencyInventoryMod;
+    public int getAlchemyProficiencyMod() {
+        return alchemyProficiencyMod;
     }
 
-    public void setAlchemyProficiencyInventoryMod(int alchemyProficiencyInventoryMod) {
-        this.alchemyProficiencyInventoryMod = alchemyProficiencyInventoryMod;
+    public void setAlchemyProficiencyMod(int alchemyProficiencyMod) {
+        this.alchemyProficiencyMod = alchemyProficiencyMod;
     }
 
-    public int getCraftingInventoryMod() {
-        return craftingInventoryMod;
+    public int getCraftingMod() {
+        return craftingMod;
     }
 
-    public void setCraftingInventoryMod(int craftingInventoryMod) {
-        this.craftingInventoryMod = craftingInventoryMod;
+    public void setCraftingMod(int craftingMod) {
+        this.craftingMod = craftingMod;
     }
 
-    public int getCraftingProficiencyInventoryMod() {
-        return craftingProficiencyInventoryMod;
+    public int getCraftingProficiencyMod() {
+        return craftingProficiencyMod;
     }
 
-    public void setCraftingProficiencyInventoryMod(int craftingProficiencyInventoryMod) {
-        this.craftingProficiencyInventoryMod = craftingProficiencyInventoryMod;
+    public void setCraftingProficiencyMod(int craftingProficiencyMod) {
+        this.craftingProficiencyMod = craftingProficiencyMod;
     }
 
-    public int getArtsInventoryMod() {
-        return artsInventoryMod;
+    public int getArtsMod() {
+        return artsMod;
     }
 
-    public void setArtsInventoryMod(int artsInventoryMod) {
-        this.artsInventoryMod = artsInventoryMod;
+    public void setArtsMod(int artsMod) {
+        this.artsMod = artsMod;
     }
 
-    public int getArtsProficiencyInventoryMod() {
-        return artsProficiencyInventoryMod;
+    public int getArtsProficiencyMod() {
+        return artsProficiencyMod;
     }
 
-    public void setArtsProficiencyInventoryMod(int artsProficiencyInventoryMod) {
-        this.artsProficiencyInventoryMod = artsProficiencyInventoryMod;
+    public void setArtsProficiencyMod(int artsProficiencyMod) {
+        this.artsProficiencyMod = artsProficiencyMod;
     }
 
-    public int getDiplomacyInventoryMod() {
-        return diplomacyInventoryMod;
+    public int getDiplomacyMod() {
+        return diplomacyMod;
     }
 
-    public void setDiplomacyInventoryMod(int diplomacyInventoryMod) {
-        this.diplomacyInventoryMod = diplomacyInventoryMod;
+    public void setDiplomacyMod(int diplomacyMod) {
+        this.diplomacyMod = diplomacyMod;
     }
 
-    public int getDiplomacyProficiencyInventoryMod() {
-        return diplomacyProficiencyInventoryMod;
+    public int getDiplomacyProficiencyMod() {
+        return diplomacyProficiencyMod;
     }
 
-    public void setDiplomacyProficiencyInventoryMod(int diplomacyProficiencyInventoryMod) {
-        this.diplomacyProficiencyInventoryMod = diplomacyProficiencyInventoryMod;
+    public void setDiplomacyProficiencyMod(int diplomacyProficiencyMod) {
+        this.diplomacyProficiencyMod = diplomacyProficiencyMod;
     }
 
-    public int getForceInventoryMod() {
-        return forceInventoryMod;
+    public int getForceMod() {
+        return forceMod;
     }
 
-    public void setForceInventoryMod(int forceInventoryMod) {
-        this.forceInventoryMod = forceInventoryMod;
+    public void setForceMod(int forceMod) {
+        this.forceMod = forceMod;
     }
 
-    public int getShotStrengthInventoryMod() {
-        return shotStrengthInventoryMod;
+    public int getShotStrengthMod() {
+        return shotStrengthMod;
     }
 
-    public void setShotStrengthInventoryMod(int shotStrengthInventoryMod) {
-        this.shotStrengthInventoryMod = shotStrengthInventoryMod;
+    public void setShotStrengthMod(int shotStrengthMod) {
+        this.shotStrengthMod = shotStrengthMod;
     }
 
-    public int getShotDistanceInventoryMod() {
-        return shotDistanceInventoryMod;
+    public int getShotDistanceMod() {
+        return shotDistanceMod;
     }
 
-    public void setShotDistanceInventoryMod(int shotDistanceInventoryMod) {
-        this.shotDistanceInventoryMod = shotDistanceInventoryMod;
+    public void setShotDistanceMod(int shotDistanceMod) {
+        this.shotDistanceMod = shotDistanceMod;
     }
 
-    public int getPowerInventoryMod() {
-        return PowerInventoryMod;
+    public int getPowerMod() {
+        return PowerMod;
     }
 
-    public void setPowerInventoryMod(int powerInventoryMod) {
-        PowerInventoryMod = powerInventoryMod;
+    public void setPowerMod(int powerMod) {
+        PowerMod = powerMod;
     }
 
-    public int getMartialCritInventoryMod() {
-        return martialCritInventoryMod;
+    public int getMartialCritMod() {
+        return martialCritMod;
     }
 
-    public void setMartialCritInventoryMod(int martialCritInventoryMod) {
-        this.martialCritInventoryMod = martialCritInventoryMod;
+    public void setMartialCritMod(int martialCritMod) {
+        this.martialCritMod = martialCritMod;
     }
 
-    public int getRangedCritInventoryMod() {
-        return rangedCritInventoryMod;
+    public int getRangedCritMod() {
+        return rangedCritMod;
     }
 
-    public void setRangedCritInventoryMod(int rangedCritInventoryMod) {
-        this.rangedCritInventoryMod = rangedCritInventoryMod;
+    public void setRangedCritMod(int rangedCritMod) {
+        this.rangedCritMod = rangedCritMod;
     }
 
-    public int getDefenseInventoryMod() {
-        return defenseInventoryMod;
+    public int getDefenseMod() {
+        return defenseMod;
     }
 
-    public void setDefenseInventoryMod(int defenseInventoryMod) {
-        this.defenseInventoryMod = defenseInventoryMod;
+    public void setDefenseMod(int defenseMod) {
+        this.defenseMod = defenseMod;
     }
 
-    public int getResolveInventoryMod() {
-        return resolveInventoryMod;
+    public int getResolveMod() {
+        return resolveMod;
     }
 
-    public void setResolveInventoryMod(int resolveInventoryMod) {
-        this.resolveInventoryMod = resolveInventoryMod;
+    public void setResolveMod(int resolveMod) {
+        this.resolveMod = resolveMod;
     }
 
-    public int getDeflectInventoryMod() {
-        return deflectInventoryMod;
+    public int getDeflectMod() {
+        return deflectMod;
     }
 
-    public void setDeflectInventoryMod(int deflectInventoryMod) {
-        this.deflectInventoryMod = deflectInventoryMod;
+    public void setDeflectMod(int deflectMod) {
+        this.deflectMod = deflectMod;
     }
 
-    public int getMoveInventoryMod() {
-        return moveInventoryMod;
+    public int getMoveMod() {
+        return moveMod;
     }
 
-    public void setMoveInventoryMod(int moveInventoryMod) {
-        this.moveInventoryMod = moveInventoryMod;
+    public void setMoveMod(int moveMod) {
+        this.moveMod = moveMod;
     }
 
-    public int getInitiativeInventoryMod() {
-        return initiativeInventoryMod;
+    public int getInitiativeMod() {
+        return initiativeMod;
     }
 
-    public void setInitiativeInventoryMod(int initiativeInventoryMod) {
-        this.initiativeInventoryMod = initiativeInventoryMod;
+    public void setInitiativeMod(int initiativeMod) {
+        this.initiativeMod = initiativeMod;
     }
 }

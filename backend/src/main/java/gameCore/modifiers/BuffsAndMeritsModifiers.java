@@ -4,377 +4,377 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BuffsAndMeritsModifiers {
-    private int speedBuffsAndMeritsMod;
-    private int assessmentBuffsAndMeritsMod;
-    private int insightBuffsAndMeritsMod;
-    private int spiritBuffsAndMeritsMod;
-    private int coordinationBuffsAndMeritsMod;
-    private int strengthBuffsAndMeritsMod;
-    private int fortitudeBuffsAndMeritsMod;
-    private int wisdomBuffsAndMeritsMod;
-    private int willBuffsAndMeritsMod;
-    private int charismaBuffsAndMeritsMod;
+    private int speedMod;
+    private int assessmentMod;
+    private int insightMod;
+    private int spiritMod;
+    private int coordinationMod;
+    private int strengthMod;
+    private int fortitudeMod;
+    private int wisdomMod;
+    private int willMod;
+    private int presenceMod;
 
-    private int martialBuffsAndMeritsMod;
-    private int martialProficiencyBuffsAndMeritsMod;
-    private int rangedBuffsAndMeritsMod;
-    private int rangedProficiencyBuffsAndMeritsMod;
-    private int stealthBuffsAndMeritsMod;
-    private int stealthProficiencyBuffsAndMeritsMod;
-    private int athleticsBuffsAndMeritsMod;
-    private int athleticsProficiencyBuffsAndMeritsMod;
+    private int martialMod;
+    private int martialProficiencyMod;
+    private int rangedMod;
+    private int rangedProficiencyMod;
+    private int stealthMod;
+    private int stealthProficiencyMod;
+    private int athleticsMod;
+    private int athleticsProficiencyMod;
 
-    private int loreBuffsAndMeritsMod;
-    private int loreProficiencyBuffsAndMeritsMod;
-    private int scoutingBuffsAndMeritsMod;
-    private int scoutingProficiencyBuffsAndMeritsMod;
-    private int alchemyBuffsAndMeritsMod;
-    private int alchemyProficiencyBuffsAndMeritsMod;
-    private int craftingBuffsAndMeritsMod;
-    private int craftingProficiencyBuffsAndMeritsMod;
+    private int loreMod;
+    private int loreProficiencyMod;
+    private int scoutingMod;
+    private int scoutingProficiencyMod;
+    private int alchemyMod;
+    private int alchemyProficiencyMod;
+    private int craftingMod;
+    private int craftingProficiencyMod;
 
-    private int artsBuffsAndMeritsMod;
-    private int artsProficiencyBuffsAndMeritsMod;
-    private int diplomacyBuffsAndMeritsMod;
-    private int diplomacyProficiencyBuffsAndMeritsMod;
+    private int artsMod;
+    private int artsProficiencyMod;
+    private int diplomacyMod;
+    private int diplomacyProficiencyMod;
 
-    private int forceBuffsAndMeritsMod;
-    private int shotStrengthBuffsAndMeritsMod;
-    private int shotDistanceBuffsAndMeritsMod;
-    private int PowerBuffsAndMeritsMod;
-    private int martialCritBuffsAndMeritsMod;
-    private int rangedCritBuffsAndMeritsMod;
-    private int defenseBuffsAndMeritsMod;
-    private int resolveBuffsAndMeritsMod;
-    private int deflectBuffsAndMeritsMod;
-    private int moveBuffsAndMeritsMod;
-    private int initiativeBuffsAndMeritsMod;
+    private int forceMod;
+    private int shotStrengthMod;
+    private int shotDistanceMod;
+    private int PowerMod;
+    private int martialCritMod;
+    private int rangedCritMod;
+    private int defenseMod;
+    private int resolveMod;
+    private int deflectMod;
+    private int moveMod;
+    private int initiativeMod;
 
-    public int getSpeedBuffsAndMeritsMod() {
-        return speedBuffsAndMeritsMod;
+    public int getSpeedMod() {
+        return speedMod;
     }
 
-    public void setSpeedBuffsAndMeritsMod(int speedBuffsAndMeritsMod) {
-        this.speedBuffsAndMeritsMod = speedBuffsAndMeritsMod;
+    public void setSpeedMod(int speedMod) {
+        this.speedMod = speedMod;
     }
 
-    public int getAssessmentBuffsAndMeritsMod() {
-        return assessmentBuffsAndMeritsMod;
+    public int getAssessmentMod() {
+        return assessmentMod;
     }
 
-    public void setAssessmentBuffsAndMeritsMod(int assessmentBuffsAndMeritsMod) {
-        this.assessmentBuffsAndMeritsMod = assessmentBuffsAndMeritsMod;
+    public void setAssessmentMod(int assessmentMod) {
+        this.assessmentMod = assessmentMod;
     }
 
-    public int getInsightBuffsAndMeritsMod() {
-        return insightBuffsAndMeritsMod;
+    public int getInsightMod() {
+        return insightMod;
     }
 
-    public void setInsightBuffsAndMeritsMod(int insightBuffsAndMeritsMod) {
-        this.insightBuffsAndMeritsMod = insightBuffsAndMeritsMod;
+    public void setInsightMod(int insightMod) {
+        this.insightMod = insightMod;
     }
 
-    public int getSpiritBuffsAndMeritsMod() {
-        return spiritBuffsAndMeritsMod;
+    public int getSpiritMod() {
+        return spiritMod;
     }
 
-    public void setSpiritBuffsAndMeritsMod(int spiritBuffsAndMeritsMod) {
-        this.spiritBuffsAndMeritsMod = spiritBuffsAndMeritsMod;
+    public void setSpiritMod(int spiritMod) {
+        this.spiritMod = spiritMod;
     }
 
-    public int getCoordinationBuffsAndMeritsMod() {
-        return coordinationBuffsAndMeritsMod;
+    public int getCoordinationMod() {
+        return coordinationMod;
     }
 
-    public void setCoordinationBuffsAndMeritsMod(int coordinationBuffsAndMeritsMod) {
-        this.coordinationBuffsAndMeritsMod = coordinationBuffsAndMeritsMod;
+    public void setCoordinationMod(int coordinationMod) {
+        this.coordinationMod = coordinationMod;
     }
 
-    public int getStrengthBuffsAndMeritsMod() {
-        return strengthBuffsAndMeritsMod;
+    public int getStrengthMod() {
+        return strengthMod;
     }
 
-    public void setStrengthBuffsAndMeritsMod(int strengthBuffsAndMeritsMod) {
-        this.strengthBuffsAndMeritsMod = strengthBuffsAndMeritsMod;
+    public void setStrengthMod(int strengthMod) {
+        this.strengthMod = strengthMod;
     }
 
-    public int getFortitudeBuffsAndMeritsMod() {
-        return fortitudeBuffsAndMeritsMod;
+    public int getFortitudeMod() {
+        return fortitudeMod;
     }
 
-    public void setFortitudeBuffsAndMeritsMod(int fortitudeBuffsAndMeritsMod) {
-        this.fortitudeBuffsAndMeritsMod = fortitudeBuffsAndMeritsMod;
+    public void setFortitudeMod(int fortitudeMod) {
+        this.fortitudeMod = fortitudeMod;
     }
 
-    public int getWisdomBuffsAndMeritsMod() {
-        return wisdomBuffsAndMeritsMod;
+    public int getWisdomMod() {
+        return wisdomMod;
     }
 
-    public void setWisdomBuffsAndMeritsMod(int wisdomBuffsAndMeritsMod) {
-        this.wisdomBuffsAndMeritsMod = wisdomBuffsAndMeritsMod;
+    public void setWisdomMod(int wisdomMod) {
+        this.wisdomMod = wisdomMod;
     }
 
-    public int getWillBuffsAndMeritsMod() {
-        return willBuffsAndMeritsMod;
+    public int getWillMod() {
+        return willMod;
     }
 
-    public void setWillBuffsAndMeritsMod(int willBuffsAndMeritsMod) {
-        this.willBuffsAndMeritsMod = willBuffsAndMeritsMod;
+    public void setWillMod(int willMod) {
+        this.willMod = willMod;
     }
 
-    public int getCharismaBuffsAndMeritsMod() {
-        return charismaBuffsAndMeritsMod;
+    public int getPresenceMod() {
+        return presenceMod;
     }
 
-    public void setCharismaBuffsAndMeritsMod(int charismaBuffsAndMeritsMod) {
-        this.charismaBuffsAndMeritsMod = charismaBuffsAndMeritsMod;
+    public void setPresenceMod(int presenceMod) {
+        this.presenceMod = presenceMod;
     }
 
-    public int getMartialBuffsAndMeritsMod() {
-        return martialBuffsAndMeritsMod;
+    public int getMartialMod() {
+        return martialMod;
     }
 
-    public void setMartialBuffsAndMeritsMod(int martialBuffsAndMeritsMod) {
-        this.martialBuffsAndMeritsMod = martialBuffsAndMeritsMod;
+    public void setMartialMod(int martialMod) {
+        this.martialMod = martialMod;
     }
 
-    public int getMartialProficiencyBuffsAndMeritsMod() {
-        return martialProficiencyBuffsAndMeritsMod;
+    public int getMartialProficiencyMod() {
+        return martialProficiencyMod;
     }
 
-    public void setMartialProficiencyBuffsAndMeritsMod(int martialProficiencyBuffsAndMeritsMod) {
-        this.martialProficiencyBuffsAndMeritsMod = martialProficiencyBuffsAndMeritsMod;
+    public void setMartialProficiencyMod(int martialProficiencyMod) {
+        this.martialProficiencyMod = martialProficiencyMod;
     }
 
-    public int getRangedBuffsAndMeritsMod() {
-        return rangedBuffsAndMeritsMod;
+    public int getRangedMod() {
+        return rangedMod;
     }
 
-    public void setRangedBuffsAndMeritsMod(int rangedBuffsAndMeritsMod) {
-        this.rangedBuffsAndMeritsMod = rangedBuffsAndMeritsMod;
+    public void setRangedMod(int rangedMod) {
+        this.rangedMod = rangedMod;
     }
 
-    public int getRangedProficiencyBuffsAndMeritsMod() {
-        return rangedProficiencyBuffsAndMeritsMod;
+    public int getRangedProficiencyMod() {
+        return rangedProficiencyMod;
     }
 
-    public void setRangedProficiencyBuffsAndMeritsMod(int rangedProficiencyBuffsAndMeritsMod) {
-        this.rangedProficiencyBuffsAndMeritsMod = rangedProficiencyBuffsAndMeritsMod;
+    public void setRangedProficiencyMod(int rangedProficiencyMod) {
+        this.rangedProficiencyMod = rangedProficiencyMod;
     }
 
-    public int getStealthBuffsAndMeritsMod() {
-        return stealthBuffsAndMeritsMod;
+    public int getStealthMod() {
+        return stealthMod;
     }
 
-    public void setStealthBuffsAndMeritsMod(int stealthBuffsAndMeritsMod) {
-        this.stealthBuffsAndMeritsMod = stealthBuffsAndMeritsMod;
+    public void setStealthMod(int stealthMod) {
+        this.stealthMod = stealthMod;
     }
 
-    public int getStealthProficiencyBuffsAndMeritsMod() {
-        return stealthProficiencyBuffsAndMeritsMod;
+    public int getStealthProficiencyMod() {
+        return stealthProficiencyMod;
     }
 
-    public void setStealthProficiencyBuffsAndMeritsMod(int stealthProficiencyBuffsAndMeritsMod) {
-        this.stealthProficiencyBuffsAndMeritsMod = stealthProficiencyBuffsAndMeritsMod;
+    public void setStealthProficiencyMod(int stealthProficiencyMod) {
+        this.stealthProficiencyMod = stealthProficiencyMod;
     }
 
-    public int getAthleticsBuffsAndMeritsMod() {
-        return athleticsBuffsAndMeritsMod;
+    public int getAthleticsMod() {
+        return athleticsMod;
     }
 
-    public void setAthleticsBuffsAndMeritsMod(int athleticsBuffsAndMeritsMod) {
-        this.athleticsBuffsAndMeritsMod = athleticsBuffsAndMeritsMod;
+    public void setAthleticsMod(int athleticsMod) {
+        this.athleticsMod = athleticsMod;
     }
 
-    public int getAthleticsProficiencyBuffsAndMeritsMod() {
-        return athleticsProficiencyBuffsAndMeritsMod;
+    public int getAthleticsProficiencyMod() {
+        return athleticsProficiencyMod;
     }
 
-    public void setAthleticsProficiencyBuffsAndMeritsMod(int athleticsProficiencyBuffsAndMeritsMod) {
-        this.athleticsProficiencyBuffsAndMeritsMod = athleticsProficiencyBuffsAndMeritsMod;
+    public void setAthleticsProficiencyMod(int athleticsProficiencyMod) {
+        this.athleticsProficiencyMod = athleticsProficiencyMod;
     }
 
-    public int getLoreBuffsAndMeritsMod() {
-        return loreBuffsAndMeritsMod;
+    public int getLoreMod() {
+        return loreMod;
     }
 
-    public void setLoreBuffsAndMeritsMod(int loreBuffsAndMeritsMod) {
-        this.loreBuffsAndMeritsMod = loreBuffsAndMeritsMod;
+    public void setLoreMod(int loreMod) {
+        this.loreMod = loreMod;
     }
 
-    public int getLoreProficiencyBuffsAndMeritsMod() {
-        return loreProficiencyBuffsAndMeritsMod;
+    public int getLoreProficiencyMod() {
+        return loreProficiencyMod;
     }
 
-    public void setLoreProficiencyBuffsAndMeritsMod(int loreProficiencyBuffsAndMeritsMod) {
-        this.loreProficiencyBuffsAndMeritsMod = loreProficiencyBuffsAndMeritsMod;
+    public void setLoreProficiencyMod(int loreProficiencyMod) {
+        this.loreProficiencyMod = loreProficiencyMod;
     }
 
-    public int getScoutingBuffsAndMeritsMod() {
-        return scoutingBuffsAndMeritsMod;
+    public int getScoutingMod() {
+        return scoutingMod;
     }
 
-    public void setScoutingBuffsAndMeritsMod(int scoutingBuffsAndMeritsMod) {
-        this.scoutingBuffsAndMeritsMod = scoutingBuffsAndMeritsMod;
+    public void setScoutingMod(int scoutingMod) {
+        this.scoutingMod = scoutingMod;
     }
 
-    public int getScoutingProficiencyBuffsAndMeritsMod() {
-        return scoutingProficiencyBuffsAndMeritsMod;
+    public int getScoutingProficiencyMod() {
+        return scoutingProficiencyMod;
     }
 
-    public void setScoutingProficiencyBuffsAndMeritsMod(int scoutingProficiencyBuffsAndMeritsMod) {
-        this.scoutingProficiencyBuffsAndMeritsMod = scoutingProficiencyBuffsAndMeritsMod;
+    public void setScoutingProficiencyMod(int scoutingProficiencyMod) {
+        this.scoutingProficiencyMod = scoutingProficiencyMod;
     }
 
-    public int getAlchemyBuffsAndMeritsMod() {
-        return alchemyBuffsAndMeritsMod;
+    public int getAlchemyMod() {
+        return alchemyMod;
     }
 
-    public void setAlchemyBuffsAndMeritsMod(int alchemyBuffsAndMeritsMod) {
-        this.alchemyBuffsAndMeritsMod = alchemyBuffsAndMeritsMod;
+    public void setAlchemyMod(int alchemyMod) {
+        this.alchemyMod = alchemyMod;
     }
 
-    public int getAlchemyProficiencyBuffsAndMeritsMod() {
-        return alchemyProficiencyBuffsAndMeritsMod;
+    public int getAlchemyProficiencyMod() {
+        return alchemyProficiencyMod;
     }
 
-    public void setAlchemyProficiencyBuffsAndMeritsMod(int alchemyProficiencyBuffsAndMeritsMod) {
-        this.alchemyProficiencyBuffsAndMeritsMod = alchemyProficiencyBuffsAndMeritsMod;
+    public void setAlchemyProficiencyMod(int alchemyProficiencyMod) {
+        this.alchemyProficiencyMod = alchemyProficiencyMod;
     }
 
-    public int getCraftingBuffsAndMeritsMod() {
-        return craftingBuffsAndMeritsMod;
+    public int getCraftingMod() {
+        return craftingMod;
     }
 
-    public void setCraftingBuffsAndMeritsMod(int craftingBuffsAndMeritsMod) {
-        this.craftingBuffsAndMeritsMod = craftingBuffsAndMeritsMod;
+    public void setCraftingMod(int craftingMod) {
+        this.craftingMod = craftingMod;
     }
 
-    public int getCraftingProficiencyBuffsAndMeritsMod() {
-        return craftingProficiencyBuffsAndMeritsMod;
+    public int getCraftingProficiencyMod() {
+        return craftingProficiencyMod;
     }
 
-    public void setCraftingProficiencyBuffsAndMeritsMod(int craftingProficiencyBuffsAndMeritsMod) {
-        this.craftingProficiencyBuffsAndMeritsMod = craftingProficiencyBuffsAndMeritsMod;
+    public void setCraftingProficiencyMod(int craftingProficiencyMod) {
+        this.craftingProficiencyMod = craftingProficiencyMod;
     }
 
-    public int getArtsBuffsAndMeritsMod() {
-        return artsBuffsAndMeritsMod;
+    public int getArtsMod() {
+        return artsMod;
     }
 
-    public void setArtsBuffsAndMeritsMod(int artsBuffsAndMeritsMod) {
-        this.artsBuffsAndMeritsMod = artsBuffsAndMeritsMod;
+    public void setArtsMod(int artsMod) {
+        this.artsMod = artsMod;
     }
 
-    public int getArtsProficiencyBuffsAndMeritsMod() {
-        return artsProficiencyBuffsAndMeritsMod;
+    public int getArtsProficiencyMod() {
+        return artsProficiencyMod;
     }
 
-    public void setArtsProficiencyBuffsAndMeritsMod(int artsProficiencyBuffsAndMeritsMod) {
-        this.artsProficiencyBuffsAndMeritsMod = artsProficiencyBuffsAndMeritsMod;
+    public void setArtsProficiencyMod(int artsProficiencyMod) {
+        this.artsProficiencyMod = artsProficiencyMod;
     }
 
-    public int getDiplomacyBuffsAndMeritsMod() {
-        return diplomacyBuffsAndMeritsMod;
+    public int getDiplomacyMod() {
+        return diplomacyMod;
     }
 
-    public void setDiplomacyBuffsAndMeritsMod(int diplomacyBuffsAndMeritsMod) {
-        this.diplomacyBuffsAndMeritsMod = diplomacyBuffsAndMeritsMod;
+    public void setDiplomacyMod(int diplomacyMod) {
+        this.diplomacyMod = diplomacyMod;
     }
 
-    public int getDiplomacyProficiencyBuffsAndMeritsMod() {
-        return diplomacyProficiencyBuffsAndMeritsMod;
+    public int getDiplomacyProficiencyMod() {
+        return diplomacyProficiencyMod;
     }
 
-    public void setDiplomacyProficiencyBuffsAndMeritsMod(int diplomacyProficiencyBuffsAndMeritsMod) {
-        this.diplomacyProficiencyBuffsAndMeritsMod = diplomacyProficiencyBuffsAndMeritsMod;
+    public void setDiplomacyProficiencyMod(int diplomacyProficiencyMod) {
+        this.diplomacyProficiencyMod = diplomacyProficiencyMod;
     }
 
-    public int getForceBuffsAndMeritsMod() {
-        return forceBuffsAndMeritsMod;
+    public int getForceMod() {
+        return forceMod;
     }
 
-    public void setForceBuffsAndMeritsMod(int forceBuffsAndMeritsMod) {
-        this.forceBuffsAndMeritsMod = forceBuffsAndMeritsMod;
+    public void setForceMod(int forceMod) {
+        this.forceMod = forceMod;
     }
 
-    public int getShotStrengthBuffsAndMeritsMod() {
-        return shotStrengthBuffsAndMeritsMod;
+    public int getShotStrengthMod() {
+        return shotStrengthMod;
     }
 
-    public void setShotStrengthBuffsAndMeritsMod(int shotStrengthBuffsAndMeritsMod) {
-        this.shotStrengthBuffsAndMeritsMod = shotStrengthBuffsAndMeritsMod;
+    public void setShotStrengthMod(int shotStrengthMod) {
+        this.shotStrengthMod = shotStrengthMod;
     }
 
-    public int getShotDistanceBuffsAndMeritsMod() {
-        return shotDistanceBuffsAndMeritsMod;
+    public int getShotDistanceMod() {
+        return shotDistanceMod;
     }
 
-    public void setShotDistanceBuffsAndMeritsMod(int shotDistanceBuffsAndMeritsMod) {
-        this.shotDistanceBuffsAndMeritsMod = shotDistanceBuffsAndMeritsMod;
+    public void setShotDistanceMod(int shotDistanceMod) {
+        this.shotDistanceMod = shotDistanceMod;
     }
 
-    public int getPowerBuffsAndMeritsMod() {
-        return PowerBuffsAndMeritsMod;
+    public int getPowerMod() {
+        return PowerMod;
     }
 
-    public void setPowerBuffsAndMeritsMod(int powerBuffsAndMeritsMod) {
-        PowerBuffsAndMeritsMod = powerBuffsAndMeritsMod;
+    public void setPowerMod(int powerMod) {
+        PowerMod = powerMod;
     }
 
-    public int getMartialCritBuffsAndMeritsMod() {
-        return martialCritBuffsAndMeritsMod;
+    public int getMartialCritMod() {
+        return martialCritMod;
     }
 
-    public void setMartialCritBuffsAndMeritsMod(int martialCritBuffsAndMeritsMod) {
-        this.martialCritBuffsAndMeritsMod = martialCritBuffsAndMeritsMod;
+    public void setMartialCritMod(int martialCritMod) {
+        this.martialCritMod = martialCritMod;
     }
 
-    public int getRangedCritBuffsAndMeritsMod() {
-        return rangedCritBuffsAndMeritsMod;
+    public int getRangedCritMod() {
+        return rangedCritMod;
     }
 
-    public void setRangedCritBuffsAndMeritsMod(int rangedCritBuffsAndMeritsMod) {
-        this.rangedCritBuffsAndMeritsMod = rangedCritBuffsAndMeritsMod;
+    public void setRangedCritMod(int rangedCritMod) {
+        this.rangedCritMod = rangedCritMod;
     }
 
-    public int getDefenseBuffsAndMeritsMod() {
-        return defenseBuffsAndMeritsMod;
+    public int getDefenseMod() {
+        return defenseMod;
     }
 
-    public void setDefenseBuffsAndMeritsMod(int defenseBuffsAndMeritsMod) {
-        this.defenseBuffsAndMeritsMod = defenseBuffsAndMeritsMod;
+    public void setDefenseMod(int defenseMod) {
+        this.defenseMod = defenseMod;
     }
 
-    public int getResolveBuffsAndMeritsMod() {
-        return resolveBuffsAndMeritsMod;
+    public int getResolveMod() {
+        return resolveMod;
     }
 
-    public void setResolveBuffsAndMeritsMod(int resolveBuffsAndMeritsMod) {
-        this.resolveBuffsAndMeritsMod = resolveBuffsAndMeritsMod;
+    public void setResolveMod(int resolveMod) {
+        this.resolveMod = resolveMod;
     }
 
-    public int getDeflectBuffsAndMeritsMod() {
-        return deflectBuffsAndMeritsMod;
+    public int getDeflectMod() {
+        return deflectMod;
     }
 
-    public void setDeflectBuffsAndMeritsMod(int deflectBuffsAndMeritsMod) {
-        this.deflectBuffsAndMeritsMod = deflectBuffsAndMeritsMod;
+    public void setDeflectMod(int deflectMod) {
+        this.deflectMod = deflectMod;
     }
 
-    public int getMoveBuffsAndMeritsMod() {
-        return moveBuffsAndMeritsMod;
+    public int getMoveMod() {
+        return moveMod;
     }
 
-    public void setMoveBuffsAndMeritsMod(int moveBuffsAndMeritsMod) {
-        this.moveBuffsAndMeritsMod = moveBuffsAndMeritsMod;
+    public void setMoveMod(int moveMod) {
+        this.moveMod = moveMod;
     }
 
-    public int getInitiativeBuffsAndMeritsMod() {
-        return initiativeBuffsAndMeritsMod;
+    public int getInitiativeMod() {
+        return initiativeMod;
     }
 
-    public void setInitiativeBuffsAndMeritsMod(int initiativeBuffsAndMeritsMod) {
-        this.initiativeBuffsAndMeritsMod = initiativeBuffsAndMeritsMod;
+    public void setInitiativeMod(int initiativeMod) {
+        this.initiativeMod = initiativeMod;
     }
 }
