@@ -1,6 +1,30 @@
 package gameCore.modifiers;
 
+import gameCore.characterSheet.CharacterSheet;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+
+import javax.persistence.*;
+
+@Entity
+@Builder
+@AllArgsConstructor
 public class Modifiers {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Long modifiersId;
+
+    public Modifiers() {}
+
+    public Modifiers(Long modifiersId) {
+        this.modifiersId = modifiersId;
+    }
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "character_id", nullable = false)
+    private CharacterSheet characterSheet;
+
+
     private int speedMod;
     private int assessmentMod;
     private int insightMod;

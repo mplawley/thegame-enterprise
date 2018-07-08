@@ -11,13 +11,13 @@ export class InventoryComponent implements OnInit {
   inventory: Inventory;
 
   getInventory(): void {
-    this.inventoryService.getInventory('10')
+    this.inventoryServiceImpl.getInventory('10')
       .subscribe(inventoryObject => {
         this.inventory = inventoryObject;
       })
   }
 
-  constructor(private inventoryService: InventoryService) { }
+  constructor(private inventoryServiceImpl: InventoryService) { }
 
   ngOnInit() {
     this.getInventory();

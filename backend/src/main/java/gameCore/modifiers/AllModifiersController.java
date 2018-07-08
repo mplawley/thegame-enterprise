@@ -1,15 +1,16 @@
 package gameCore.modifiers;
 
-
-import gameCore.characterSheet.CharacterSheetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
+
 @RestController
-@RequestMapping("/characterSheet")
+@RequestMapping("/modifiers")
 @CrossOrigin
 public class AllModifiersController {
     private final AllModifiersService allModifiersService;
@@ -20,8 +21,9 @@ public class AllModifiersController {
         this.allModifiersService = allModifiersService;
     }
 
-    @GetMapping("/getCharacterSheet")
+    @GetMapping("/getAllModifiers")
     @CrossOrigin(origins = CROSS_ORIGIN_URL)
-    public
-
+    public Map<String, Integer> getAllModifiers() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        return allModifiersService.getAllModifiers();
+    }
 }

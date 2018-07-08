@@ -16,7 +16,7 @@
 //@AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
 //public class CharacterSheetServiceTest {
 //    @Tested
-//    CharacterSheetService characterSheetService;
+//    CharacterSheetServiceImpl characterSheetServiceImpl;
 //
 //    @Autowired
 //    CharacterSheetRepository characterSheetRepository;
@@ -25,7 +25,7 @@
 //
 //    @Test
 //    public void getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository() {
-//        characterSheetService.getCharacterSheet(TEST_CHARACTER_ID);
+//        characterSheetServiceImpl.getCharacterSheet(TEST_CHARACTER_ID);
 //
 //        new Verifications() {{
 //            characterSheetRepository.findByCharacterId(TEST_CHARACTER_ID);

@@ -15,7 +15,7 @@ public class Inventory implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long inventoryId;
 
-    public Inventory() {};
+    public Inventory() {}
 
     public Inventory(Long inventoryId) {
         this.inventoryId = inventoryId;

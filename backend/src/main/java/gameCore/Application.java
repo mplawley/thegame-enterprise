@@ -6,14 +6,12 @@ import gameCore.characterSheet.Proficiency;
 import gameCore.inventory.Inventory;
 import gameCore.inventory.InventoryEntry;
 import gameCore.inventory.InventoryRepository;
-import gameCore.modifiers.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import java.util.Map;
 
 @SpringBootApplication
 public class Application {
@@ -94,20 +92,6 @@ public class Application {
 
             log.info(String.format("Fetching character sheet with playerName: %s", clarissaGladstone.getPlayerName()));
             log.info(repository.findByCharacterName("Clarissa Gladstone").toString());
-        };
-    }
-
-    @Bean
-    public CommandLineRunner testCharacterSheetMods() {
-        return (args) -> {
-            InventoryModifiers inventoryModifiers = new InventoryModifiers();
-            BuffsAndMeritsModifiers buffsAndMeritsModifiers = new BuffsAndMeritsModifiers();
-            VitalsModifiers vitalsModifiers = new VitalsModifiers();
-            VitalsModifiersService vitalsModifiersService = new VitalsModifiersService(vitalsModifiers);
-            AllModifiersService allModifiersService = new AllModifiersService(inventoryModifiers, buffsAndMeritsModifiers, vitalsModifiers, vitalsModifiersService);
-            Map<String, Integer> mapOfValues = allModifiersService.getAllModifiers();
-
-            mapOfValues.forEach((k, v) -> log.info(k + ":" + v.toString()));
         };
     }
 }
