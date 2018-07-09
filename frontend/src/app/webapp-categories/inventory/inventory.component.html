@@ -1,8 +1,81 @@
-<h3>Inventory</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let inventoryItem of inventory" class="col-1-4">
-    <div class="module hero">
-      <h4></h4>
-    </div>
-  </a>
+<h1>Inventory</h1>
+<div id="inventoryDisplay" *ngIf="inventory">
+    <table class="inventoryTable" id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Slot</th>
+            <th>Equipment</th>
+            <th>Quality</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="4">
+            </td>
+          </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+              <td>Melee weapon</td>
+              <td>{{inventory["meleeWeapon"].itemName}}</td>
+              <td>{{inventory["meleeWeapon"].itemQuality}}</td>
+              <td>{{inventory["meleeWeapon"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Ranged weapon</td>
+                <td>{{inventory["rangedWeapon"].itemName}}</td>
+                <td>{{inventory["rangedWeapon"].itemQuality}}</td>
+                <td>{{inventory["rangedWeapon"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Armor</td>
+                <td>{{inventory["armor"].itemName}}</td>
+                <td>{{inventory["armor"].itemQuality}}</td>
+                <td>{{inventory["armor"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Shield</td>
+                <td>{{inventory["shield"].itemName}}</td>
+                <td>{{inventory["shield"].itemQuality}}</td>
+                <td>{{inventory["shield"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td>{{inventory["itemSlot1"].itemName}}</td>
+                <td>{{inventory["itemSlot1"].itemQuality}}</td>
+                <td>{{inventory["itemSlot1"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>{{inventory["itemSlot2"].itemName}}</td>
+                <td>{{inventory["itemSlot2"].itemQuality}}</td>
+                <td>{{inventory["itemSlot2"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>{{inventory["itemSlot3"].itemName}}</td>
+                <td>{{inventory["itemSlot3"].itemQuality}}</td>
+                <td>{{inventory["itemSlot3"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Item 4</td>
+                <td>{{inventory["itemSlot4"].itemName}}</td>
+                <td>{{inventory["itemSlot4"].itemQuality}}</td>
+                <td>{{inventory["itemSlot4"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Item 5</td>
+                <td>{{inventory["itemSlot5"].itemName}}</td>
+                <td>{{inventory["itemSlot5"].itemQuality}}</td>
+                <td>{{inventory["itemSlot5"].itemNotes}}</td>
+            </tr>
+            <tr>
+                <td>Item 6</td>
+                <td>{{inventory["itemSlot6"].itemName}}</td>
+                <td>{{inventory["itemSlot6"].itemQuality}}</td>
+                <td>{{inventory["itemSlot6"].itemNotes}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

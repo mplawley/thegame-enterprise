@@ -12,7 +12,6 @@ import { CharacterService } from '../../services/character.service';
 export class CharacterComponent implements OnInit {
   characterSheet: CharacterSheet;
   proficiencies;
-
   selectedCharacterSheetItem: string;
   currentPerformance: number;
 
@@ -39,7 +38,7 @@ export class CharacterComponent implements OnInit {
   }
 
   getCharacterSheet(): void {
-    this.characterService.getCharacterSheet('10')
+    this.characterService.getCharacterSheet('2')
       .subscribe(characterSheetObject => {
         this.characterSheet = characterSheetObject;
         this.populateProficienciesObject(characterSheetObject);

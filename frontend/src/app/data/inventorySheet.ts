@@ -6,7 +6,12 @@ export class Inventory {
     rangedWeapon: InventoryEntry;
     armor: InventoryEntry;
     shield: InventoryEntry;
-    generalItems: InventoryEntry[];
+    item1: InventoryEntry;
+    item2: InventoryEntry;
+    item3: InventoryEntry;
+    item4: InventoryEntry;
+    item5: InventoryEntry;
+    item6: InventoryEntry;
 }
 
 export class InventoryEntry {
