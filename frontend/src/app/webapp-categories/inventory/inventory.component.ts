@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Inventory, InventoryEntry } from '../../data/inventorySheet';
 import { InventoryService } from '../../services/inventory-service.service';
 import { Modifiers } from '../../data/Modifiers';
+import { Proficiency } from '../../data/characterSheet';
 
 @Component({
   selector: 'app-inventory',
@@ -12,6 +13,7 @@ export class InventoryComponent implements OnInit {
   inventory: Inventory;
   inventoryId: string;
   modifiers: Modifiers;
+  proficiencies: string[] = ["Apprentice", "Journeyman", "Master", "Grandmaster", "Legendary", "Epic"];
 
   getInventory(): void {
     this.inventoryService.getInventory(this.inventoryId)

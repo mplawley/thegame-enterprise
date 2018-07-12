@@ -1,12 +1,13 @@
 <h1>Inventory</h1>
+
 <div id="inventoryDisplay" *ngIf="inventory">
-    <table class="inventoryTable" id="inventoryTable">
+    <table class="container" id="inventoryTable">
         <thead>
           <tr>
-            <th>Slot</th>
-            <th>Equipment</th>
-            <th>Quality</th>
-            <th>Notes</th>
+            <th><h1>Slot</h1></th>
+            <th><h1>Equipment</h1></th>
+            <th><h1>Quality</h1></th>
+            <th><h1>Notes</h1></th>
           </tr>
         </thead>
         <tfoot>
@@ -19,61 +20,142 @@
             <tr>
               <td>Melee weapon</td>
               <td>{{inventory["meleeWeapon"].itemName}}</td>
-              <td>{{inventory["meleeWeapon"].itemQuality}}</td>
+              <td>{{inventory["meleeWeapon"].itemQuality}}
+                <select>
+                    <option *ngFor="let item of proficiencies; let i = index"
+                    [class.selected]= "inventory['meleeWeapon'].itemQuality | titlecase"
+                    [selected]="item == (inventory['meleeWeapon'].itemQuality | titlecase) ? true : false" >
+                        {{item}}
+                    </option>
+                </select>
+              </td>
               <td>{{inventory["meleeWeapon"].itemNotes}}</td>
             </tr>
+
             <tr>
                 <td>Ranged weapon</td>
                 <td>{{inventory["rangedWeapon"].itemName}}</td>
-                <td>{{inventory["rangedWeapon"].itemQuality}}</td>
+                <td>{{inventory["rangedWeapon"].itemQuality}}
+                    <select>
+                        <option *ngFor="let item of proficiencies; let i = index"
+                        [class.selected]= "inventory['rangedWeapon'].itemQuality | titlecase"
+                        [selected]="item == (inventory['rangedWeapon'].itemQuality | titlecase) ? true : false" >
+                            {{item}}
+                        </option>
+                    </select>
+                </td>
                 <td>{{inventory["rangedWeapon"].itemNotes}}</td>
             </tr>
             <tr>
                 <td>Armor</td>
                 <td>{{inventory["armor"].itemName}}</td>
-                <td>{{inventory["armor"].itemQuality}}</td>
+                <td>{{inventory["armor"].itemQuality}}
+                        <select>
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['armor'].itemQuality | titlecase"
+                            [selected]="item == (inventory['armor'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
                 <td>{{inventory["armor"].itemNotes}}</td>
             </tr>
             <tr>
                 <td>Shield</td>
                 <td>{{inventory["shield"].itemName}}</td>
-                <td>{{inventory["shield"].itemQuality}}</td>
+                <td>{{inventory["shield"].itemQuality}}
+                    <select>
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['shield'].itemQuality | titlecase"
+                            [selected]="item == (inventory['shield'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                    </select>
+                </td>
                 <td>{{inventory["shield"].itemNotes}}</td>
             </tr>
             <tr>
                 <td>Item 1</td>
                 <td>{{inventory["itemSlot1"].itemName}}</td>
-                <td>{{inventory["itemSlot1"].itemQuality}}</td>
+                <td>{{inventory["itemSlot1"].itemQuality}}
+                        <select>
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot1'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot1'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
                 <td>{{inventory["itemSlot1"].itemNotes}}</td>
             </tr>
             <tr>
                 <td>Item 2</td>
                 <td>{{inventory["itemSlot2"].itemName}}</td>
-                <td>{{inventory["itemSlot2"].itemQuality}}</td>
+                <td>{{inventory["itemSlot2"].itemQuality}}
+                        <select>
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot2'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot2'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
                 <td>{{inventory["itemSlot2"].itemNotes}}</td>
             </tr>
             <tr>
                 <td>Item 3</td>
                 <td>{{inventory["itemSlot3"].itemName}}</td>
-                <td>{{inventory["itemSlot3"].itemQuality}}</td>
+                <td>{{inventory["itemSlot3"].itemQuality}}
+                        <select>
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot3'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot3'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
                 <td>{{inventory["itemSlot3"].itemNotes}}</td>
             </tr>
             <tr>
                 <td>Item 4</td>
                 <td>{{inventory["itemSlot4"].itemName}}</td>
-                <td>{{inventory["itemSlot4"].itemQuality}}</td>
+                <td>{{inventory["itemSlot4"].itemQuality}}
+                        <select>
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot4'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot4'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
                 <td>{{inventory["itemSlot4"].itemNotes}}</td>
             </tr>
             <tr>
                 <td>Item 5</td>
                 <td>{{inventory["itemSlot5"].itemName}}</td>
-                <td>{{inventory["itemSlot5"].itemQuality}}</td>
+                <td>{{inventory["itemSlot5"].itemQuality}}
+                        <select>
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot5'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot5'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
                 <td>{{inventory["itemSlot5"].itemNotes}}</td>
             </tr>
             <tr>
                 <td>Item 6</td>
                 <td>{{inventory["itemSlot6"].itemName}}</td>
-                <td>{{inventory["itemSlot6"].itemQuality}}</td>
+                <td>{{inventory["itemSlot6"].itemQuality}}
+                        <select>
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot6'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot6'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
                 <td>{{inventory["itemSlot6"].itemNotes}}</td>
             </tr>
         </tbody>
