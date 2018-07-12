@@ -21,7 +21,8 @@
               <td>Melee weapon</td>
               <td>{{inventory["meleeWeapon"].itemName}}</td>
               <td>{{inventory["meleeWeapon"].itemQuality}}
-                <select>
+                <select id="meleeWeaponSelect"
+                    (change)="onItemQualityChange($event)">
                     <option *ngFor="let item of proficiencies; let i = index"
                     [class.selected]= "inventory['meleeWeapon'].itemQuality | titlecase"
                     [selected]="item == (inventory['meleeWeapon'].itemQuality | titlecase) ? true : false" >
@@ -36,7 +37,8 @@
                 <td>Ranged weapon</td>
                 <td>{{inventory["rangedWeapon"].itemName}}</td>
                 <td>{{inventory["rangedWeapon"].itemQuality}}
-                    <select>
+                    <select id="rangedWeaponSelect"
+                    (change)="onItemQualityChange($event)">
                         <option *ngFor="let item of proficiencies; let i = index"
                         [class.selected]= "inventory['rangedWeapon'].itemQuality | titlecase"
                         [selected]="item == (inventory['rangedWeapon'].itemQuality | titlecase) ? true : false" >
@@ -50,7 +52,8 @@
                 <td>Armor</td>
                 <td>{{inventory["armor"].itemName}}</td>
                 <td>{{inventory["armor"].itemQuality}}
-                        <select>
+                        <select id="armorSelect"
+                        (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['armor'].itemQuality | titlecase"
                             [selected]="item == (inventory['armor'].itemQuality | titlecase) ? true : false" >
@@ -64,7 +67,8 @@
                 <td>Shield</td>
                 <td>{{inventory["shield"].itemName}}</td>
                 <td>{{inventory["shield"].itemQuality}}
-                    <select>
+                    <select id="shieldSelect"
+                    (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['shield'].itemQuality | titlecase"
                             [selected]="item == (inventory['shield'].itemQuality | titlecase) ? true : false" >
@@ -78,7 +82,8 @@
                 <td>Item 1</td>
                 <td>{{inventory["itemSlot1"].itemName}}</td>
                 <td>{{inventory["itemSlot1"].itemQuality}}
-                        <select>
+                        <select id="item1Select"
+                        (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot1'].itemQuality | titlecase"
                             [selected]="item == (inventory['itemSlot1'].itemQuality | titlecase) ? true : false" >
@@ -92,7 +97,8 @@
                 <td>Item 2</td>
                 <td>{{inventory["itemSlot2"].itemName}}</td>
                 <td>{{inventory["itemSlot2"].itemQuality}}
-                        <select>
+                        <select id="item2Select"
+                        (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot2'].itemQuality | titlecase"
                             [selected]="item == (inventory['itemSlot2'].itemQuality | titlecase) ? true : false" >
@@ -106,7 +112,8 @@
                 <td>Item 3</td>
                 <td>{{inventory["itemSlot3"].itemName}}</td>
                 <td>{{inventory["itemSlot3"].itemQuality}}
-                        <select>
+                        <select id="item3Select"
+                        (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot3'].itemQuality | titlecase"
                             [selected]="item == (inventory['itemSlot3'].itemQuality | titlecase) ? true : false" >
@@ -120,7 +127,8 @@
                 <td>Item 4</td>
                 <td>{{inventory["itemSlot4"].itemName}}</td>
                 <td>{{inventory["itemSlot4"].itemQuality}}
-                        <select>
+                        <select id="item4Select"
+                        (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot4'].itemQuality | titlecase"
                             [selected]="item == (inventory['itemSlot4'].itemQuality | titlecase) ? true : false" >
@@ -134,7 +142,8 @@
                 <td>Item 5</td>
                 <td>{{inventory["itemSlot5"].itemName}}</td>
                 <td>{{inventory["itemSlot5"].itemQuality}}
-                        <select>
+                        <select id="item5Select"
+                        (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot5'].itemQuality | titlecase"
                             [selected]="item == (inventory['itemSlot5'].itemQuality | titlecase) ? true : false" >
@@ -148,7 +157,8 @@
                 <td>Item 6</td>
                 <td>{{inventory["itemSlot6"].itemName}}</td>
                 <td>{{inventory["itemSlot6"].itemQuality}}
-                        <select>
+                        <select id="item6Select"
+                        (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot6'].itemQuality | titlecase"
                             [selected]="item == (inventory['itemSlot6'].itemQuality | titlecase) ? true : false" >

@@ -22,6 +22,12 @@ export class InventoryComponent implements OnInit {
       })
   }
 
+  onItemQualityChange(event) {
+    console.log(event.target.id);
+    const newItemQualitySelection = event.target.value;
+    console.log(newItemQualitySelection);
+  }
+
   constructor(private inventoryService: InventoryService) { }
 
   ngOnInit() {

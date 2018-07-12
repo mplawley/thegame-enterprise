@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ef15c94-5eb6-42dc-bf1e-39c9a6c17d88" name="Default" comment="" />
+    <list default="true" id="1ef15c94-5eb6-42dc-bf1e-39c9a6c17d88" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.css" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.ts" />
+    </list>
     <ignored path="$PROJECT_DIR$/thegame/target/" />
     <ignored path="$PROJECT_DIR$/backend/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
