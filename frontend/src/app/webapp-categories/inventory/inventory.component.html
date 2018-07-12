@@ -19,7 +19,7 @@
         <tbody>
             <tr>
               <td>Melee weapon</td>
-              <td>{{inventory["meleeWeapon"].itemName}}</td>
+              <td><input [(ngModel)] = "inventory['meleeWeapon'].itemName" /></td>
               <td>{{inventory["meleeWeapon"].itemQuality}}
                 <select id="meleeWeaponSelect"
                     (change)="onItemQualityChange($event)">
@@ -35,7 +35,7 @@
 
             <tr>
                 <td>Ranged weapon</td>
-                <td>{{inventory["rangedWeapon"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['rangedWeapon'].itemName" /></td>
                 <td>{{inventory["rangedWeapon"].itemQuality}}
                     <select id="rangedWeaponSelect"
                     (change)="onItemQualityChange($event)">
@@ -50,7 +50,7 @@
             </tr>
             <tr>
                 <td>Armor</td>
-                <td>{{inventory["armor"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['armor'].itemName" /> </td>
                 <td>{{inventory["armor"].itemQuality}}
                         <select id="armorSelect"
                         (change)="onItemQualityChange($event)">
@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td>Shield</td>
-                <td>{{inventory["shield"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['shield'].itemName" /></td>
                 <td>{{inventory["shield"].itemQuality}}
                     <select id="shieldSelect"
                     (change)="onItemQualityChange($event)">
@@ -80,9 +80,9 @@
             </tr>
             <tr>
                 <td>Item 1</td>
-                <td>{{inventory["itemSlot1"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot1'].itemName" /></td>
                 <td>{{inventory["itemSlot1"].itemQuality}}
-                        <select id="item1Select"
+                        <select id="itemSlot1Select"
                         (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot1'].itemQuality | titlecase"
@@ -95,9 +95,9 @@
             </tr>
             <tr>
                 <td>Item 2</td>
-                <td>{{inventory["itemSlot2"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot2'].itemName" /></td>
                 <td>{{inventory["itemSlot2"].itemQuality}}
-                        <select id="item2Select"
+                        <select id="itemSlot2Select"
                         (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot2'].itemQuality | titlecase"
@@ -110,9 +110,9 @@
             </tr>
             <tr>
                 <td>Item 3</td>
-                <td>{{inventory["itemSlot3"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot3'].itemName" /></td>
                 <td>{{inventory["itemSlot3"].itemQuality}}
-                        <select id="item3Select"
+                        <select id="itemSlot3Select"
                         (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot3'].itemQuality | titlecase"
@@ -125,9 +125,9 @@
             </tr>
             <tr>
                 <td>Item 4</td>
-                <td>{{inventory["itemSlot4"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot4'].itemName" /></td>
                 <td>{{inventory["itemSlot4"].itemQuality}}
-                        <select id="item4Select"
+                        <select id="itemSlot4Select"
                         (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot4'].itemQuality | titlecase"
@@ -140,9 +140,9 @@
             </tr>
             <tr>
                 <td>Item 5</td>
-                <td>{{inventory["itemSlot5"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot5'].itemName" /></td>
                 <td>{{inventory["itemSlot5"].itemQuality}}
-                        <select id="item5Select"
+                        <select id="itemSlot5Select"
                         (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot5'].itemQuality | titlecase"
@@ -155,9 +155,9 @@
             </tr>
             <tr>
                 <td>Item 6</td>
-                <td>{{inventory["itemSlot6"].itemName}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot6'].itemName" /></td>
                 <td>{{inventory["itemSlot6"].itemQuality}}
-                        <select id="item6Select"
+                        <select id="itemSlot6Select"
                         (change)="onItemQualityChange($event)">
                             <option *ngFor="let item of proficiencies; let i = index"
                             [class.selected]= "inventory['itemSlot6'].itemQuality | titlecase"

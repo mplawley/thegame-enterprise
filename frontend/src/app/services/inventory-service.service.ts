@@ -18,6 +18,7 @@ const httpOptions = {
 export class InventoryService {
 
   private inventoryUrl = 'http://localhost:8080/inventory/getInventory';
+  private updateInventoryUrl = 'http://localhost:8080/inventory/updateInventory';
 
   getInventory(inventoryId: string): Observable<any> {
     inventoryId = inventoryId.trim();
@@ -26,6 +27,14 @@ export class InventoryService {
       .pipe(
         tap(inventoryObject => this.log(`Fetched inventory with inventoryId=${inventoryId}`)),
         catchError(this.handleError('getInventory', []))
+      );
+  }
+
+  /** PUT: update the inventory on the server. Returns the updated inventory upon success. */
+  updateInventory(inventory: Inventory): Observable<Inventory> {
+    return this.http.put<Inventory>(this.updateInventoryUrl, inventory, httpOptions)
+      .pipe(
+        catchError(this.handleError('updateInventory', inventory))
       );
   }
   

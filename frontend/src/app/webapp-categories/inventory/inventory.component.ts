@@ -22,10 +22,19 @@ export class InventoryComponent implements OnInit {
       })
   }
 
+  updateInventory(): void {
+    this.inventoryService.updateInventory(this.inventory)
+      .subscribe(inventoryObject => {
+        this.inventory = inventoryObject;
+        // this.getInventory(); //update UI after the update to the server
+      })
+  }
+
   onItemQualityChange(event) {
-    console.log(event.target.id);
+    let itemWhoseQualityChanged = event.target.id.replace('Select', '');
     const newItemQualitySelection = event.target.value;
-    console.log(newItemQualitySelection);
+    this.inventory[itemWhoseQualityChanged].itemQuality = newItemQualitySelection;
+    this.updateInventory();
   }
 
   constructor(private inventoryService: InventoryService) { }
