@@ -3,6 +3,7 @@ import { Inventory, InventoryEntry } from '../../data/inventorySheet';
 import { InventoryService } from '../../services/inventory-service.service';
 import { Modifiers } from '../../data/Modifiers';
 import { Proficiency } from '../../data/characterSheet';
+import { CharacterService } from '../../services/character.service';
 
 @Component({
   selector: 'app-inventory',
@@ -23,6 +24,7 @@ export class InventoryComponent implements OnInit {
   }
 
   updateInventory(): void {
+    this.inventory.inventoryId = 1;
     this.inventoryService.updateInventory(this.inventory)
       .subscribe(inventoryObject => {
         this.inventory = inventoryObject;
@@ -33,7 +35,7 @@ export class InventoryComponent implements OnInit {
   onItemQualityChange(event) {
     let itemWhoseQualityChanged = event.target.id.replace('Select', '');
     const newItemQualitySelection = event.target.value;
-    this.inventory[itemWhoseQualityChanged].itemQuality = newItemQualitySelection;
+    this.inventory[itemWhoseQualityChanged].itemQuality = newItemQualitySelection.toUpperCase();
     this.updateInventory();
   }
 

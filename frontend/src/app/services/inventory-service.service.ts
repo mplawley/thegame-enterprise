@@ -4,6 +4,7 @@ import { MessageService } from './message.service';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Inventory } from '../data/inventorySheet';
+import { CharacterSheet } from '../data/characterSheet';
 
 const httpOptions = {
   headers: new HttpHeaders({

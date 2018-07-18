@@ -10,7 +10,7 @@ public class CharacterSheetControllerTest {
     CharacterSheetController characterSheetController;
 
     @Injectable
-    CharacterSheetServiceImpl characterSheetServiceImpl;
+    CharacterSheetService characterSheetService;
 
     private final Long TEST_CHARACTER_ID = 123L;
 
@@ -19,7 +19,7 @@ public class CharacterSheetControllerTest {
         characterSheetController.getCharacterSheet(TEST_CHARACTER_ID);
 
         new Verifications() {{
-            characterSheetServiceImpl.getCharacterSheet(TEST_CHARACTER_ID);
+            characterSheetService.getCharacterSheet(TEST_CHARACTER_ID);
             times = 1;
         }};
     }
@@ -32,7 +32,7 @@ public class CharacterSheetControllerTest {
         characterSheetController.updateCharacterSheet(testCharacterSheet);
 
         new Verifications() {{
-            characterSheetServiceImpl.updateCharacterSheet(testCharacterSheet);
+            characterSheetService.updateCharacterSheet(testCharacterSheet);
             times = 1;
         }};
     }
