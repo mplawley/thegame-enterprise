@@ -16,8 +16,8 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class BioService {
-  bioUpdateUrl = "";
-  getBioUrl = "";
+  bioUpdateUrl = "http://localhost:8080/bio/updateBio";
+  getBioUrl = "http://localhost:8080/bio/getBio";
 
   updateBio(bio: Bio): Observable<Bio> {
     return this.http.put<Bio>(this.bioUpdateUrl, bio, httpOptions)
