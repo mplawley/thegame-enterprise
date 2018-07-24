@@ -29,6 +29,7 @@ export class BioComponent implements OnInit {
   constructor(private bioService: BioService) { }
 
   ngOnInit() {
+    this.getBio();
   }
 
 }
