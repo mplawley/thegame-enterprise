@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef15c94-5eb6-42dc-bf1e-39c9a6c17d88" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/angular.json" afterPath="$PROJECT_DIR$/frontend/angular.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/thegame/target/" />
     <ignored path="$PROJECT_DIR$/backend/target/" />
@@ -14,214 +13,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/thegame_enterprise$CharacterSheetControllerTest_saveVitalsWithValidInput.coverage" NAME="CharacterSheetControllerTest.saveVitalsWithValidInput Coverage Results" MODIFIED="1532184202754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gameCore.characterSheet.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/thegame_enterprise$CharacterSheetControllerTest_getVitalsWithValidCharacterId.coverage" NAME="CharacterSheetControllerTest.getVitalsWithValidCharacterId Coverage Results" MODIFIED="1532184342909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gameCore.characterSheet.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/thegame_enterprise$CharacterSheetControllerTest.coverage" NAME="CharacterSheetControllerTest Coverage Results" MODIFIED="1532184599009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gameCore.characterSheet.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/thegame_enterprise$CharacterSheetControllerTest_saveEntryTest.coverage" NAME="CharacterSheetControllerTest.saveEntryTest Coverage Results" MODIFIED="1532184586006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gameCore.characterSheet.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/thegame_enterprise$CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository.coverage" NAME="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository Coverage Results" MODIFIED="1530669615877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gameCore.characterSheet.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/thegame_enterprise$CharacterSheetControllerTest_getStatsWithValidCharacterId.coverage" NAME="CharacterSheetControllerTest.getStatsWithValidCharacterId Coverage Results" MODIFIED="1532184480032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gameCore.characterSheet.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CharacterSheetController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java">
+      <file leaf-file-name="InventoryController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2502#2503#0" expanded="true" />
-                <element signature="e#2555#2556#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharacterSheetRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="67" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharacterSheetService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="43" column="82" lean-forward="false" selection-start-line="43" selection-start-column="82" selection-end-line="43" selection-end-column="82" />
+            <state relative-caret-position="405">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CharacterSheet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java">
+      <file leaf-file-name="InventoryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1530583879156" expanded="true" signature="494:585" ph="{...}" />
-                <marker date="1530583879156" expanded="false" signature="1998:2009" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2028:2034" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2084:2095" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2126:2132" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2167:2178" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2196:2202" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2252:2263" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2292:2298" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2336:2347" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2368:2374" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2430:2441" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2476:2482" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2519:2530" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2550:2556" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2610:2621" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2654:2660" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2698:2709" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2729:2735" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2790:2801" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2834:2840" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2877:2888" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="2907:2913" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="2966:2977" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3008:3014" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3047:3058" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3073:3079" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3124:3135" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3158:3164" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3206:3217" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3241:3247" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3310:3321" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3362:3368" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3406:3417" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3437:3443" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3498:3509" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3542:3548" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3579:3590" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3603:3609" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3650:3661" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3680:3686" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3722:3733" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3751:3757" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3808:3819" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3848:3854" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3887:3898" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3913:3919" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="3964:3975" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="3998:4004" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4036:4047" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4061:4067" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4110:4121" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4142:4148" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4186:4197" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4217:4223" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4278:4289" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4322:4328" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4362:4373" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4389:4395" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4442:4453" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4478:4484" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4519:4530" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4547:4553" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4602:4613" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4640:4646" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4678:4689" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4703:4709" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4752:4763" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4784:4790" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4820:4831" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4843:4849" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4888:4899" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4916:4922" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="4956:4967" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="4983:4989" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5036:5047" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5072:5078" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5111:5122" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5137:5143" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5188:5199" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5222:5228" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5276:5287" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5313:5319" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5390:5401" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5446:5452" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5484:5495" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5509:5515" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5558:5569" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5590:5596" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5643:5654" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5679:5685" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5754:5765" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5808:5814" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5849:5860" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5877:5883" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="5932:5943" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="5970:5976" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6026:6037" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6065:6071" ph=" }" />
-                <marker date="1530583879156" expanded="true" signature="6147:6212" ph="{...}" />
-                <marker date="1530583879156" expanded="false" signature="6245:6256" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6271:6277" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6322:6333" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6356:6362" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6410:6421" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6447:6453" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6524:6535" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6580:6586" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6616:6627" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6639:6645" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6684:6695" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6712:6718" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6763:6774" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6797:6803" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6868:6879" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6918:6924" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="6958:6969" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="6985:6991" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="7038:7049" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7074:7080" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="7129:7140" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7167:7173" ph=" }" />
-                <marker date="1530583879156" expanded="true" signature="7247:7310" ph="{...}" />
-                <marker date="1530583879156" expanded="false" signature="7343:7354" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7369:7375" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="7420:7431" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7454:7460" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="7508:7519" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7545:7551" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="7622:7633" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7678:7684" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="7718:7729" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7745:7751" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="7798:7809" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7834:7840" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="7889:7900" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="7927:7933" ph=" }" />
-                <marker date="1530583879156" expanded="true" signature="8007:8070" ph="{...}" />
-                <marker date="1530583879156" expanded="false" signature="8100:8111" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="8123:8129" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="8168:8179" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="8196:8202" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="8247:8258" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="8281:8287" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="8352:8363" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="8402:8408" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="8443:8454" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="8471:8477" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="8526:8537" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="8564:8570" ph=" }" />
-                <marker date="1530583879156" expanded="false" signature="8620:8631" ph=" { " />
-                <marker date="1530583879156" expanded="false" signature="8659:8665" ph=" }" />
-                <marker date="1530583879156" expanded="true" signature="8741:8806" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="47" column="48" lean-forward="false" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+            <state relative-caret-position="60">
+              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -232,21 +60,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>userrepository</find>
-      <find>setcharac</find>
-      <find>userRepository</find>
-      <find>hibernate</find>
-      <find>spring-boot-maven</find>
-      <find>@RestController</find>
-      <find>alchemy</find>
-      <find>hello</find>
       <find>enablejpa</find>
       <find>WebSecurityConfig</find>
       <find>security</find>
@@ -260,7 +81,29 @@
       <find>hbm2ddl</find>
       <find>spring.jpa.hibernate.ddl-auto</find>
       <find>craftingProficiency</find>
+      <find>junit</find>
+      <find>CharacterSheetServiceTest</find>
+      <find>getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository</find>
+      <find>repository</find>
+      <find>inventory</find>
+      <find>profici</find>
+      <find>@GeneratedValue(strategy = GenerationType.IDENTITY)</find>
+      <find>: number;</find>
+      <find>log.info</find>
+      <find>BuffsAndMerits</find>
+      <find>Inventory</find>
+      <find>presence</find>
+      <find>charisma</find>
+      <find>inventorymodifiersservice</find>
+      <find>proficiency</find>
+      <find>clarissa gladstone</find>
+      <find>characterid</find>
     </findStrings>
+    <replaceStrings>
+      <replace>;</replace>
+      <replace>BuffsAndMerits</replace>
+      <replace>presence</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/backend/src/main/java/gameCore</dir>
     </dirStrings>
@@ -276,22 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/thegame/src/main/java/hello/Character.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStats.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterRepository.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStatsRepository.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/MainController.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/Character.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CoolCarController.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterSheetRepository.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/Application.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/WebApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterSheetController.java" />
-        <option value="$PROJECT_DIR$/thegame/pom.xml" />
-        <option value="$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterSheet.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetVitals.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetVitalsRepository.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/CharacterSheetVitalsController.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitalsRepository.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitals.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetVitalsController.java" />
@@ -299,18 +126,50 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/WebConfig.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java" />
         <option value="$PROJECT_DIR$/thegame-enterprise-db.spf" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java" />
-        <option value="$PROJECT_DIR$/backend/pom.xml" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetControllerTest.groovy" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetControllerTest.java" />
+        <option value="$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/WebMockTest.java" />
+        <option value="$PROJECT_DIR$/backend/src/it/java/gameCore/characterSheet/WebMockTest.java" />
         <option value="$PROJECT_DIR$/backend/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryEntry.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/utils/Modifiers.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/utils/InventoryModifiers.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/utils/BuffsAndMeritsModifiers.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/utils/VitalsModifiers.java" />
+        <option value="$PROJECT_DIR$/backend/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/InventoryModifiers.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/BuffsAndMeritsModifiers.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/VitalsModifiers.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/Modifiers.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/Inventory.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/AllModifiersService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/AllModifiersController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/BuffsAndMeritsModifiersService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/InventoryModifiersService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/VitalsModifiersService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/ModifiersRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/AllModifiersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/InventoryModifiersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/BuffsAndMeritsModifiersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/VitalsModifiersServiceImpl.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryController.java" />
+        <option value="$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/CharacterSheetControllerTest.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/CharacterSheetServiceTest.java" />
       </list>
     </option>
   </component>
@@ -369,8 +228,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -428,15 +288,30 @@
               <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thegame-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thegame-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thegame-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="characterSheet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,7 +320,27 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet" />
+    <property name="editorconfig.notification" value="View&#10;" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="gameCore.characterSheet" />
+      <recent name="java.gameCore.characterSheet" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src/it/java/gameCore/characterSheet" />
+      <recent name="$PROJECT_DIR$/backend/src/it" />
+      <recent name="$PROJECT_DIR$/backend/test/main/java/gameCore/characterSheet" />
+      <recent name="$PROJECT_DIR$/backend/test/main/java/gameCore" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -460,6 +355,131 @@
     </option>
   </component>
   <component name="RunManager" selected="Remote.Remote debugger for localhost">
+    <configuration name="CharacterSheetControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gameCore.characterSheet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backend" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gameCore.characterSheet" />
+      <option name="MAIN_CLASS_NAME" value="gameCore.characterSheet.CharacterSheetControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CharacterSheetControllerTest.getStatsWithValidCharacterId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gameCore.characterSheet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backend" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gameCore.characterSheet" />
+      <option name="MAIN_CLASS_NAME" value="gameCore.characterSheet.CharacterSheetControllerTest" />
+      <option name="METHOD_NAME" value="getStatsWithValidCharacterId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CharacterSheetControllerTest.saveEntryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gameCore.characterSheet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backend" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gameCore.characterSheet" />
+      <option name="MAIN_CLASS_NAME" value="gameCore.characterSheet.CharacterSheetControllerTest" />
+      <option name="METHOD_NAME" value="saveEntryTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CharacterSheetServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gameCore.characterSheet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backend" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gameCore.characterSheet" />
+      <option name="MAIN_CLASS_NAME" value="gameCore.characterSheet.CharacterSheetServiceTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gameCore.characterSheet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backend" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gameCore.characterSheet" />
+      <option name="MAIN_CLASS_NAME" value="gameCore.characterSheet.CharacterSheetServiceTest" />
+      <option name="METHOD_NAME" value="getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="Remote debugger for localhost" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -552,6 +572,23 @@
       <properties />
       <listeners />
     </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Remote.Remote debugger for localhost" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CharacterSheetControllerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CharacterSheetControllerTest.getStatsWithValidCharacterId" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CharacterSheetControllerTest.saveEntryTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CharacterSheetServiceTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CharacterSheetServiceTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CharacterSheetControllerTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CharacterSheetControllerTest.saveEntryTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CharacterSheetControllerTest.getStatsWithValidCharacterId" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -566,6 +603,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CharacterSheetServiceTest - 2018.07.21 at 10h 59m 42s.xml">
+      <configuration name="CharacterSheetServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 10h 54m 18s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 10h 55m 42s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 10h 55m 54s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 10h 56m 32s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 10h 57m 13s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 10h 58m 49s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 11h 00m 14s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 11h 01m 26s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterSheetServiceTest_getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository - 2018.07.21 at 11h 02m 13s.xml">
+      <configuration name="CharacterSheetServiceTest.getCharacterSheetByIdCallsFindByCharacterIdOnCharacterSheetRepository" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
@@ -577,18 +646,17 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26800978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34067085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2741148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2832723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.418239" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -597,6 +665,8 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -604,131 +674,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="59" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="inventory.inventoryId" />
+      </configuration>
+      <configuration name="JUnit">
+        <watch expression="mockedCharacterSheet.characterId" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterSheetRepository.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/Proficiency.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/MainController.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStats.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStatsRepository.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/User.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/Proficiency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/UserRepository.java" />
-    <entry file="file://$PROJECT_DIR$/backend/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/MainController.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.7.RELEASE/spring-data-commons-2.0.7.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStatsRepository.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CharacterStats.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/CoolCarController.java" />
-    <entry file="file://$PROJECT_DIR$/thegame/src/main/java/gameCore/WebApplicationConfig.java" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/bio/bio.component.ts" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/character/character.component.ts" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/mock-enemies.ts" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/power.ts" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/power.service.spec.ts" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/characterSheet.ts" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/character.service.ts" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/MainController.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/User.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/UserRepository.java" />
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.0.2.RELEASE/spring-boot-dependencies-2.0.2.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="477" column="56" lean-forward="false" selection-start-line="477" selection-start-column="48" selection-end-line="477" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/WebSecurityConfig.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/WebConfig.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/handlebars/dist/handlebars.runtime.amd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/xml2js/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="15" lean-forward="false" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.2.RELEASE/spring-boot-2.0.2.RELEASE-sources.jar!/org/springframework/boot/CommandLineRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thegame-enterprise-db.spf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -743,22 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/mvnw.cmd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -770,15 +711,253 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetControllerTest.groovy" />
+    <entry file="file://$PROJECT_DIR$/backend/test/main/java/gameCore/characterSheet/CharacterSheetControllerTest.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jmockit/jmockit/1.8/jmockit-1.8.jar!/mockit/integration/junit4/internal/JUnit4TestRunnerDecorator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="117" column="47" lean-forward="true" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/JoinColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/it/java/gameCore/characterSheet/WebMockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="47" column="48" lean-forward="false" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+        <state relative-caret-position="742">
+          <caret line="79" column="8" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/InventoryModifiers.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/VitalsModifiers.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/BuffsAndMeritsModifiers.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/BuffsAndMeritsModifiersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/VitalsModifiersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/AllModifiersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="123" lean-forward="false" selection-start-line="6" selection-start-column="123" selection-end-line="6" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/InventoryModifiersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/ModifiersRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/BuffsAndMeritsModifiersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/Modifiers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/AllModifiersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="37" column="102" lean-forward="false" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/AllModifiersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/VitalsModifiersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/modifiers/InventoryModifiersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.7.RELEASE/spring-data-commons-2.0.7.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/CharacterSheetControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/CharacterSheetServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -789,209 +968,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsRepository.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        <state relative-caret-position="57">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#8993#8994#0" expanded="true" />
+            <element signature="e#9035#9036#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="67" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="67" />
+        <state relative-caret-position="135">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1531074419722" expanded="true" signature="0:6277" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetController.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheetVitals/CharacterSheetVitalsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2502#2503#0" expanded="true" />
-            <element signature="e#2555#2556#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="85" lean-forward="false" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="85" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheet.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/characterSheet/CharacterSheetService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1530583879156" expanded="true" signature="494:585" ph="{...}" />
-            <marker date="1530583879156" expanded="false" signature="1998:2009" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2028:2034" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2084:2095" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2126:2132" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2167:2178" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2196:2202" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2252:2263" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2292:2298" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2336:2347" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2368:2374" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2430:2441" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2476:2482" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2519:2530" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2550:2556" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2610:2621" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2654:2660" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2698:2709" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2729:2735" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2790:2801" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2834:2840" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2877:2888" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="2907:2913" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="2966:2977" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3008:3014" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3047:3058" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3073:3079" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3124:3135" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3158:3164" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3206:3217" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3241:3247" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3310:3321" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3362:3368" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3406:3417" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3437:3443" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3498:3509" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3542:3548" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3579:3590" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3603:3609" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3650:3661" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3680:3686" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3722:3733" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3751:3757" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3808:3819" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3848:3854" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3887:3898" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3913:3919" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="3964:3975" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="3998:4004" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4036:4047" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4061:4067" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4110:4121" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4142:4148" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4186:4197" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4217:4223" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4278:4289" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4322:4328" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4362:4373" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4389:4395" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4442:4453" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4478:4484" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4519:4530" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4547:4553" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4602:4613" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4640:4646" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4678:4689" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4703:4709" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4752:4763" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4784:4790" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4820:4831" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4843:4849" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4888:4899" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4916:4922" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="4956:4967" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="4983:4989" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5036:5047" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5072:5078" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5111:5122" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5137:5143" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5188:5199" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5222:5228" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5276:5287" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5313:5319" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5390:5401" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5446:5452" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5484:5495" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5509:5515" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5558:5569" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5590:5596" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5643:5654" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5679:5685" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5754:5765" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5808:5814" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5849:5860" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5877:5883" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="5932:5943" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="5970:5976" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6026:6037" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6065:6071" ph=" }" />
-            <marker date="1530583879156" expanded="true" signature="6147:6212" ph="{...}" />
-            <marker date="1530583879156" expanded="false" signature="6245:6256" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6271:6277" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6322:6333" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6356:6362" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6410:6421" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6447:6453" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6524:6535" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6580:6586" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6616:6627" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6639:6645" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6684:6695" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6712:6718" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6763:6774" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6797:6803" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6868:6879" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6918:6924" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="6958:6969" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="6985:6991" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="7038:7049" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7074:7080" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="7129:7140" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7167:7173" ph=" }" />
-            <marker date="1530583879156" expanded="true" signature="7247:7310" ph="{...}" />
-            <marker date="1530583879156" expanded="false" signature="7343:7354" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7369:7375" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="7420:7431" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7454:7460" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="7508:7519" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7545:7551" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="7622:7633" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7678:7684" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="7718:7729" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7745:7751" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="7798:7809" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7834:7840" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="7889:7900" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="7927:7933" ph=" }" />
-            <marker date="1530583879156" expanded="true" signature="8007:8070" ph="{...}" />
-            <marker date="1530583879156" expanded="false" signature="8100:8111" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="8123:8129" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="8168:8179" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="8196:8202" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="8247:8258" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="8281:8287" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="8352:8363" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="8402:8408" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="8443:8454" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="8471:8477" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="8526:8537" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="8564:8570" ph=" }" />
-            <marker date="1530583879156" expanded="false" signature="8620:8631" ph=" { " />
-            <marker date="1530583879156" expanded="false" signature="8659:8665" ph=" }" />
-            <marker date="1530583879156" expanded="true" signature="8741:8806" ph="{...}" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/Application.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="66" column="7" lean-forward="false" selection-start-line="45" selection-start-column="2" selection-end-line="66" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/gameCore/inventory/InventoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>

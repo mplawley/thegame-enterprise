@@ -1,53 +1,28 @@
+import { Proficiency } from "./characterSheet";
+
 export class Inventory {
-    inventory: InventoryEntry[] = [];
-
-    constructBasicInventory(): void {
-        let numberOfItemsInBasicInventory = 10;
-        let inventorySlot: InventorySlot;
-        for (var i = 0; i < numberOfItemsInBasicInventory; i++) {
-            let newItem: InventoryEntry = new InventoryEntry();
-            newItem.addItem("", Quality.Apprentice, inventorySlot[i]);
-            this.inventory.push(newItem);
-            console.log(this.inventory[i]);
-        }
-    }
-
-}
-
-export enum InventorySlot {
-    MeleeWeapon,
-    RangedWeapon,
-    Armor,
-    Shield,
-    Slot1,
-    Slot2,
-    Slot3,
-    Slot4,
-    Slot5,
-    Slot6,
-}
-
-//This may seem to be a repeat of the Proficiency enum in the characterSheet, but
-//we want to separate Item quality enum from this enum for architectural design purposes.
-//What's more, we want the option to change item quality in case game rules change.
-export enum Quality {
-    Apprentice = 1,
-    Journeyman,
-    Master,
-    Grandmaster,
-    Legend,
-    Epic,
+    inventoryId: number;
+    meleeWeapon: InventoryEntry;
+    rangedWeapon: InventoryEntry;
+    armor: InventoryEntry;
+    shield: InventoryEntry;
+    item1: InventoryEntry;
+    item2: InventoryEntry;
+    item3: InventoryEntry;
+    item4: InventoryEntry;
+    item5: InventoryEntry;
+    item6: InventoryEntry;
 }
 
 export class InventoryEntry {
-    item: string;
-    itemQuality: Quality;
-    slotOccupied: InventorySlot;
+    itemName: String;
+    itemQuality: Proficiency;
+    itemNotes: String;
 
-    addItem(item: string, itemQuality: Quality, slotOccupied: InventorySlot): void {
-        this.item = item;
+    addItem(itemName: string, itemQuality: Proficiency, itemNotes: String): void {
+        this.itemName = itemName;
         this.itemQuality = itemQuality;
-        this.slotOccupied = slotOccupied;
+        this.itemNotes = itemNotes;
     }
 }
 

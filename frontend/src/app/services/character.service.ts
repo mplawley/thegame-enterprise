@@ -63,7 +63,7 @@ export class CharacterService {
       );
   }
 
-    /** PUT: update the characterSheet on the server. Returns the updated hero upon success. */
+    /** PUT: update the characterSheet on the server. Returns the updated characterSheet upon success. */
   updateCharacterSheet(characterSheet: CharacterSheet): Observable<CharacterSheet> {
     return this.http.put<CharacterSheet>(this.updateCharacterSheetUrl, characterSheet, httpOptions)
       .pipe(
