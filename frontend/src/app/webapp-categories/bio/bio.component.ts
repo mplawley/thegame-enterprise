@@ -10,10 +10,11 @@ import { BioService } from '../../services/bio.service';
 export class BioComponent implements OnInit {
   bio: Bio;
 
-  updateBio(bio: Bio): void {    
+  updateBio(bio: Bio): void {
+    this.bio.bioId = 2;    
     this.bioService.updateBio(this.bio)
-      .subscribe(bio => {
-        this.bio = bio;
+      .subscribe(bioObject => {
+        this.bio = bioObject;
         this.getBio(); //Update UI after the update to the server
       })
   }

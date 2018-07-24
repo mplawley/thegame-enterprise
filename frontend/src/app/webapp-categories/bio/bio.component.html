@@ -1,3 +1,42 @@
 <p>
-  characterBio works!
+  Player name:
+  Character name:
+  Characer age:
+  Character bio:
 </p>
+
+
+
+<h1>Inventory</h1>
+
+<div id="bioDisplay">
+    <table class="container" id="bioTable">
+        <thead>
+          <tr>
+            <th><h1>Field</h1></th>
+            <th><h1>Data</h1></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Player name: </td>
+                <td><input [(ngModel)] = "bio['playerName']"/></td>
+            </tr>
+            <tr>
+                <td>Character name: </td>
+                <td><input [(ngModel)] = "bio['characterName']"/></td>
+            </tr>
+            <tr>
+                <td>Age: </td>
+                <td><input [(ngModel)] = "bio['characterAge']"/></td>
+            <tr>
+                <td>Bio: </td>
+                <td><input [(ngModel)] = "bio['characterBio']"/></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <button (click)="updateBio()">Save bio</button>
+</div>
