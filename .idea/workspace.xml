@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef15c94-5eb6-42dc-bf1e-39c9a6c17d88" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/CharacterSheetControllerTest.java" afterPath="$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/CharacterSheetControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/CharacterSheetServiceTest.java" afterPath="$PROJECT_DIR$/backend/src/test/java/gameCore/characterSheet/CharacterSheetServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/inventory/inventory.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/webapp-categories/character/character.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/thegame/target/" />
     <ignored path="$PROJECT_DIR$/backend/target/" />
