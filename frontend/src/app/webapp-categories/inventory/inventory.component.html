@@ -1,8 +1,177 @@
-<h3>Inventory</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let inventoryItem of inventory" class="col-1-4">
-    <div class="module hero">
-      <h4></h4>
-    </div>
-  </a>
+<h1>Inventory</h1>
+
+<div id="inventoryDisplay" *ngIf="inventory">
+    <table class="container" id="inventoryTable">
+        <thead>
+          <tr>
+            <th><h1>Slot</h1></th>
+            <th><h1>Equipment</h1></th>
+            <th><h1>Quality</h1></th>
+            <th><h1>Notes</h1></th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="4">
+            </td>
+          </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+              <td>Melee weapon</td>
+              <td><input [(ngModel)] = "inventory['meleeWeapon'].itemName" /></td>
+              <td>{{inventory["meleeWeapon"].itemQuality}}
+                <select id="meleeWeaponSelect"
+                    (change)="onItemQualityChange($event)">
+                    <option *ngFor="let item of proficiencies; let i = index"
+                    [class.selected]= "inventory['meleeWeapon'].itemQuality | titlecase"
+                    [selected]="item == (inventory['meleeWeapon'].itemQuality | titlecase) ? true : false" >
+                        {{item}}
+                    </option>
+                </select>
+              </td>
+              <td><input [(ngModel)] = "inventory['meleeWeapon'].itemNotes"/></td>
+            </tr>
+
+            <tr>
+                <td>Ranged weapon</td>
+                <td><input [(ngModel)] = "inventory['rangedWeapon'].itemName" /></td>
+                <td>{{inventory["rangedWeapon"].itemQuality}}
+                    <select id="rangedWeaponSelect"
+                    (change)="onItemQualityChange($event)">
+                        <option *ngFor="let item of proficiencies; let i = index"
+                        [class.selected]= "inventory['rangedWeapon'].itemQuality | titlecase"
+                        [selected]="item == (inventory['rangedWeapon'].itemQuality | titlecase) ? true : false" >
+                            {{item}}
+                        </option>
+                    </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['rangedWeapon'].itemNotes"/></td>
+            </tr>
+            <tr>
+                <td>Armor</td>
+                <td><input [(ngModel)] = "inventory['armor'].itemName" /> </td>
+                <td>{{inventory["armor"].itemQuality}}
+                        <select id="armorSelect"
+                        (change)="onItemQualityChange($event)">
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['armor'].itemQuality | titlecase"
+                            [selected]="item == (inventory['armor'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['armor'].itemNotes"/></td>
+            </tr>
+            <tr>
+                <td>Shield</td>
+                <td><input [(ngModel)] = "inventory['shield'].itemName" /></td>
+                <td>{{inventory["shield"].itemQuality}}
+                    <select id="shieldSelect"
+                    (change)="onItemQualityChange($event)">
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['shield'].itemQuality | titlecase"
+                            [selected]="item == (inventory['shield'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                    </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['shield'].itemNotes"/></td>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td><input [(ngModel)] = "inventory['itemSlot1'].itemName" /></td>
+                <td>{{inventory["itemSlot1"].itemQuality}}
+                        <select id="itemSlot1Select"
+                        (change)="onItemQualityChange($event)">
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot1'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot1'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['itemSlot1'].itemNotes"/></td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td><input [(ngModel)] = "inventory['itemSlot2'].itemName" /></td>
+                <td>{{inventory["itemSlot2"].itemQuality}}
+                        <select id="itemSlot2Select"
+                        (change)="onItemQualityChange($event)">
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot2'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot2'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['itemSlot2'].itemNotes"/></td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td><input [(ngModel)] = "inventory['itemSlot3'].itemName" /></td>
+                <td>{{inventory["itemSlot3"].itemQuality}}
+                        <select id="itemSlot3Select"
+                        (change)="onItemQualityChange($event)">
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot3'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot3'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['itemSlot3'].itemNotes"/></td>
+            </tr>
+            <tr>
+                <td>Item 4</td>
+                <td><input [(ngModel)] = "inventory['itemSlot4'].itemName" /></td>
+                <td>{{inventory["itemSlot4"].itemQuality}}
+                        <select id="itemSlot4Select"
+                        (change)="onItemQualityChange($event)">
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot4'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot4'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['itemSlot4'].itemNotes"/></td>
+            </tr>
+            <tr>
+                <td>Item 5</td>
+                <td><input [(ngModel)] = "inventory['itemSlot5'].itemName" /></td>
+                <td>{{inventory["itemSlot5"].itemQuality}}
+                        <select id="itemSlot5Select"
+                        (change)="onItemQualityChange($event)">
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot5'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot5'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['itemSlot5'].itemNotes"/></td>
+            </tr>
+            <tr>
+                <td>Item 6</td>
+                <td><input [(ngModel)] = "inventory['itemSlot6'].itemName" /></td>
+                <td>{{inventory["itemSlot6"].itemQuality}}
+                        <select id="itemSlot6Select"
+                        (change)="onItemQualityChange($event)">
+                            <option *ngFor="let item of proficiencies; let i = index"
+                            [class.selected]= "inventory['itemSlot6'].itemQuality | titlecase"
+                            [selected]="item == (inventory['itemSlot6'].itemQuality | titlecase) ? true : false" >
+                                {{item}}
+                            </option>
+                        </select>
+                </td>
+                <td><input [(ngModel)] = "inventory['itemSlot6'].itemNotes"/></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <button (click)="updateInventory()">Save inventory</button>
 </div>

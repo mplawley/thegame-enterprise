@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Inventory, InventoryEntry } from '../../data/inventorySheet';
+import { InventoryService } from '../../services/inventory-service.service';
+import { Modifiers } from '../../data/Modifiers';
+import { Proficiency } from '../../data/characterSheet';
 import { CharacterService } from '../../services/character.service';
 
 @Component({
@@ -9,15 +12,37 @@ import { CharacterService } from '../../services/character.service';
 })
 export class InventoryComponent implements OnInit {
   inventory: Inventory;
+  inventoryId: string;
+  modifiers: Modifiers;
+  proficiencies: string[] = ["Apprentice", "Journeyman", "Master", "Grandmaster", "Legendary", "Epic"];
 
-  constructor(private characterService: CharacterService) { }
-
-  ngOnInit() {
-    this.inventory.constructBasicInventory();
+  getInventory(): void {
+    this.inventoryService.getInventory(this.inventoryId)
+      .subscribe(inventoryObject => {
+        this.inventory = inventoryObject;
+      })
   }
 
-  getHeroes(): void {
-    // this.heroService.getHeroes()
-    //   .subscribe(heroes => this.heroes = heroes.slice(1, 5));
+  updateInventory(): void {
+    this.inventory.inventoryId = 1;
+    this.inventoryService.updateInventory(this.inventory)
+      .subscribe(inventoryObject => {
+        this.inventory = inventoryObject;
+        // this.getInventory(); //update UI after the update to the server
+      })
+  }
+
+  onItemQualityChange(event) {
+    let itemWhoseQualityChanged = event.target.id.replace('Select', '');
+    const newItemQualitySelection = event.target.value;
+    this.inventory[itemWhoseQualityChanged].itemQuality = newItemQualitySelection.toUpperCase();
+    this.updateInventory();
+  }
+
+  constructor(private inventoryService: InventoryService) { }
+
+  ngOnInit() {
+    this.inventoryId = "1";
+    this.getInventory();
   }
 }

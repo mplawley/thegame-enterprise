@@ -1,22 +1,27 @@
 package gameCore.characterSheet;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+import gameCore.inventory.Inventory;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+
+import java.io.Serializable;
 
 @Entity
 @Builder
 @AllArgsConstructor
-public class CharacterSheet {
+public class CharacterSheet implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long characterId;
 
-    public CharacterSheet() {};
+    @OneToOne(fetch = FetchType.LAZY,
+              cascade =  CascadeType.ALL,
+              mappedBy = "characterSheet")
+    private Inventory inventory;
+
+    public CharacterSheet() {}
 
     public CharacterSheet(Long characterId, String characterName) {
         this.characterId = characterId;
@@ -389,5 +394,9 @@ public class CharacterSheet {
 
     public void setDiplomacyProficiency(Proficiency diplomacyProficiency) {
         this.diplomacyProficiency = diplomacyProficiency;
+    }
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
     }
 }

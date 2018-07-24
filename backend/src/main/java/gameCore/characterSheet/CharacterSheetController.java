@@ -12,7 +12,7 @@ public class CharacterSheetController {
     private final String CROSS_ORIGIN_URL = "http://localhost:4200";
 
     @Autowired
-    CharacterSheetController(CharacterSheetRepository characterSheetRepository, CharacterSheetService characterSheetService) {
+    CharacterSheetController(CharacterSheetService characterSheetService) {
         this.characterSheetService = characterSheetService;
     }
 
