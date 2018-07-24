@@ -30,7 +30,7 @@
                     </option>
                 </select>
               </td>
-              <td>{{inventory["meleeWeapon"].itemNotes}}</td>
+              <td><input [(ngModel)] = "inventory['meleeWeapon'].itemNotes"/></td>
             </tr>
 
             <tr>
@@ -46,7 +46,7 @@
                         </option>
                     </select>
                 </td>
-                <td>{{inventory["rangedWeapon"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['rangedWeapon'].itemNotes"/></td>
             </tr>
             <tr>
                 <td>Armor</td>
@@ -61,7 +61,7 @@
                             </option>
                         </select>
                 </td>
-                <td>{{inventory["armor"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['armor'].itemNotes"/></td>
             </tr>
             <tr>
                 <td>Shield</td>
@@ -76,7 +76,7 @@
                             </option>
                     </select>
                 </td>
-                <td>{{inventory["shield"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['shield'].itemNotes"/></td>
             </tr>
             <tr>
                 <td>Item 1</td>
@@ -91,7 +91,7 @@
                             </option>
                         </select>
                 </td>
-                <td>{{inventory["itemSlot1"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot1'].itemNotes"/></td>
             </tr>
             <tr>
                 <td>Item 2</td>
@@ -106,7 +106,7 @@
                             </option>
                         </select>
                 </td>
-                <td>{{inventory["itemSlot2"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot2'].itemNotes"/></td>
             </tr>
             <tr>
                 <td>Item 3</td>
@@ -121,7 +121,7 @@
                             </option>
                         </select>
                 </td>
-                <td>{{inventory["itemSlot3"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot3'].itemNotes"/></td>
             </tr>
             <tr>
                 <td>Item 4</td>
@@ -136,7 +136,7 @@
                             </option>
                         </select>
                 </td>
-                <td>{{inventory["itemSlot4"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot4'].itemNotes"/></td>
             </tr>
             <tr>
                 <td>Item 5</td>
@@ -151,7 +151,7 @@
                             </option>
                         </select>
                 </td>
-                <td>{{inventory["itemSlot5"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot5'].itemNotes"/></td>
             </tr>
             <tr>
                 <td>Item 6</td>
@@ -166,8 +166,12 @@
                             </option>
                         </select>
                 </td>
-                <td>{{inventory["itemSlot6"].itemNotes}}</td>
+                <td><input [(ngModel)] = "inventory['itemSlot6'].itemNotes"/></td>
             </tr>
         </tbody>
     </table>
+</div>
+
+<div>
+    <button (click)="updateInventory()">Save inventory</button>
 </div>
