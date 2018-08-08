@@ -1,29 +1,39 @@
 package gameCore.characterSheet;
 
 import gameCore.characterSheetVitals.CharacterSheetVitals;
-import mockit.Injectable;
-import mockit.Tested;
-import mockit.Verifications;
-import mockit.VerificationsInOrder;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.when;
+
+@RunWith(MockitoJUnitRunner.class)
 public class CharacterSheetControllerTest {
-    @Tested
-    CharacterSheetController characterSheetController;
-
-    @Injectable
+    @Mock
     CharacterSheetService characterSheetService;
 
+    CharacterSheetController characterSheetController;
     private final Long TEST_CHARACTER_ID = 123L;
+
+    @Before
+    public void setUp() {
+        characterSheetController = new CharacterSheetController(characterSheetService);
+    }
 
     @Test
     public void getCharacterSheetWithValidCharacterIdParameterCallsTheCharacterService() {
+        CharacterSheet characterSheet = new CharacterSheet(TEST_CHARACTER_ID, "testName");
+
+        when(characterSheetService.getCharacterSheet(TEST_CHARACTER_ID)).thenReturn(characterSheet);
+
         characterSheetController.getCharacterSheet(TEST_CHARACTER_ID);
 
-        new Verifications() {{
-            characterSheetService.getCharacterSheet(TEST_CHARACTER_ID);
-            times = 1;
-        }};
+        Mockito.verify(characterSheetService, times(1)).getCharacterSheet(TEST_CHARACTER_ID);
     }
 
     @Test
@@ -33,10 +43,7 @@ public class CharacterSheetControllerTest {
 
         characterSheetController.updateCharacterSheet(testCharacterSheet);
 
-        new Verifications() {{
-            characterSheetService.updateCharacterSheet(testCharacterSheet);
-            times = 1;
-        }};
+        Mockito.verify(characterSheetService, times(1)).updateCharacterSheet(testCharacterSheet);
     }
 
     @Test
@@ -49,40 +56,25 @@ public class CharacterSheetControllerTest {
 
         characterSheetController.saveVitals(TEST_CHARACTER_ID, currentLife, maxLife, currentEndurance, maxEndurance);
 
-        new Verifications() {{
-            characterSheetService.saveVitals((CharacterSheetVitals)any);
-            times = 1;
-        }};
+        Mockito.verify(characterSheetService, times(1)).saveVitals((any(CharacterSheetVitals.class)));
     }
 
     @Test
     public void getVitalsWithValidCharacterId() {
         characterSheetController.getVitals(TEST_CHARACTER_ID);
-
-        new Verifications() {{
-            characterSheetService.getVitals(TEST_CHARACTER_ID);
-            times = 1;
-        }};
+        Mockito.verify(characterSheetService, times(1)).getVitals(TEST_CHARACTER_ID);
     }
 
     @Test
     public void getStatsWithValidCharacterId() {
         characterSheetController.getStats(TEST_CHARACTER_ID);
-
-        new Verifications() {{
-            characterSheetService.getStats(TEST_CHARACTER_ID);
-            times = 1;
-        }};
+        Mockito.verify(characterSheetService, times(1)).getStats(TEST_CHARACTER_ID);
     }
 
     @Test
     public void saveEntryTest() {
         characterSheetController.saveEntryTest();
-
-        new Verifications() {{
-            characterSheetService.saveEntryTest();
-            times = 1;
-        }};
+        Mockito.verify(characterSheetService, times(1)).saveEntryTest();
     }
 
 }
