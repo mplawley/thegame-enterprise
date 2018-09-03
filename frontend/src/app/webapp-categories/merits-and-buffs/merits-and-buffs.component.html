@@ -1,3 +1,25 @@
-<p>
-  merits-and-buffs works!
-</p>
+  <h1>Merits and buffs</h1>
+  
+  <div id="meritsAndBuffsDisplay">
+      <table class="container" id="meritsAndBuffsTable">
+          <thead>
+            <tr>
+              <th><h1>Modifier</h1></th>
+              <th><h1>What modified</h1></th>
+              <th><h1>How much modified</h1></th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><input [(ngModel)] = "meritsAndBuffs['modifier1name']"/> </td>
+                  <td><input [(ngModel)] = "meritsAndBuffs['modifier1whatModified']"/></td>
+                  <td><input [(ngModel)] = "meritsAndBuffs['modifier1amount']"/></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  
+  <div>
+      <button (click)="updateMeritsAndBuffs()">Save merits and buffs</button>
+  </div>
+  
