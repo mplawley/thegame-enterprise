@@ -22,7 +22,7 @@ public class AllModifiersController {
 
     @GetMapping("/getAllModifiers")
     @CrossOrigin(origins = CROSS_ORIGIN_URL)
-    public Map<String, Integer> getAllModifiers() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+    public Modifiers getAllModifiers() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         return allModifiersService.getAllModifiers();
     }
 
@@ -30,5 +30,11 @@ public class AllModifiersController {
     @CrossOrigin(origins = CROSS_ORIGIN_URL)
     public void updateMeritsAndBuffsModifiers(@RequestBody Modifiers modifiers) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         buffsAndMeritsModifiersService.setBuffsAndMeritsModifiersObject(modifiers);
+        allModifiersService.saveAllModifiers();
+
+    }
+
+    private void setModifiers() {
+
     }
 }

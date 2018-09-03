@@ -1,8 +1,10 @@
 package gameCore.modifiers;
 
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Modifier;
 import java.util.Map;
 
 public interface AllModifiersService {
-    Map<String, Integer> getAllModifiers() throws IllegalAccessException, InvocationTargetException, NoSuchMethodException;
+    Modifiers getAllModifiers() throws IllegalAccessException, InvocationTargetException, NoSuchMethodException;
+    void saveAllModifiers() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException;
 }

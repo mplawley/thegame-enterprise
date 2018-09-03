@@ -1,5 +1,7 @@
 package gameCore.modifiers;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import gameCore.characterSheet.CharacterSheetService;
 import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,15 +18,19 @@ public class AllModifiersServiceImpl implements AllModifiersService {
     private final InventoryModifiersService inventoryModifiersService;
     private final BuffsAndMeritsModifiersService buffsAndMeritsModifiersService;
     private final VitalsModifiersService vitalsModifiersService;
+    private final ModifiersRepository modifiersRepository;
+    private final CharacterSheetService characterSheetService;
 
     @Autowired
-    public AllModifiersServiceImpl(InventoryModifiersService inventoryModifiersService, BuffsAndMeritsModifiersService buffsAndMeritsModifiersService, VitalsModifiersService vitalsModifiersService) {
+    public AllModifiersServiceImpl(InventoryModifiersService inventoryModifiersService, BuffsAndMeritsModifiersService buffsAndMeritsModifiersService, VitalsModifiersService vitalsModifiersService, ModifiersRepository modifiersRepository, CharacterSheetService characterSheetService) {
         this.inventoryModifiersService = inventoryModifiersService;
         this.buffsAndMeritsModifiersService = buffsAndMeritsModifiersService;
         this.vitalsModifiersService = vitalsModifiersService;
+        this.modifiersRepository = modifiersRepository;
+        this.characterSheetService = characterSheetService;
     }
 
-    public Map<String, Integer> getAllModifiers() throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+    public Modifiers getAllModifiers() throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
         Modifiers inventoryModifiers = inventoryModifiersService.getInventoryModifiersObject();
         Modifiers buffsAndMeritsModifiers = buffsAndMeritsModifiersService.getBuffsAndMeritsModifiersObject();
         Modifiers vitalsModifiers = vitalsModifiersService.getVitalsModifiersObject();
@@ -34,7 +40,16 @@ public class AllModifiersServiceImpl implements AllModifiersService {
         Map<String, Integer> vitalsModifiersMap = retrieveAllReadPropertiesOnClassAndCallGettersAndConvertReturnedGetterValueFromStringToInteger(vitalsModifiers);
         Map<String, Integer> allModifiersMap = sumAnyNumberOfMaps(inventoryModifiersMap, buffsAndMeritsModifiersMap, vitalsModifiersMap);
 
-        return allModifiersMap;
+        ObjectMapper mapper = new ObjectMapper();
+        Modifiers allModifiersObj = mapper.convertValue(allModifiersMap, Modifiers.class);
+
+        return allModifiersObj;
+    }
+
+    public void saveAllModifiers() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        Modifiers allModifiers = getAllModifiers();
+        allModifiers.setCharacterSheet(characterSheetService.getCharacterSheet(allModifiers.getModifiersId()));
+        modifiersRepository.save(getAllModifiers());
     }
 
     private <T> Map<String, Integer> retrieveAllReadPropertiesOnClassAndCallGettersAndConvertReturnedGetterValueFromStringToInteger(T objectWithCharacterSheetModifiers) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
@@ -42,7 +57,9 @@ public class AllModifiersServiceImpl implements AllModifiersService {
         mapOfModifierNameStringsAndModifierValueStrings.remove("class");
         Map<String, Integer> mapOfModifierNameStringsAndModifierValueIntegers = new LinkedHashMap<>();
         for(Map.Entry<String, String> entry : mapOfModifierNameStringsAndModifierValueStrings.entrySet()) {
-            mapOfModifierNameStringsAndModifierValueIntegers.put(entry.getKey(), Integer.parseInt(entry.getValue()));
+            if (entry.getKey() != "modifiersId" && entry.getKey() != "characterSheet") {
+                mapOfModifierNameStringsAndModifierValueIntegers.put(entry.getKey(), Integer.parseInt(entry.getValue()));
+            }
         }
         return mapOfModifierNameStringsAndModifierValueIntegers;
     }

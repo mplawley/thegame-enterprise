@@ -71,6 +71,22 @@ public class Modifiers {
     private int moveMod;
     private int initiativeMod;
 
+    public Long getModifiersId() {
+        return modifiersId;
+    }
+
+    public void setModifiersId(Long modifiersId) {
+        this.modifiersId = modifiersId;
+    }
+
+    public CharacterSheet getCharacterSheet() {
+        return characterSheet;
+    }
+
+    public void setCharacterSheet(CharacterSheet characterSheet) {
+        this.characterSheet = characterSheet;
+    }
+
     public int getSpeedMod() {
         return speedMod;
     }
