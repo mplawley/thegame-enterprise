@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Modifiers, ModifierEntry } from '../../data/Modifiers';
+import { MeritsAndBuffsService } from '../../services/merits-and-buffs.service';
 
 @Component({
   selector: 'app-merits-and-buffs',
@@ -6,8 +8,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./merits-and-buffs.component.css']
 })
 export class MeritsAndBuffsComponent implements OnInit {
+  modifiers: Modifiers[];
+  modifierEntries: ModifierEntry[];
 
-  constructor() { }
+  onInputModifier(modifyEntry: ModifierEntry) {
+    this.modifierEntries.push(modifyEntry);
+  }
+
+  updateModifiers() {
+    this.meritsAndBuffsService.updateMeritsAndBuffs(this.modifierEntries)
+      .subscribe(modifierEntries => {
+        this.modifierEntries = modifierEntries;
+        this.getModifierEntries();
+      })
+  }
+
+  getModifierEntries() {
+    
+  }
+
+
+  
+  constructor(private meritsAndBuffsService: MeritsAndBuffsService) { }
 
   ngOnInit() {
   }

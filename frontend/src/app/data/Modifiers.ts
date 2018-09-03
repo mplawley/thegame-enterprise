@@ -50,3 +50,9 @@ export class Modifiers {
     moveMod: number;
     initiativeMod: number;
 }
+
+export class ModifierEntry {
+    modifierName: string;
+    whatModified: string;
+    modifierAmount: number;
+}
