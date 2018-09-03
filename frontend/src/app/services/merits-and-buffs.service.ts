@@ -12,6 +12,7 @@ import { MessageService } from './message.service';
 
 export class MeritsAndBuffsService {
   private updateMeritsAndBuffsUrl = "http://localhost:8080/modifiers/updateMeritsAndBuffsModifiers";
+  private getMeritsAndBuffsUrl = "http://localhost:8080/modifiers/getMeritsAndBuffsModifiers";
 
   // getMeritsAndBuffs(meritsAndBuffsId: string): Observable<any> {
   //   meritsAndBuffsId = meritsAndBuffsId.trim();
@@ -28,6 +29,16 @@ export class MeritsAndBuffsService {
     return this.http.put<Modifiers>(this.updateMeritsAndBuffsUrl, meritsAndBuffs, httpOptions)
       .pipe(
         catchError(this.handleError('updateMeritsAndBuffs', meritsAndBuffs))
+      );
+  }
+
+  getMeritsAndBuffs(meritsAndBuffId: string): Observable<any> {
+    meritsAndBuffId = meritsAndBuffId.trim();
+    const options = meritsAndBuffId ? { params: new HttpParams().set('meritsAndBuffId', meritsAndBuffId) } : {};
+    return this.http.get<Modifiers>(this.getMeritsAndBuffsUrl,options )
+      .pipe(
+        tap(meritsAndBuffObject => this.log(`Fetched merits and buffs for merits and buffs id/characterId=${meritsAndBuffId}`)),
+        catchError(this.handleError('getMeritsAndBuffs'))
       );
   }
 

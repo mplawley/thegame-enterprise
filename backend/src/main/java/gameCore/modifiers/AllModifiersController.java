@@ -34,6 +34,12 @@ public class AllModifiersController {
 
     }
 
+    @PutMapping("/getMeritsAndBuffsModifiers")
+    @CrossOrigin(origins = CROSS_ORIGIN_URL)
+    public Modifiers updateMeritsAndBuffsModifiers(@RequestParam long modifiersId) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        return allModifiersService.getAllModifiers();
+    }
+
     private void setModifiers() {
 
     }

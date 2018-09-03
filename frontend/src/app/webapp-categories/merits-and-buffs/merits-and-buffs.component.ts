@@ -108,8 +108,11 @@ export class MeritsAndBuffsComponent implements OnInit {
       })
   }
 
-  getModifierEntries(modifierId) {
-
+  getModifierEntries(modifierId): void {
+    this.meritsAndBuffsService.getMeritsAndBuffs('1')
+      .subscribe(meritsAndBuffsObject => {
+        this.modifiers = meritsAndBuffsObject;
+      })
   }
 
   constructor(private meritsAndBuffsService: MeritsAndBuffsService,
@@ -120,7 +123,7 @@ export class MeritsAndBuffsComponent implements OnInit {
                               whatModified: "", 
                               modifierAmount: 0
                             }];
-    this.getModifierEntries(1); //fake modifierId for now
-    this.initializeModifiersObject();
+  this.initializeModifiersObject();
+  this.getModifierEntries(1); //fake modifierId for now
   }
 }
