@@ -11,6 +11,7 @@ import { CharacterSheet } from '../../data/characterSheet';
 })
 export class MeritsAndBuffsComponent implements OnInit {
   modifiers: Modifiers;
+  statusFromServerAfterUpdatingModifiers: string;
 
   modifierEntries: ModifierEntry[];
   modifierEntry1: ModifierEntry = { modifierName:"", modifierAmount:0, whatModified:""};
@@ -23,6 +24,7 @@ export class MeritsAndBuffsComponent implements OnInit {
   modifierEntry8: ModifierEntry = { modifierName:"", modifierAmount:0, whatModified:""};
 
   buildMeritsAndBuffsObject() {
+    this.modifierEntries = [];
     this.modifierEntries.push(this.modifierEntry1);
     this.modifierEntries.push(this.modifierEntry2);
     this.modifierEntries.push(this.modifierEntry3);
@@ -33,7 +35,7 @@ export class MeritsAndBuffsComponent implements OnInit {
     this.modifierEntries.push(this.modifierEntry8);
   }
 
-  initializeModifiersObject(characterSheetFK) {
+  initializeModifiersObject() {
     this.modifiers = {
       modifiersId : 1,
       characterSheetId : 1,
@@ -90,18 +92,19 @@ export class MeritsAndBuffsComponent implements OnInit {
       Object.entries(this.modifiers).forEach(modType => {
         let nameOfAttributeModified = modEntry.whatModified.toLowerCase() + "Mod";
         if (nameOfAttributeModified == modType[0]) {
-          this.modifiers[nameOfAttributeModified] += modEntry.modifierAmount;
+          this.modifiers[nameOfAttributeModified] += +modEntry.modifierAmount;
         }
       })
     });
   }
 
   updateMeritsAndBuffs() {
-    this.buildMeritsAndBuffsObject();
+    this.initializeModifiersObject(); //zero out mods
+    this.buildMeritsAndBuffsObject(); 
     this.buildModifiersObject();
     this.meritsAndBuffsService.updateMeritsAndBuffs(this.modifiers)
-      .subscribe(modifiers => {
-        this.modifiers = modifiers;
+      .subscribe(serverResponse => {
+        this.statusFromServerAfterUpdatingModifiers = serverResponse;
       })
   }
 
@@ -118,7 +121,6 @@ export class MeritsAndBuffsComponent implements OnInit {
                               modifierAmount: 0
                             }];
     this.getModifierEntries(1); //fake modifierId for now
-    let characterSheetFK = this.characterService.getCharacterSheet('1');
-    this.initializeModifiersObject(characterSheetFK);
+    this.initializeModifiersObject();
   }
 }

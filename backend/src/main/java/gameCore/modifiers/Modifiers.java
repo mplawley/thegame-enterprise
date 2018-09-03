@@ -12,7 +12,7 @@ import javax.persistence.*;
 public class Modifiers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long modifiersId;
+    public Long modifiersId;
 
     public Modifiers() {}
 

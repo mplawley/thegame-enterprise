@@ -24,7 +24,7 @@ export class MeritsAndBuffsService {
   // }
 
     /** PUT: update the characterSheet on the server. Returns the updated characterSheet upon success. */
-  updateMeritsAndBuffs(meritsAndBuffs: Modifiers): Observable<Modifiers> {
+  updateMeritsAndBuffs(meritsAndBuffs: Modifiers): Observable<any> {
     return this.http.put<Modifiers>(this.updateMeritsAndBuffsUrl, meritsAndBuffs, httpOptions)
       .pipe(
         catchError(this.handleError('updateMeritsAndBuffs', meritsAndBuffs))

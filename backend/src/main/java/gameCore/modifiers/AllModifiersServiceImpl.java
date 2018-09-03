@@ -49,6 +49,7 @@ public class AllModifiersServiceImpl implements AllModifiersService {
     public void saveAllModifiers() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         Modifiers allModifiers = getAllModifiers();
         allModifiers.characterSheet = characterSheetService.getCharacterSheet(1L);
+        allModifiers.modifiersId = 1L;
         modifiersRepository.save(allModifiers);
     }
 
