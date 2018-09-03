@@ -11,7 +11,6 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class Modifiers {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long modifiersId;
 
     public Modifiers() {}
