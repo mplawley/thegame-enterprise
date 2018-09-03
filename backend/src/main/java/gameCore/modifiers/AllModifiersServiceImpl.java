@@ -48,8 +48,8 @@ public class AllModifiersServiceImpl implements AllModifiersService {
 
     public void saveAllModifiers() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         Modifiers allModifiers = getAllModifiers();
-        allModifiers.setCharacterSheet(characterSheetService.getCharacterSheet(allModifiers.getModifiersId()));
-        modifiersRepository.save(getAllModifiers());
+        allModifiers.characterSheet = characterSheetService.getCharacterSheet(1L);
+        modifiersRepository.save(allModifiers);
     }
 
     private <T> Map<String, Integer> retrieveAllReadPropertiesOnClassAndCallGettersAndConvertReturnedGetterValueFromStringToInteger(T objectWithCharacterSheetModifiers) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {

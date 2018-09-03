@@ -36,7 +36,7 @@ export class MeritsAndBuffsComponent implements OnInit {
   initializeModifiersObject(characterSheetFK) {
     this.modifiers = {
       modifiersId : 1,
-      //characterSheet : characterSheetFK,
+      characterSheetId : 1,
       speedMod : 0,
       assessmentMod : 0,
       insightMod : 0,

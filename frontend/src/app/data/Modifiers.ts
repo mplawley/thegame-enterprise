@@ -2,7 +2,7 @@ import { CharacterSheet, Proficiency } from "./characterSheet";
 
 export class Modifiers {
     modifiersId: number;
-    // characterSheet: CharacterSheet;
+    characterSheetId: number;
 
     speedMod: number;
     assessmentMod: number;
