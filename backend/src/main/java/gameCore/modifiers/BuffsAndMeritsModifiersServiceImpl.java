@@ -13,4 +13,8 @@ public class BuffsAndMeritsModifiersServiceImpl implements BuffsAndMeritsModifie
     public Modifiers getBuffsAndMeritsModifiersObject() {
         return this.modifiers;
     }
+
+    public void setBuffsAndMeritsModifiersObject(Modifiers modifiers) {
+        this.modifiers = modifiers;
+    }
 }

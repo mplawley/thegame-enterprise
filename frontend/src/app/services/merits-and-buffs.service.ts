@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ModifierEntry } from '../data/Modifiers';
+import { ModifierEntry, Modifiers } from '../data/Modifiers';
 import { httpOptions} from '../data/httpOptions';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
@@ -11,7 +11,7 @@ import { MessageService } from './message.service';
 })
 
 export class MeritsAndBuffsService {
-  private updateMeritsAndBuffsUrl = "http://localhost:8080/characterSheet/updateMeritsAndBuffs";
+  private updateMeritsAndBuffsUrl = "http://localhost:8080/modifiers/updateMeritsAndBuffsModifiers";
 
   // getMeritsAndBuffs(meritsAndBuffsId: string): Observable<any> {
   //   meritsAndBuffsId = meritsAndBuffsId.trim();
@@ -24,8 +24,8 @@ export class MeritsAndBuffsService {
   // }
 
     /** PUT: update the characterSheet on the server. Returns the updated characterSheet upon success. */
-  updateMeritsAndBuffs(meritsAndBuffs: ModifierEntry[]): Observable<ModifierEntry[]> {
-    return this.http.put<ModifierEntry[]>(this.updateMeritsAndBuffsUrl, meritsAndBuffs, httpOptions)
+  updateMeritsAndBuffs(meritsAndBuffs: Modifiers): Observable<Modifiers> {
+    return this.http.put<Modifiers>(this.updateMeritsAndBuffsUrl, meritsAndBuffs, httpOptions)
       .pipe(
         catchError(this.handleError('updateMeritsAndBuffs', meritsAndBuffs))
       );

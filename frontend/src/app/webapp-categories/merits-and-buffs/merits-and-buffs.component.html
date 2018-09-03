@@ -1,6 +1,6 @@
   <h1>Merits and buffs</h1>
   
-  <div id="meritsAndBuffsDisplay">
+  <div id="meritsAndBuffsDisplay" *ngIf="modifierEntries">
       <table class="container" id="meritsAndBuffsTable">
           <thead>
             <tr>
@@ -11,10 +11,46 @@
           </thead>
           <tbody>
               <tr>
-                  <td><input [(ngModel)] = "meritsAndBuffs['modifier1name']"/> </td>
-                  <td><input [(ngModel)] = "meritsAndBuffs['modifier1whatModified']"/></td>
-                  <td><input [(ngModel)] = "meritsAndBuffs['modifier1amount']"/></td>
+                  <td><input [(ngModel)] = "modifierEntry1['modifierName']"/> </td>
+                  <td><input [(ngModel)] = "modifierEntry1['whatModified']"/></td>
+                  <td><input [(ngModel)] = "modifierEntry1['modifierAmount']"/></td>
               </tr>
+              <tr>
+                <td><input [(ngModel)] = "modifierEntry2['modifierName']"/> </td>
+                <td><input [(ngModel)] = "modifierEntry2['whatModified']"/></td>
+                <td><input [(ngModel)] = "modifierEntry2['modifierAmount']"/></td>
+            </tr>
+            <tr>
+                <td><input [(ngModel)] = "modifierEntry3['modifierName']"/> </td>
+                <td><input [(ngModel)] = "modifierEntry3['whatModified']"/></td>
+                <td><input [(ngModel)] = "modifierEntry3['modifierAmount']"/></td>
+            </tr>
+            <tr>
+                <td><input [(ngModel)] = "modifierEntry4['modifierName']"/> </td>
+                <td><input [(ngModel)] = "modifierEntry4['whatModified']"/></td>
+                <td><input [(ngModel)] = "modifierEntry4['modifierAmount']"/></td>
+            </tr>
+            <tr>
+                <td><input [(ngModel)] = "modifierEntry5['modifierName']"/> </td>
+                <td><input [(ngModel)] = "modifierEntry5['whatModified']"/></td>
+                <td><input [(ngModel)] = "modifierEntry5['modifierAmount']"/></td>
+            </tr>
+            <tr>
+                <td><input [(ngModel)] = "modifierEntry6['modifierName']"/> </td>
+                <td><input [(ngModel)] = "modifierEntry6['whatModified']"/></td>
+                <td><input [(ngModel)] = "modifierEntry6['modifierAmount']"/></td>
+            </tr>
+            <tr>
+                <td><input [(ngModel)] = "modifierEntry7['modifierName']"/> </td>
+                <td><input [(ngModel)] = "modifierEntry7['whatModified']"/></td>
+                <td><input [(ngModel)] = "modifierEntry7['modifierAmount']"/></td>
+            </tr>
+            <tr>
+                <td><input [(ngModel)] = "modifierEntry8['modifierName']"/> </td>
+                <td><input [(ngModel)] = "modifierEntry8['whatModified']"/></td>
+                <td><input [(ngModel)] = "modifierEntry8['modifierAmount']"/></td>
+            </tr>
+                
           </tbody>
       </table>
   </div>
@@ -22,4 +58,3 @@
   <div>
       <button (click)="updateMeritsAndBuffs()">Save merits and buffs</button>
   </div>
-  
