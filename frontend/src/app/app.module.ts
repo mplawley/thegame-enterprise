@@ -22,6 +22,7 @@ import { SettingsComponent } from './webapp-categories/settings/settings.compone
 import { PowersDetailComponent } from './webapp-categories/powers-detail/powers-detail.component';
 import { NotesComponent } from './webapp-categories/notes/notes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './webapp-categories/login/login.component';
 
 //import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 // import { InMemoryDataService} from './in-memory-data.service';
@@ -41,7 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     LevelUpComponent,
     SettingsComponent,
     PowersDetailComponent,
-    NotesComponent
+    NotesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

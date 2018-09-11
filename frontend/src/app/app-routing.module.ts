@@ -11,9 +11,11 @@ import { PowersDetailComponent } from './webapp-categories/powers-detail/powers-
 import { ItemsComponent } from './webapp-categories/items/items.component';
 import { LevelUpComponent } from './webapp-categories/level-up/level-up.component';
 import { SettingsComponent } from './webapp-categories/settings/settings.component';
+import { LoginComponent } from './webapp-categories/login/login.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/character', pathMatch: 'full'},
+  {path: 'login', component: LoginComponent},
   {path: 'character', component: CharacterComponent},
   {path: 'characterBio', component: BioComponent},
   {path: 'inventory', component: InventoryComponent},
