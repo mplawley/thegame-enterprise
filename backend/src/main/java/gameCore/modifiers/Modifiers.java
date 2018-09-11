@@ -23,6 +23,7 @@ public class Modifiers {
     @JoinColumn(name = "character_id", nullable = false)
     public CharacterSheet characterSheet;
 
+    //Modifiers
 
     private int speedMod;
     private int assessmentMod;
@@ -69,6 +70,40 @@ public class Modifiers {
     private int deflectMod;
     private int moveMod;
     private int initiativeMod;
+
+    //Merits and buffs
+
+    private String modifierEntry1modifierName;
+    private String modifierEntry1WhatModified;
+    private int modifierEntry1modifierAmount;
+
+    private String modifierEntry2modifierName;
+    private String modifierEntry2WhatModified;
+    private int modifierEntry2modifierAmount;
+
+    private String modifierEntry3modifierName;
+    private String modifierEntry3WhatModified;
+    private int modifierEntry3modifierAmount;
+
+    private String modifierEntry4modifierName;
+    private String modifierEntry4WhatModified;
+    private int modifierEntry4modifierAmount;
+
+    private String modifierEntry5modifierName;
+    private String modifierEntry5WhatModified;
+    private int modifierEntry5modifierAmount;
+
+    private String modifierEntry6modifierName;
+    private String modifierEntry6WhatModified;
+    private int modifierEntry6modifierAmount;
+
+    private String modifierEntry7modifierName;
+    private String modifierEntry7WhatModified;
+    private int modifierEntry7modifierAmount;
+
+    private String modifierEntry8modifierName;
+    private String modifierEntry8WhatModified;
+    private int modifierEntry8modifierAmount;
 
 //    public Long getModifiersId() {
 //        return modifiersId;
@@ -412,5 +447,198 @@ public class Modifiers {
 
     public void setInitiativeMod(int initiativeMod) {
         this.initiativeMod = initiativeMod;
+    }
+
+    //Merits and buffs
+    public String getModifierEntry1modifierName() {
+        return modifierEntry1modifierName;
+    }
+
+    public void setModifierEntry1modifierName(String modifierEntry1modifierName) {
+        this.modifierEntry1modifierName = modifierEntry1modifierName;
+    }
+
+    public String getModifierEntry1WhatModified() {
+        return modifierEntry1WhatModified;
+    }
+
+    public void setModifierEntry1WhatModified(String modifierEntry1WhatModified) {
+        this.modifierEntry1WhatModified = modifierEntry1WhatModified;
+    }
+
+    public int getModifierEntry1modifierAmount() {
+        return modifierEntry1modifierAmount;
+    }
+
+    public void setModifierEntry1modifierAmount(int modifierEntry1modifierAmount) {
+        this.modifierEntry1modifierAmount = modifierEntry1modifierAmount;
+    }
+
+    public String getModifierEntry2modifierName() {
+        return modifierEntry2modifierName;
+    }
+
+    public void setModifierEntry2modifierName(String modifierEntry2modifierName) {
+        this.modifierEntry2modifierName = modifierEntry2modifierName;
+    }
+
+    public String getModifierEntry2WhatModified() {
+        return modifierEntry2WhatModified;
+    }
+
+    public void setModifierEntry2WhatModified(String modifierEntry2WhatModified) {
+        this.modifierEntry2WhatModified = modifierEntry2WhatModified;
+    }
+
+    public int getModifierEntry2modifierAmount() {
+        return modifierEntry2modifierAmount;
+    }
+
+    public void setModifierEntry2modifierAmount(int modifierEntry2modifierAmount) {
+        this.modifierEntry2modifierAmount = modifierEntry2modifierAmount;
+    }
+
+    public String getModifierEntry3modifierName() {
+        return modifierEntry3modifierName;
+    }
+
+    public void setModifierEntry3modifierName(String modifierEntry3modifierName) {
+        this.modifierEntry3modifierName = modifierEntry3modifierName;
+    }
+
+    public String getModifierEntry3WhatModified() {
+        return modifierEntry3WhatModified;
+    }
+
+    public void setModifierEntry3WhatModified(String modifierEntry3WhatModified) {
+        this.modifierEntry3WhatModified = modifierEntry3WhatModified;
+    }
+
+    public int getModifierEntry3modifierAmount() {
+        return modifierEntry3modifierAmount;
+    }
+
+    public void setModifierEntry3modifierAmount(int modifierEntry3modifierAmount) {
+        this.modifierEntry3modifierAmount = modifierEntry3modifierAmount;
+    }
+
+    public String getModifierEntry4modifierName() {
+        return modifierEntry4modifierName;
+    }
+
+    public void setModifierEntry4modifierName(String modifierEntry4modifierName) {
+        this.modifierEntry4modifierName = modifierEntry4modifierName;
+    }
+
+    public String getModifierEntry4WhatModified() {
+        return modifierEntry4WhatModified;
+    }
+
+    public void setModifierEntry4WhatModified(String modifierEntry4WhatModified) {
+        this.modifierEntry4WhatModified = modifierEntry4WhatModified;
+    }
+
+    public int getModifierEntry4modifierAmount() {
+        return modifierEntry4modifierAmount;
+    }
+
+    public void setModifierEntry4modifierAmount(int modifierEntry4modifierAmount) {
+        this.modifierEntry4modifierAmount = modifierEntry4modifierAmount;
+    }
+
+    public String getModifierEntry5modifierName() {
+        return modifierEntry5modifierName;
+    }
+
+    public void setModifierEntry5modifierName(String modifierEntry5modifierName) {
+        this.modifierEntry5modifierName = modifierEntry5modifierName;
+    }
+
+    public String getModifierEntry5WhatModified() {
+        return modifierEntry5WhatModified;
+    }
+
+    public void setModifierEntry5WhatModified(String modifierEntry5WhatModified) {
+        this.modifierEntry5WhatModified = modifierEntry5WhatModified;
+    }
+
+    public int getModifierEntry5modifierAmount() {
+        return modifierEntry5modifierAmount;
+    }
+
+    public void setModifierEntry5modifierAmount(int modifierEntry5modifierAmount) {
+        this.modifierEntry5modifierAmount = modifierEntry5modifierAmount;
+    }
+
+    public String getModifierEntry6modifierName() {
+        return modifierEntry6modifierName;
+    }
+
+    public void setModifierEntry6modifierName(String modifierEntry6modifierName) {
+        this.modifierEntry6modifierName = modifierEntry6modifierName;
+    }
+
+    public String getModifierEntry6WhatModified() {
+        return modifierEntry6WhatModified;
+    }
+
+    public void setModifierEntry6WhatModified(String modifierEntry6WhatModified) {
+        this.modifierEntry6WhatModified = modifierEntry6WhatModified;
+    }
+
+    public int getModifierEntry6modifierAmount() {
+        return modifierEntry6modifierAmount;
+    }
+
+    public void setModifierEntry6modifierAmount(int modifierEntry6modifierAmount) {
+        this.modifierEntry6modifierAmount = modifierEntry6modifierAmount;
+    }
+
+    public String getModifierEntry7modifierName() {
+        return modifierEntry7modifierName;
+    }
+
+    public void setModifierEntry7modifierName(String modifierEntry7modifierName) {
+        this.modifierEntry7modifierName = modifierEntry7modifierName;
+    }
+
+    public String getModifierEntry7WhatModified() {
+        return modifierEntry7WhatModified;
+    }
+
+    public void setModifierEntry7WhatModified(String modifierEntry7WhatModified) {
+        this.modifierEntry7WhatModified = modifierEntry7WhatModified;
+    }
+
+    public int getModifierEntry7modifierAmount() {
+        return modifierEntry7modifierAmount;
+    }
+
+    public void setModifierEntry7modifierAmount(int modifierEntry7modifierAmount) {
+        this.modifierEntry7modifierAmount = modifierEntry7modifierAmount;
+    }
+
+    public String getModifierEntry8modifierName() {
+        return modifierEntry8modifierName;
+    }
+
+    public void setModifierEntry8modifierName(String modifierEntry8modifierName) {
+        this.modifierEntry8modifierName = modifierEntry8modifierName;
+    }
+
+    public String getModifierEntry8WhatModified() {
+        return modifierEntry8WhatModified;
+    }
+
+    public void setModifierEntry8WhatModified(String modifierEntry8WhatModified) {
+        this.modifierEntry8WhatModified = modifierEntry8WhatModified;
+    }
+
+    public int getModifierEntry8modifierAmount() {
+        return modifierEntry8modifierAmount;
+    }
+
+    public void setModifierEntry8modifierAmount(int modifierEntry8modifierAmount) {
+        this.modifierEntry8modifierAmount = modifierEntry8modifierAmount;
     }
 }

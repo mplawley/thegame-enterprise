@@ -49,6 +49,38 @@ export class Modifiers {
     deflectMod: number;
     moveMod: number;
     initiativeMod: number;
+
+    modifierEntry1modifierName: string;
+    modifierEntry1WhatModified: string;
+    modifierEntry1modifierAmount: number;
+
+    modifierEntry2modifierName: string;
+    modifierEntry2WhatModified: string;
+    modifierEntry2modifierAmount: number;
+
+    modifierEntry3modifierName: string;
+    modifierEntry3WhatModified: string;
+    modifierEntry3modifierAmount: number;
+
+    modifierEntry4modifierName: string;
+    modifierEntry4WhatModified: string;
+    modifierEntry4modifierAmount: number;
+
+    modifierEntry5modifierName: string;
+    modifierEntry5WhatModified: string;
+    modifierEntry5modifierAmount: number;
+
+    modifierEntry6modifierName: string;
+    modifierEntry6WhatModified: string;
+    modifierEntry6modifierAmount: number;
+
+    modifierEntry7modifierName: string;
+    modifierEntry7WhatModified: string;
+    modifierEntry7modifierAmount: number;
+
+    modifierEntry8modifierName: string;
+    modifierEntry8WhatModified: string;
+    modifierEntry8modifierAmount: number;
 }
 
 export class ModifierEntry {

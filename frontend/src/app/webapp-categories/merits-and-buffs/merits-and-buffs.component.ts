@@ -83,7 +83,39 @@ export class MeritsAndBuffsComponent implements OnInit {
       resolveMod : 0,
       deflectMod : 0,
       moveMod : 0,
-      initiativeMod : 0
+      initiativeMod : 0,
+
+      modifierEntry1modifierName: "",
+      modifierEntry1WhatModified: "",
+      modifierEntry1modifierAmount: 0,
+
+      modifierEntry2modifierName: "",
+      modifierEntry2WhatModified: "",
+      modifierEntry2modifierAmount: 0,
+
+      modifierEntry3modifierName: "",
+      modifierEntry3WhatModified: "",
+      modifierEntry3modifierAmount: 0,
+
+      modifierEntry4modifierName: "",
+      modifierEntry4WhatModified: "",
+      modifierEntry4modifierAmount: 0,
+
+      modifierEntry5modifierName: "",
+      modifierEntry5WhatModified: "",
+      modifierEntry5modifierAmount: 0,
+
+      modifierEntry6modifierName: "",
+      modifierEntry6WhatModified: "",
+      modifierEntry6modifierAmount: 0,
+
+      modifierEntry7modifierName: "",
+      modifierEntry7WhatModified: "",
+      modifierEntry7modifierAmount: 0,
+
+      modifierEntry8modifierName: "",
+      modifierEntry8WhatModified: "",
+      modifierEntry8modifierAmount: 0
     }
   }
 
