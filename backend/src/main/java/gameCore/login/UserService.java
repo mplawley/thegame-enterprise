@@ -76,9 +76,9 @@ public class UserService {
                     user.setLangKey(userDTO.getLangKey());
                     Set<Authority> managedAuthorities = user.getAuthorities();
                     managedAuthorities.clear();
-                    userDTO.getAuthorities().stream()
-                            .map(authorityRepository::findOne)
-                            .forEach(managedAuthorities::add);
+//                    userDTO.getAuthorities().stream()
+//                            .map(authorityRepository::findOne)
+//                            .forEach(managedAuthorities::add);
                     userRepository.save(user);
                     log.debug("Changed Information for User: {}", user);
                     return user;
@@ -101,7 +101,7 @@ public class UserService {
         return userRepository.findOneByLogin(login);
     }
 
-    public Optional<User> getUserWithAuthorities(String id) {
+    public Optional<User> getUserWithAuthorities(Long id) {
         return Optional.ofNullable(userRepository.findOne(id));
     }
 
@@ -113,7 +113,7 @@ public class UserService {
      * @return a list of all the authorities
      */
     public List<String> getAuthorities() {
-        return authorityRepository.findAll().stream().map(Authority::getName).collect(Collectors.toList());
+        return makeCollection(authorityRepository.findAll()).stream().map(Authority::getName).collect(Collectors.toList());
     }
 
     /**
@@ -238,6 +238,14 @@ public class UserService {
                     auth.setName(string);
                     return auth;
                 }).collect(Collectors.toSet());
+    }
+
+    private static <E> Collection<E> makeCollection(Iterable<E> iter) {
+        Collection<E> list = new ArrayList<E>();
+        for (E item : iter) {
+            list.add(item);
+        }
+        return list;
     }
 
 }
