@@ -13,7 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-import static houselawlez.config.OAuth2Configuration.SAVED_LOGIN_ORIGIN_URI;
+import static gameCore.login.OAuth2Configuration.SAVED_LOGIN_ORIGIN_URI;
+
 
 /**
  * AuthenticationSuccessHandler that looks for a saved login origin and redirects to it if it exists.
