@@ -1,10 +1,6 @@
 package gameCore.login;
 
 import com.codahale.metrics.annotation.Timed;
-import houselawlez.security.AuthoritiesConstants;
-import houselawlez.service.UserService;
-import houselawlez.service.dto.UserDTO;
-import houselawlez.web.rest.util.PaginationUtil;
 import io.github.jhipster.web.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
