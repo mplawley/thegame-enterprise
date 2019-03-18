@@ -1,5 +1,7 @@
 # The Game
 
+![Alt text](https://github.com/mplawley/thegame-enterprise/blob/master/screenshots/TheGameShot.png?raw=true "Optional Title")
+
 In lieu of Dungeons and Dragons, a growing group of us have been playing a rather crunchy RPG that I designed. So far, we've simply called this tabletop RPG "The Game" or, originally, "The Board Game," because we used to play it using those old cardboard tiles (along with figurines) on a tabletop.
 
 Unfortunately, the crunchy probability and modifier mechanics of The Game have led to very, very long sessions calculating the outcomes of in-game actions. This is what led me to build a variety of apps to handle those calculations. This project is the Angular 5 (and eventually Java Spring) version of The Game.
