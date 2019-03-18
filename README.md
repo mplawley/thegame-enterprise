@@ -4,19 +4,15 @@ In lieu of Dungeons and Dragons, a growing group of us have been playing a rathe
 
 Unfortunately, the crunchy probability and modifier mechanics of The Game have led to very, very long sessions calculating the outcomes of in-game actions. This is what led me to build a variety of apps to handle those calculations. This project is the Angular 5 (and eventually Java Spring) version of The Game.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+# Installation
+
+To demonstrate how the front-end and back-ends can be separately deployed (e.g. in their own microservices as dockerized containers, e.g. with k8s), I've separated out Angular from Sprint Boot code. With what is currently pushed to master, this app requires that CORS be turned on; this is not desirable in production; a proxy server should be used and CORS turned off.
+
+For local deployment, deploy the Spring boot app from the back-end after a mvn clean install and ng serve the front-end app.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
