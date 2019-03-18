@@ -10,18 +10,11 @@ To demonstrate how the front-end and back-ends can be separately deployed (e.g. 
 
 For local deployment, deploy the Spring boot app from the back-end after a mvn clean install and ng serve the front-end app.
 
-## Development server
+## Running unit and e2e tests for the front end
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Running unit tests
+## Running unit and ITs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+mvn clean install
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
