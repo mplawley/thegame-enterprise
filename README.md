@@ -10,7 +10,13 @@ Unfortunately, the crunchy probability and modifier mechanics of The Game have l
 
 To demonstrate how the front-end and back-ends can be separately deployed (e.g. in their own microservices as dockerized containers, e.g. with k8s), I've separated out Angular from Sprint Boot code. With what is currently pushed to master, this app requires that CORS be turned on; this is not desirable in production; a proxy server should be used and CORS turned off.
 
-For local deployment, deploy the Spring boot app from the back-end after a mvn clean install and ng serve the front-end app.
+For local deployment, 
+1. Deploy a dockerized mysql db
+2. ./mvnw clean install in the backend directory
+3. ./mvnw spring-boot:run to deploy the API
+4. deploy the angular app with an ng serve
+
+Note that the backend and frontend can be dockerized as their own services.
 
 ## Running unit and e2e tests for the front end
 
